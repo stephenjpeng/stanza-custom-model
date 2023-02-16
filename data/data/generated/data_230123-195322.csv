@@ -1,0 +1,7 @@
+location,organization,type,date,unit,weight1,item1,prompt,text
+"Ann, islote",Seabin Project Australia,instagram caption,2018-11-05,kilograms,3665,other plastic cups,"Generate an instagram caption for a beach cleanup where 3665 kilograms of other plastic cups, drink cartons, and other plastic wrappers were cleaned.
+Organization: Seabin Project Australia
+Date: 2018-11-05
+Location: Ann, islote 
+###
+","Yesterday, Seabin Project Australia helped clean up Ann Islote beach and removed an incredible 3,665 kilograms of plastic cups, drink cartons, and wrappers! 🌊 #CleanSeas #SeabinProjectAustralia #BeachCleanup"

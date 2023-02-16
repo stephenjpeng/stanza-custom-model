@@ -1,0 +1,588 @@
+location,organization,type,date,unit,weight1,item1,weight2,prompt,text,item2
+Waihi,Plastic Pollution Coalition,press release,2015-10-12,,,metal bottle caps,,"Generate a press release for a beach cleanup where metal bottle caps were cleaned.
+Organization: Plastic Pollution Coalition
+Date: 2015-10-12
+Location: Waihi
+###
+",Text not generated,
+Bravo Hills,Sea Change Project,press release,2021-11-29,lbs,500.0,aerosols,,"Generate a press release for a beach cleanup where 500 lbs of aerosols were cleaned.
+Organization: Sea Change Project
+Date: 2021-11-29
+Location: Bravo Hills
+###
+",Text not generated,
+Kakadu National Park,Rameau Project,instagram caption,2015-06-15,kgs,200.0,trash,,"Generate an instagram caption for a beach cleanup where 200 kgs of trash were cleaned.
+Organization: Rameau Project
+Date: 2015-06-15
+Location: Kakadu National Park
+###
+",Text not generated,
+"Lively, punta",Seabin Project,press release,2018-04-24,lbs,350.0,paper bags,,"Generate a press release for a beach cleanup where 350 lbs of paper bags were cleaned.
+Organization: Seabin Project
+Date: 2018-04-24
+Location: Lively, punta
+###
+",Text not generated,
+Zomba,Surfrider Foundation,instagram caption,2016-08-11,units,400.0,trash,,"Generate an instagram caption for a beach cleanup where 400 units of trash were cleaned.
+Organization: Surfrider Foundation
+Date: 2016-08-11
+Location: Zomba
+###
+",Text not generated,
+Kaunalā Beach,,press release,2015-06-19,lbs,200.0,aluminium foils,,"Generate a press release for a beach cleanup where 200 lbs of aluminium foils were cleaned.
+Date: 2015-06-19
+Location: Kaunalā Beach
+###
+",Text not generated,
+Hulcombe Ridge,Seabin Project Australia,press release,2017-08-31,units,222.0,plastic,,"Generate a press release for a beach cleanup where 222 units of plastic were cleaned.
+Organization: Seabin Project Australia
+Date: 2017-08-31
+Location: Hulcombe Ridge
+###
+",Text not generated,
+"Lepanto, Mount",Sea Shepherd Conservation Society,instagram caption,2016-02-20,pounds,160.0,plastic,,"Generate an instagram caption for a beach cleanup where 160 pounds of plastic were cleaned.
+Organization: Sea Shepherd Conservation Society
+Date: 2016-02-20
+Location: Lepanto, Mount
+###
+",Text not generated,
+La Playa de Guadalupe,Ocean Heroes,press release,2019-09-24,pounds,240.0,plastic,,"Generate a press release for a beach cleanup where 240 pounds of plastic were cleaned.
+Organization: Ocean Heroes
+Date: 2019-09-24
+Location: La Playa de Guadalupe
+###
+",Text not generated,
+Inan Peak,Scuba Nation,instagram caption,2020-12-02,kilograms,397.0,trash,,"Generate an instagram caption for a beach cleanup where 397 kilograms of trash were cleaned.
+Organization: Scuba Nation
+Date: 2020-12-02
+Location: Inan Peak
+###
+",Text not generated,
+Wonboyn Beach,Marine Debris Solutions,press release,,lbs,400.0,trash,,"Generate a press release for a beach cleanup where 400 lbs of trash were cleaned.
+Organization: Marine Debris Solutions
+Location: Wonboyn Beach
+###
+",Text not generated,
+Huntly,Project AWARE,press release,2019-11-05,units,300.0,trash,,"Generate a press release for a beach cleanup where 300 units of trash were cleaned.
+Organization: Project AWARE
+Date: 2019-11-05
+Location: Huntly
+###
+",Text not generated,
+Trivelpiece Island,Shore Buddies,press release,2020-02-05,kilograms,35.0,styrofoam pieces,,"Generate a press release for a beach cleanup where 35 kilograms of styrofoam pieces were cleaned.
+Organization: Shore Buddies
+Date: 2020-02-05
+Location: Trivelpiece Island
+###
+",Text not generated,
+Scituate Coast Guard Station,The Ocean Cleanup,press release,2017-10-15,lbs,410.0,trash,,"Generate a press release for a beach cleanup where 410 lbs of trash were cleaned.
+Organization: The Ocean Cleanup
+Date: 2017-10-15
+Location: Scituate Coast Guard Station
+###
+",Text not generated,
+Anganja Beach,The Surfrider Foundation South Africa,instagram caption,2021-07-29,kilograms,300.0,trash,,"Generate an instagram caption for a beach cleanup where 300 kilograms of trash were cleaned.
+Organization: The Surfrider Foundation South Africa
+Date: 2021-07-29
+Location: Anganja Beach
+###
+",Text not generated,
+Shelly Beach Park,Sea Turtle Conservancy USA,instagram caption,2021-10-01,pounds,288.0,trash,,"Generate an instagram caption for a beach cleanup where 288 pounds of trash were cleaned.
+Organization: Sea Turtle Conservancy USA
+Date: 2021-10-01
+Location: Shelly Beach Park
+###
+",Text not generated,
+Playa de Batata,Coastal Care Botswana,instagram caption,2017-04-30,lbs,200.0,trash,,"Generate an instagram caption for a beach cleanup where 200 lbs of trash were cleaned.
+Organization: Coastal Care Botswana
+Date: 2017-04-30
+Location: Playa de Batata
+###
+",Text not generated,
+Janosy Hill,Upcycle the Gyres,press release,2015-12-19,,,"aluminium foils, scrap metals, and normal papers",,"Generate a press release for a beach cleanup where aluminium foils, scrap metals, and normal papers were cleaned.
+Organization: Upcycle the Gyres
+Date: 2015-12-19
+Location: Janosy Hill
+###
+",Text not generated,
+United States Coast Guard Academy,Trash Free Seas Alliance,instagram caption,2020-04-07,lbs,20.0,plastic,,"Generate an instagram caption for a beach cleanup where 20 lbs of plastic were cleaned.
+Organization: Trash Free Seas Alliance
+Date: 2020-04-07
+Location: United States Coast Guard Academy
+###
+",Text not generated,
+City of Belleair Beach,Plastic Oceans,press release,2017-11-18,units,300.0,toilet tubes,,"Generate a press release for a beach cleanup where 300 units of toilet tubes were cleaned.
+Organization: Plastic Oceans
+Date: 2017-11-18
+Location: City of Belleair Beach
+###
+",Text not generated,
+Doppler Nunatak,,press release,2015-04-30,pounds,160.0,other plastics and aerosols,,"Generate a press release for a beach cleanup where 160 pounds of other plastics and aerosols were cleaned.
+Date: 2015-04-30
+Location: Doppler Nunatak
+###
+",Text not generated,
+Lady Kathleen Beach,Ocean Conservation Research,press release,2016-07-12,kilograms,200.0,disposable plastic cups,,"Generate a press release for a beach cleanup where 200 kilograms of disposable plastic cups were cleaned.
+Organization: Ocean Conservation Research
+Date: 2016-07-12
+Location: Lady Kathleen Beach
+###
+",Text not generated,
+Mattituck Park District Beach,World Wildlife Fund,press release,2015-08-01,kilograms,390.0,plastic films,,"Generate a press release for a beach cleanup where 390 kilograms of plastic films were cleaned.
+Organization: World Wildlife Fund
+Date: 2015-08-01
+Location: Mattituck Park District Beach
+###
+",Text not generated,
+Izumrudnoje Lake,Plastic Pollution Coalition India,press release,2022-06-07,pounds,430.0,lids,,"Generate a press release for a beach cleanup where 430 pounds of lids were cleaned.
+Organization: Plastic Pollution Coalition India
+Date: 2022-06-07
+Location: Izumrudnoje Lake
+###
+",Text not generated,
+Ulithi Atoll,,instagram caption,2015-07-30,lbs,370.0,meal cartons,,"Generate an instagram caption for a beach cleanup where 370 lbs of meal cartons were cleaned.
+Date: 2015-07-30
+Location: Ulithi Atoll
+###
+",Text not generated,
+Jones Nunatak,The Beach Cleanup,press release,2022-12-02,units,140.0,trash,,"Generate a press release for a beach cleanup where 140 units of trash were cleaned.
+Organization: The Beach Cleanup
+Date: 2022-12-02
+Location: Jones Nunatak
+###
+",Text not generated,
+Mackey Rock,The Great Canadian Shoreline Cleanup,instagram caption,2020-05-08,pounds,165.0,straws,,"Generate an instagram caption for a beach cleanup where 165 pounds of straws were cleaned.
+Organization: The Great Canadian Shoreline Cleanup
+Date: 2020-05-08
+Location: Mackey Rock
+###
+",Text not generated,
+Butter Bean Beach,Rameau Project,instagram caption,2016-08-24,units,450.0,trash,,"Generate an instagram caption for a beach cleanup where 450 units of trash were cleaned.
+Organization: Rameau Project
+Date: 2016-08-24
+Location: Butter Bean Beach
+###
+",Text not generated,
+Playa de Mal Nombre,The Beach Cleaners,instagram caption,2018-09-30,lbs,200.0,glass cups,,"Generate an instagram caption for a beach cleanup where 200 lbs of glass cups were cleaned.
+Organization: The Beach Cleaners
+Date: 2018-09-30
+Location: Playa de Mal Nombre
+###
+",Text not generated,
+Playa de Florida,Sea Shepherd Conservation Society Canada,instagram caption,2016-07-18,pounds,436.0,paper bags,,"Generate an instagram caption for a beach cleanup where 436 pounds of paper bags were cleaned.
+Organization: Sea Shepherd Conservation Society Canada
+Date: 2016-07-18
+Location: Playa de Florida
+###
+",Text not generated,
+Baiti,Wildcoast,instagram caption,2018-03-18,kilograms,436.0,aluminium blister packs,,"Generate an instagram caption for a beach cleanup where 436 kilograms of aluminium blister packs were cleaned.
+Organization: Wildcoast
+Date: 2018-03-18
+Location: Baiti
+###
+",Text not generated,
+Radnevo Peak,4ocean Canada,instagram caption,2022-11-24,units,400.0,"egg cartons, aerosols, and paper bags",,"Generate an instagram caption for a beach cleanup where 400 units of egg cartons, aerosols, and paper bags were cleaned.
+Organization: 4ocean Canada
+Date: 2022-11-24
+Location: Radnevo Peak
+###
+",Text not generated,
+Tallebudgera Beach,Shoreline Cleanup Foundation Australia,press release,2018-10-02,kilograms,200.0,foam cups and disposable plastic cups,,"Generate a press release for a beach cleanup where 200 kilograms of foam cups and disposable plastic cups were cleaned.
+Organization: Shoreline Cleanup Foundation Australia
+Date: 2018-10-02
+Location: Tallebudgera Beach
+###
+",Text not generated,
+,Protect Our Winters,press release,2021-10-14,kgs,210.0,glass cups,,"Generate a press release for a beach cleanup where 210 kgs of glass cups were cleaned.
+Organization: Protect Our Winters
+Date: 2021-10-14
+###
+",Text not generated,
+Borough of Jersey Shore,The Surfrider Foundation UK,instagram caption,2015-08-09,lbs,28.0,other plastic wrappers,,"Generate an instagram caption for a beach cleanup where 28 lbs of other plastic wrappers were cleaned.
+Organization: The Surfrider Foundation UK
+Date: 2015-08-09
+Location: Borough of Jersey Shore
+###
+",Text not generated,
+Brooklyn Coast Guard Air Station,Project Kaisei,instagram caption,2022-12-30,pounds,42.0,plastic,,"Generate an instagram caption for a beach cleanup where 42 pounds of plastic were cleaned.
+Organization: Project Kaisei
+Date: 2022-12-30
+Location: Brooklyn Coast Guard Air Station
+###
+",Text not generated,
+Racing Beach,,instagram caption,2015-04-14,kilograms,167.0,trash,,"Generate an instagram caption for a beach cleanup where 167 kilograms of trash were cleaned.
+Date: 2015-04-14
+Location: Racing Beach
+###
+",Text not generated,
+Shore Ghar,Surfrider Europe,press release,2016-05-22,kgs,87.0,other plastic wrappers,,"Generate a press release for a beach cleanup where 87 kgs of other plastic wrappers were cleaned.
+Organization: Surfrider Europe
+Date: 2016-05-22
+Location: Shore Ghar
+###
+",Text not generated,
+Dunalley Beach,Eco-Warriors,press release,2022-02-15,kgs,40.0,trash,,"Generate a press release for a beach cleanup where 40 kgs of trash were cleaned.
+Organization: Eco-Warriors
+Date: 2022-02-15
+Location: Dunalley Beach
+###
+",Text not generated,
+Nukuvotu Beach,Marine Conservation Cambodia,press release,2020-07-02,pounds,30.0,plastic,,"Generate a press release for a beach cleanup where 30 pounds of plastic were cleaned.
+Organization: Marine Conservation Cambodia
+Date: 2020-07-02
+Location: Nukuvotu Beach
+###
+",Text not generated,
+Imshaug Peninsula,Surfrider Foundation,instagram caption,2017-09-24,pounds,200.0,plastic,,"Generate an instagram caption for a beach cleanup where 200 pounds of plastic were cleaned.
+Organization: Surfrider Foundation
+Date: 2017-09-24
+Location: Imshaug Peninsula
+###
+",Text not generated,
+Playa Sabanalamar,Adventure Scientists,instagram caption,2019-06-26,kilograms,400.0,plastic,,"Generate an instagram caption for a beach cleanup where 400 kilograms of plastic were cleaned.
+Organization: Adventure Scientists
+Date: 2019-06-26
+Location: Playa Sabanalamar
+###
+",Text not generated,
+Tyndall Mountains,Trash Free Seas Alliance,instagram caption,2022-04-06,kilograms,108.0,plastic films,,"Generate an instagram caption for a beach cleanup where 108 kilograms of plastic films were cleaned.
+Organization: Trash Free Seas Alliance
+Date: 2022-04-06
+Location: Tyndall Mountains
+###
+",Text not generated,
+West Arnhem,International Union for Conservation of Nature,press release,2016-12-10,pounds,300.0,other plastic bottles,,"Generate a press release for a beach cleanup where 300 pounds of other plastic bottles were cleaned.
+Organization: International Union for Conservation of Nature
+Date: 2016-12-10
+Location: West Arnhem
+###
+",Text not generated,
+Kikish Crag,Ocean Conservancy,instagram caption,2022-01-14,kgs,90.0,trash,,"Generate an instagram caption for a beach cleanup where 90 kgs of trash were cleaned.
+Organization: Ocean Conservancy
+Date: 2022-01-14
+Location: Kikish Crag
+###
+",Text not generated,
+Cooloola Beach,The Beach Cleanup,instagram caption,2020-02-18,lbs,220.0,wrapping papers,,"Generate an instagram caption for a beach cleanup where 220 lbs of wrapping papers were cleaned.
+Organization: The Beach Cleanup
+Date: 2020-02-18
+Location: Cooloola Beach
+###
+",Text not generated,
+Drum Circle Beach,Marine Debris Solutions,press release,2016-10-15,units,80.0,trash,,"Generate a press release for a beach cleanup where 80 units of trash were cleaned.
+Organization: Marine Debris Solutions
+Date: 2016-10-15
+Location: Drum Circle Beach
+###
+",Text not generated,
+Fitzpatrick Rock,Coastal Watch,press release,2016-08-13,pounds,9.0,plastic,,"Generate a press release for a beach cleanup where 9 pounds of plastic were cleaned.
+Organization: Coastal Watch
+Date: 2016-08-13
+Location: Fitzpatrick Rock
+###
+",Text not generated,
+Fishhook Ridge,Earth Echo International,instagram caption,2018-11-14,pounds,340.0,toilet tubes and cans,,"Generate an instagram caption for a beach cleanup where 340 pounds of toilet tubes and cans were cleaned.
+Organization: Earth Echo International
+Date: 2018-11-14
+Location: Fishhook Ridge
+###
+",Text not generated,
+Playa Verraco,Ocean Conservation Research,instagram caption,2016-06-01,units,240.0,pizza boxes,,"Generate an instagram caption for a beach cleanup where 240 units of pizza boxes were cleaned.
+Organization: Ocean Conservation Research
+Date: 2016-06-01
+Location: Playa Verraco
+###
+",Text not generated,
+Playa La Galera,Unite for the Climate,instagram caption,2022-12-08,kgs,100.0,trash,,"Generate an instagram caption for a beach cleanup where 100 kgs of trash were cleaned.
+Organization: Unite for the Climate
+Date: 2022-12-08
+Location: Playa La Galera
+###
+",Text not generated,
+Nagbarongas Beach,Plastic Pollution Coalition Mexico,instagram caption,2021-01-19,kgs,400.0,unlabeled litters,,"Generate an instagram caption for a beach cleanup where 400 kgs of unlabeled litters were cleaned.
+Organization: Plastic Pollution Coalition Mexico
+Date: 2021-01-19
+Location: Nagbarongas Beach
+###
+",Text not generated,
+Playa Yumaque,Ocean Sanctuaries,press release,2017-01-02,units,356.0,glass jars,,"Generate a press release for a beach cleanup where 356 units of glass jars were cleaned.
+Organization: Ocean Sanctuaries
+Date: 2017-01-02
+Location: Playa Yumaque
+###
+",Text not generated,
+Playa Garrafón,Save the Mediterranean,press release,2022-05-26,units,400.0,"plastic straws, toilet tubes, and scrap metals",,"Generate a press release for a beach cleanup where 400 units of plastic straws, toilet tubes, and scrap metals were cleaned.
+Organization: Save the Mediterranean
+Date: 2022-05-26
+Location: Playa Garrafón
+###
+",Text not generated,
+Mexico Beach,Clean Up the World,press release,2021-05-23,kilograms,240.0,trash,,"Generate a press release for a beach cleanup where 240 kilograms of trash were cleaned.
+Organization: Clean Up the World
+Date: 2021-05-23
+Location: Mexico Beach
+###
+",Text not generated,
+Nibok,Deep Sea Conservation Coalition,instagram caption,2021-04-05,lbs,460.0,plastic lids,,"Generate an instagram caption for a beach cleanup where 460 lbs of plastic lids were cleaned.
+Organization: Deep Sea Conservation Coalition
+Date: 2021-04-05
+Location: Nibok
+###
+",Text not generated,
+Kuaotunu Beach,Big Blue Ocean Cleanup,instagram caption,2018-07-15,kgs,443.0,glass bottles,,"Generate an instagram caption for a beach cleanup where 443 kgs of glass bottles were cleaned.
+Organization: Big Blue Ocean Cleanup
+Date: 2018-07-15
+Location: Kuaotunu Beach
+###
+",Text not generated,
+Tatana Beach,Surfrider Foundation Europe,press release,2016-03-13,kilograms,273.0,drink cans,,"Generate a press release for a beach cleanup where 273 kilograms of drink cans were cleaned.
+Organization: Surfrider Foundation Europe
+Date: 2016-03-13
+Location: Tatana Beach
+###
+",Text not generated,
+"Walcott, Cape",Heal the Bay,instagram caption,2017-11-30,kgs,10.0,plastic straws,,"Generate an instagram caption for a beach cleanup where 10 kgs of plastic straws were cleaned.
+Organization: Heal the Bay
+Date: 2017-11-30
+Location: Walcott, Cape
+###
+",Text not generated,
+,Ocean Conservancy Europe,instagram caption,2017-05-27,units,400.0,"bottles, aluminium foils, and plastic bottle caps",,"Generate an instagram caption for a beach cleanup where 400 units of bottles, aluminium foils, and plastic bottle caps were cleaned.
+Organization: Ocean Conservancy Europe
+Date: 2017-05-27
+###
+",Text not generated,
+Playa Quemada,Surfrider Foundation Canada,press release,2017-04-26,kgs,100.0,plastic,,"Generate a press release for a beach cleanup where 100 kgs of plastic were cleaned.
+Organization: Surfrider Foundation Canada
+Date: 2017-04-26
+Location: Playa Quemada
+###
+",Text not generated,
+Capistrano Beach,4ocean Philippines,instagram caption,2018-11-22,units,400.0,trash,,"Generate an instagram caption for a beach cleanup where 400 units of trash were cleaned.
+Organization: 4ocean Philippines
+Date: 2018-11-22
+Location: Capistrano Beach
+###
+",Text not generated,
+Playa Berruguete,Trash Free Seas Alliance,instagram caption,2016-09-11,units,310.0,plastic,,"Generate an instagram caption for a beach cleanup where 310 units of plastic were cleaned.
+Organization: Trash Free Seas Alliance
+Date: 2016-09-11
+Location: Playa Berruguete
+###
+",Text not generated,
+Nhlangano,Wildlife Conservation Society,instagram caption,2021-12-28,kilograms,40.0,"plastified paper bags, straws, and blister packs",,"Generate an instagram caption for a beach cleanup where 40 kilograms of plastified paper bags, straws, and blister packs were cleaned.
+Organization: Wildlife Conservation Society
+Date: 2021-12-28
+Location: Nhlangano
+###
+",Text not generated,
+Vacation Beach,Plastic Pollution Coalition Japan,instagram caption,2021-08-26,kilograms,190.0,trash,,"Generate an instagram caption for a beach cleanup where 190 kilograms of trash were cleaned.
+Organization: Plastic Pollution Coalition Japan
+Date: 2021-08-26
+Location: Vacation Beach
+###
+",Text not generated,
+Mont Mokoto,Beach Angels,instagram caption,2015-03-09,lbs,446.0,plastic,,"Generate an instagram caption for a beach cleanup where 446 lbs of plastic were cleaned.
+Organization: Beach Angels
+Date: 2015-03-09
+Location: Mont Mokoto
+###
+",Text not generated,
+Hales Peak,Surfing For Change,press release,2016-02-14,kgs,230.0,trash,,"Generate a press release for a beach cleanup where 230 kgs of trash were cleaned.
+Organization: Surfing For Change
+Date: 2016-02-14
+Location: Hales Peak
+###
+",Text not generated,
+Crary Mountains,Trash Heroes,press release,2020-09-12,kgs,100.0,trash,,"Generate a press release for a beach cleanup where 100 kgs of trash were cleaned.
+Organization: Trash Heroes
+Date: 2020-09-12
+Location: Crary Mountains
+###
+",Text not generated,
+Spit Beach,International Fund for Animal Welfare,press release,2021-02-21,pounds,250.0,trash,,"Generate a press release for a beach cleanup where 250 pounds of trash were cleaned.
+Organization: International Fund for Animal Welfare
+Date: 2021-02-21
+Location: Spit Beach
+###
+",Text not generated,
+,Adopt a Beach,instagram caption,2017-01-01,units,200.0,normal papers,,"Generate an instagram caption for a beach cleanup where 200 units of normal papers were cleaned.
+Organization: Adopt a Beach
+Date: 2017-01-01
+###
+",Text not generated,
+Rayna Knyaginya Peak,Oceanic Society,press release,2020-06-23,units,60.0,plastified paper bags,,"Generate a press release for a beach cleanup where 60 units of plastified paper bags were cleaned.
+Organization: Oceanic Society
+Date: 2020-06-23
+Location: Rayna Knyaginya Peak
+###
+",Text not generated,
+Playa Cementera,The Ocean Foundation,instagram caption,,kilograms,100.0,plastic lids,90.0,"Generate an instagram caption for a beach cleanup where 100 kilograms of plastic lids and 90 kilograms of plastic bag & wrappers were cleaned.
+Organization: The Ocean Foundation
+Location: Playa Cementera
+###
+",Text not generated,plastic bag & wrappers
+Lockhart River Airport,Surfrider Europe,instagram caption,2016-04-22,kilograms,288.0,"drink cartons, drink cans, and clear plastic bottles",,"Generate an instagram caption for a beach cleanup where 288 kilograms of drink cartons, drink cans, and clear plastic bottles were cleaned.
+Organization: Surfrider Europe
+Date: 2016-04-22
+Location: Lockhart River Airport
+###
+",Text not generated,
+Mount Torii,Keep Australia Beautiful,instagram caption,2020-04-28,units,142.0,trash,,"Generate an instagram caption for a beach cleanup where 142 units of trash were cleaned.
+Organization: Keep Australia Beautiful
+Date: 2020-04-28
+Location: Mount Torii
+###
+",Text not generated,
+Midlands Province,Friends of the Sea,instagram caption,2015-10-27,kgs,200.0,trash,,"Generate an instagram caption for a beach cleanup where 200 kgs of trash were cleaned.
+Organization: Friends of the Sea
+Date: 2015-10-27
+Location: Midlands Province
+###
+",Text not generated,
+Lister Nunataks,Coastal Communities Network,instagram caption,2017-04-10,kgs,360.0,drink cans,130.0,"Generate an instagram caption for a beach cleanup where 360 kgs of drink cans and 130 kgs of bottle caps were cleaned.
+Organization: Coastal Communities Network
+Date: 2017-04-10
+Location: Lister Nunataks
+###
+",Text not generated,bottle caps
+"Valdivia, punta",Sea Change Partnership,press release,2021-10-20,pounds,370.0,plastic,,"Generate a press release for a beach cleanup where 370 pounds of plastic were cleaned.
+Organization: Sea Change Partnership
+Date: 2021-10-20
+Location: Valdivia, punta
+###
+",Text not generated,
+Peloponnese,Blue Ocean Society,instagram caption,2018-11-24,kilograms,110.0,"batteries, cups, and plastified paper bags",,"Generate an instagram caption for a beach cleanup where 110 kilograms of batteries, cups, and plastified paper bags were cleaned.
+Organization: Blue Ocean Society
+Date: 2018-11-24
+Location: Peloponnese
+###
+",Text not generated,
+San Stephanu Beach,Beach Angels,press release,2020-04-10,kgs,230.0,plastic,,"Generate a press release for a beach cleanup where 230 kgs of plastic were cleaned.
+Organization: Beach Angels
+Date: 2020-04-10
+Location: San Stephanu Beach
+###
+",Text not generated,
+Chrysí Ammoudiá,Project AWARE,press release,2016-06-19,units,250.0,trash,,"Generate a press release for a beach cleanup where 250 units of trash were cleaned.
+Organization: Project AWARE
+Date: 2016-06-19
+Location: Chrysí Ammoudiá
+###
+",Text not generated,
+Radisson Blu Hotel Waterfront,Waves for Water,instagram caption,2019-11-22,pounds,100.0,plastic films and aluminium blister packs,,"Generate an instagram caption for a beach cleanup where 100 pounds of plastic films and aluminium blister packs were cleaned.
+Organization: Waves for Water
+Date: 2019-11-22
+Location: Radisson Blu Hotel Waterfront
+###
+",Text not generated,
+Playa Calo De Ses Llisses,Coastal Care Philippines,instagram caption,2021-10-18,kgs,130.0,plastic,,"Generate an instagram caption for a beach cleanup where 130 kgs of plastic were cleaned.
+Organization: Coastal Care Philippines
+Date: 2021-10-18
+Location: Playa Calo De Ses Llisses
+###
+",Text not generated,
+Mount Dolotomw,Trash Free Seas Alliance,press release,2019-07-11,kilograms,115.0,plastic,,"Generate a press release for a beach cleanup where 115 kilograms of plastic were cleaned.
+Organization: Trash Free Seas Alliance
+Date: 2019-07-11
+Location: Mount Dolotomw
+###
+",Text not generated,
+Coolidge Beach,Seabin Project Australia,instagram caption,2022-08-01,units,440.0,"glass bottles, cigarettes, and spread tubs",,"Generate an instagram caption for a beach cleanup where 440 units of glass bottles, cigarettes, and spread tubs were cleaned.
+Organization: Seabin Project Australia
+Date: 2022-08-01
+Location: Coolidge Beach
+###
+",Text not generated,
+"Vieugué, isla",Take 3,instagram caption,2018-12-26,kilograms,461.0,"metal lids, pop tabs, and drink cartons",,"Generate an instagram caption for a beach cleanup where 461 kilograms of metal lids, pop tabs, and drink cartons were cleaned.
+Organization: Take 3
+Date: 2018-12-26
+Location: Vieugué, isla
+###
+",Text not generated,
+Hanoi,,press release,2017-10-13,lbs,322.0,"pop tabs, plastic films, and aluminium blister packs",,"Generate a press release for a beach cleanup where 322 lbs of pop tabs, plastic films, and aluminium blister packs were cleaned.
+Date: 2017-10-13
+Location: Hanoi
+###
+",Text not generated,
+Playa del Amor,Beach Warriors,press release,2019-04-20,kilograms,200.0,pop tabs,,"Generate a press release for a beach cleanup where 200 kilograms of pop tabs were cleaned.
+Organization: Beach Warriors
+Date: 2019-04-20
+Location: Playa del Amor
+###
+",Text not generated,
+Webado Beach,Keep Australia Beautiful,instagram caption,2021-04-04,kilograms,480.0,corrugated cartons,,"Generate an instagram caption for a beach cleanup where 480 kilograms of corrugated cartons were cleaned.
+Organization: Keep Australia Beautiful
+Date: 2021-04-04
+Location: Webado Beach
+###
+",Text not generated,
+Seaton Carew Beach,Beach Sweepers,instagram caption,2020-03-31,units,460.0,cups,,"Generate an instagram caption for a beach cleanup where 460 units of cups were cleaned.
+Organization: Beach Sweepers
+Date: 2020-03-31
+Location: Seaton Carew Beach
+###
+",Text not generated,
+Floral,Blue Flag Programme,press release,2022-07-17,kgs,224.0,plastic containers,,"Generate a press release for a beach cleanup where 224 kgs of plastic containers were cleaned.
+Organization: Blue Flag Programme
+Date: 2022-07-17
+Location: Floral
+###
+",Text not generated,
+Kennel Peak,Seabin Project Australia,instagram caption,2018-08-19,pounds,75.0,trash,,"Generate an instagram caption for a beach cleanup where 75 pounds of trash were cleaned.
+Organization: Seabin Project Australia
+Date: 2018-08-19
+Location: Kennel Peak
+###
+",Text not generated,
+"Virchow, cerro",4ocean Australia,instagram caption,2020-03-08,kgs,400.0,food wastes,,"Generate an instagram caption for a beach cleanup where 400 kgs of food wastes were cleaned.
+Organization: 4ocean Australia
+Date: 2020-03-08
+Location: Virchow, cerro
+###
+",Text not generated,
+East Budd Island,Reef Check Foundation,instagram caption,2015-11-17,lbs,60.0,trash,,"Generate an instagram caption for a beach cleanup where 60 lbs of trash were cleaned.
+Organization: Reef Check Foundation
+Date: 2015-11-17
+Location: East Budd Island
+###
+",Text not generated,
+Mandalay Beach,World Surfing Reserves,instagram caption,2017-06-12,units,155.0,trash,,"Generate an instagram caption for a beach cleanup where 155 units of trash were cleaned.
+Organization: World Surfing Reserves
+Date: 2017-06-12
+Location: Mandalay Beach
+###
+",Text not generated,
+"Czegka, Mount",,instagram caption,2015-05-13,kgs,400.0,plastic,,"Generate an instagram caption for a beach cleanup where 400 kgs of plastic were cleaned.
+Date: 2015-05-13
+Location: Czegka, Mount
+###
+",Text not generated,
+Dodson Rocks,The Plastic Project,instagram caption,2016-07-04,kilograms,430.0,glass bottles and garbage bags,,"Generate an instagram caption for a beach cleanup where 430 kilograms of glass bottles and garbage bags were cleaned.
+Organization: The Plastic Project
+Date: 2016-07-04
+Location: Dodson Rocks
+###
+",Text not generated,
+Sirte,Plastic Pollution Coalition Australia,instagram caption,,lbs,80.0,polypropylene bags and glass bottles,,"Generate an instagram caption for a beach cleanup where 80 lbs of polypropylene bags and glass bottles were cleaned.
+Organization: Plastic Pollution Coalition Australia
+Location: Sirte
+###
+",Text not generated,
+Mount Christmas,The Washed Ashore Project,instagram caption,2022-06-05,units,309.0,trash,,"Generate an instagram caption for a beach cleanup where 309 units of trash were cleaned.
+Organization: The Washed Ashore Project
+Date: 2022-06-05
+Location: Mount Christmas
+###
+",Text not generated,
+Mount Derom,Unite for the Climate,instagram caption,2015-01-27,kgs,400.0,trash,,"Generate an instagram caption for a beach cleanup where 400 kgs of trash were cleaned.
+Organization: Unite for the Climate
+Date: 2015-01-27
+Location: Mount Derom
+###
+",Text not generated,
+Lilli Pilli Beach,,press release,2017-12-20,lbs,454.0,plastic,,"Generate a press release for a beach cleanup where 454 lbs of plastic were cleaned.
+Date: 2017-12-20
+Location: Lilli Pilli Beach
+###
+",Text not generated,
