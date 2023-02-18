@@ -7,12 +7,21 @@ or a text file within a zip
 Main program extracts a piece of the zip file from the Danish DDT dataset
 """
 
+import argparse
 import io
 import zipfile
 from zipfile import ZipFile
 from stanza.utils.conll import CoNLL
 
-def process_conll(input_file, output_file, zip_file=None, conversion=None, attr_prefix="name", allow_empty=False):
+def parse_args():
+    parser = argparse.ArgumentParser(description="Convert the conllu format data into BIO format.")
+    parser.add_argument('input', help='Input conllu format data filename.')
+    parser.add_argument('output', help='Output BIO filename.')
+    args = parser.parse_args()
+    return args
+
+def process_conll(input_file, output_file, zip_file=None, conversion=None,
+        attr_prefix="name", allow_empty=False):
     """
     Process a single file from DDT
 
@@ -53,7 +62,8 @@ def process_conll(input_file, output_file, zip_file=None, conversion=None, attr_
             fout.write("\n")
 
 def main():
-    process_conll(zip_file="extern_data/ner/da_ddt/ddt.zip", input_file="ddt.train.conllu", output_file="data/ner/da_ddt.train.bio")
+    args = parse_args()
+    process_conll(args.input, args.output)
 
 if __name__ == '__main__':
     main()

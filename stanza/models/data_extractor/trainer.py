@@ -69,17 +69,16 @@ class Trainer(BaseTrainer):
         if model_file is not None:
             # load everything from file
             self.load(model_file, pretrain, args, foundation_cache)
-        else:
-            assert all(var is not None for var in [args, vocab, pretrain])
-            # build model from scratch
-            self.args = args
-            self.vocab = vocab
-            self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
-            self.model = DataExtractor(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
+        else: # load from ner model
+            assert args['ner_model_file'] is not None
+            # build model from scratch, load NER model
+            # load relevant pieces from file. args in file will be updated with specified args
+            self.load(args['ner_model_file'], pretrain, args, foundation_cache)
 
         if freeze_layers:
             logger.info('Disabling gradient for NER layers')
-            exclude = [] # TODO: MAKE SURE OUR LAYERS ARE EXCLUDED
+            # ner_tagger layers
+            exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm', 'tag_clf', 'crit']
             for pname, p in self.model.named_parameters():
                 if pname.split('.')[0] not in exclude:
                     p.requires_grad = False
@@ -166,6 +165,11 @@ class Trainer(BaseTrainer):
         emb_matrix=None
         if pretrain is not None:
             emb_matrix = pretrain.emb
+
+            # limit emb_matrix to the correct size
+            if emb_matrix.shape[0] > len(self.vocab['word']):
+                indices = pretrain.vocab.map(self.vocab['word']._unit2id.keys())
+                emb_matrix = emb_matrix.take(indices, axis=0)
 
         self.model = DataExtractor(self.args, self.vocab, emb_matrix=emb_matrix, bert_model=self.bert_model, bert_tokenizer=self.bert_tokenizer, use_cuda=self.use_cuda)
         self.model.load_state_dict(checkpoint['model'], strict=False)

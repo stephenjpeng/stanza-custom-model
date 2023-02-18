@@ -43,9 +43,13 @@ export POS_DATA_DIR=$DATA_ROOT/pos
 export DEPPARSE_DATA_DIR=$DATA_ROOT/depparse
 export ETE_DATA_DIR=$DATA_ROOT/ete
 export NER_DATA_DIR=$DATA_ROOT/ner
+export DATAE_DATA_DIR=$DATA_ROOT/data_extractor
 export CHARLM_DATA_DIR=$DATA_ROOT/charlm
 export CONSTITUENCY_DATA_DIR=$DATA_ROOT/constituency
 export SENTIMENT_DATA_DIR=$DATA_ROOT/sentiment
+
+export DATAEBASE=$DATA_ROOT
+export PYTHONPATH=$PYTHONPATH:.
 
 # Set directories to store external word vector data
 export WORDVEC_DIR=./extern_data/wordvec

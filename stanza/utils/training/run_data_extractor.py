@@ -22,9 +22,9 @@ automatically download the data.
 import logging
 import os
 
-from stanza.models import ner_tagger  #TODO: add model for data extractor & find / replace
+from stanza.models import data_extractor  #TODO: add model for data extractor & find / replace
 from stanza.resources.common import DEFAULT_MODEL_DIR
-from stanza.utils.datasets.ner import prepare_ner_dataset  # TODO: VERIFY: don't think we need if conscious of training data
+from stanza.utils.datasets.ner import prepare_ner_dataset
 from stanza.utils.training import common
 from stanza.utils.training.common import Mode, add_charlm_args, build_charlm_args, choose_charlm, find_wordvec_pretrain
 
@@ -64,20 +64,17 @@ def build_pretrain_args(language, dataset, charlm="default", extra_args=None, mo
 # TODO: rename treebank -> dataset everywhere
 def run_treebank(mode, paths, treebank, short_name,
                  temp_output_file, command_args, extra_args):
-    ner_dir = paths["NER_DATA_DIR"]
+    datae_dir = paths["DATAE_DATA_DIR"]
     language, dataset = short_name.split("_")
 
-    train_file = os.path.join(ner_dir, f"{short_name}.train.json")
-    dev_file   = os.path.join(ner_dir, f"{short_name}.dev.json")
-    test_file  = os.path.join(ner_dir, f"{short_name}.test.json")
+    train_file = os.path.join(datae_dir, f"{short_name}.train.json")
+    dev_file   = os.path.join(datae_dir, f"{short_name}.dev.json")
+    test_file  = os.path.join(datae_dir, f"{short_name}.test.json")
 
     missing_file = [x for x in (train_file, dev_file, test_file) if not os.path.exists(x)]
     if len(missing_file) > 0:
         logger.warning(f"The data for {short_name} is missing or incomplete.  Cannot find {missing_file}  Attempting to rebuild...")
-        try:
-            prepare_ner_dataset.main(short_name)
-        except Exception as e:
-            raise FileNotFoundError(f"An exception occurred while trying to build the data for {short_name}  At least one portion of the data was missing: {missing_file}  Please correctly build these files and then try again.") from e
+        raise FileNotFoundError(f"An exception occurred while trying to build the data for {short_name}  At least one portion of the data was missing: {missing_file}  Please correctly build these files and then try again.")
 
     pretrain_args = build_pretrain_args(language, dataset, command_args.charlm, extra_args)
 
@@ -104,7 +101,7 @@ def run_treebank(mode, paths, treebank, short_name,
                       '--mode', 'train']
         train_args = train_args + pretrain_args + bert_args + dataset_args + extra_args
         logger.info("Running train step with args: {}".format(train_args))
-        ner_tagger.main(train_args)
+        data_extractor.main(train_args)
 
     if mode == Mode.SCORE_DEV or mode == Mode.TRAIN:
         dev_args = ['--eval_file', dev_file,
@@ -113,7 +110,7 @@ def run_treebank(mode, paths, treebank, short_name,
                       '--mode', 'predict']
         dev_args = dev_args + pretrain_args + extra_args
         logger.info("Running dev step with args: {}".format(dev_args))
-        ner_tagger.main(dev_args)
+        data_extractor.main(dev_args)
 
     if mode == Mode.SCORE_TEST or mode == Mode.TRAIN:
         test_args = ['--eval_file', test_file,
@@ -122,11 +119,11 @@ def run_treebank(mode, paths, treebank, short_name,
                       '--mode', 'predict']
         test_args = test_args + pretrain_args + extra_args
         logger.info("Running test step with args: {}".format(test_args))
-        ner_tagger.main(test_args)
+        data_extractor.main(test_args)
 
 
 def main():
-    common.main(run_treebank, "ner", "nertagger", add_charlm_args)
+    common.main(run_treebank, "data_extractor", "dataextractor", add_charlm_args)
 
 if __name__ == "__main__":
     main()

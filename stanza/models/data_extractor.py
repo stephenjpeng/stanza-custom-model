@@ -18,9 +18,9 @@ import json
 import torch
 from torch import nn, optim
 
-from stanza.models.ner.data import DataLoader
-from stanza.models.ner.trainer import Trainer
-from stanza.models.ner import scorer
+from stanza.models.data_extractor.data import DataLoader
+from stanza.models.data_extractor.trainer import Trainer
+from stanza.models.data_extractor import scorer
 from stanza.models.common import utils
 from stanza.models.common.pretrain import Pretrain
 from stanza.utils.conll import CoNLL
@@ -33,13 +33,15 @@ logger = logging.getLogger('stanza')
 
 def parse_args(args=None):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='data/ner', help='Directory of NER data.')
+    parser.add_argument('--data_dir', type=str, default='data/dataextractor', help='Directory of NER data.')
     parser.add_argument('--wordvec_dir', type=str, default='extern_data/word2vec', help='Directory of word vectors')
     parser.add_argument('--wordvec_file', type=str, default='', help='File that contains word vectors')
     parser.add_argument('--wordvec_pretrain_file', type=str, default=None, help='Exact name of the pretrain file to read')
     parser.add_argument('--train_file', type=str, default=None, help='Input file for data loader.')
     parser.add_argument('--eval_file', type=str, default=None, help='Input file for data loader.')
     parser.add_argument('--eval_output_file', type=str, default=None, help='Where to write results: text, gold, pred.  If None, no results file printed')
+
+    parser.add_argument('--ner_model_file', type=str, default=None, help='State file of parameters for pretrained NER model')
 
     parser.add_argument('--mode', default='train', choices=['train', 'predict'])
     parser.add_argument('--finetune', action='store_true', help='Load existing model during `train` mode from `save_dir` path')
@@ -92,20 +94,17 @@ def parse_args(args=None):
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--max_grad_norm', type=float, default=5.0, help='Gradient clipping.')
     parser.add_argument('--log_step', type=int, default=20, help='Print log every k steps.')
-    parser.add_argument('--save_dir', type=str, default='saved_models/ner', help='Root dir for saving models.')
+    parser.add_argument('--save_dir', type=str, default='saved_models/dataextractor', help='Root dir for saving models.')
     parser.add_argument('--save_name', type=str, default=None, help="File name to save the model")
 
     parser.add_argument('--seed', type=int, default=1234)
     parser.add_argument('--cuda', type=bool, default=torch.cuda.is_available())
     parser.add_argument('--cpu', action='store_true', help='Ignore CUDA.')
 
-    parser.add_argument('--wandb', action='store_true', help='Start a wandb session and write the results of training.  Only applies to training.  Use --wandb_name instead to specify a name')
-    parser.add_argument('--wandb_name', default=None, help='Name of a wandb session to start when training.  Will default to the dataset short name')
+    parser.add_argument('--tensorboard', action='store_true', help='Start a tensorboard session and write the results of training.  Only applies to training.')
 
     args = parser.parse_args(args=args)
 
-    if args.wandb_name:
-        args.wandb = True
     if args.cpu:
         args.cuda = False
 
@@ -117,7 +116,7 @@ def main(args=None):
 
     utils.set_random_seed(args['seed'], args['cuda'])
 
-    logger.info("Running NER tagger in {} mode".format(args['mode']))
+    logger.info("Running data extractor in {} mode".format(args['mode']))
 
     if args['mode'] == 'train':
         train(args)
@@ -141,7 +140,7 @@ def load_pretrain(args):
 def train(args):
     utils.ensure_dir(args['save_dir'])
     model_file = os.path.join(args['save_dir'], args['save_name']) if args['save_name'] \
-        else '{}/{}_nertagger.pt'.format(args['save_dir'], args['shorthand'])
+        else '{}/{}_dataextractor.pt'.format(args['save_dir'], args['shorthand'])
 
     pretrain = None
     vocab = None
@@ -176,10 +175,12 @@ def train(args):
 
     # load data
     logger.info("Loading data with batch size {}...".format(args['batch_size']))
+
     train_doc = Document(json.load(open(args['train_file'])))
     logger.info("Loaded %d sentences of training data", len(train_doc.sentences))
     if len(train_doc.sentences) == 0:
         raise ValueError("File %s exists but has no usable training data" % args['train_file'])
+
     train_batch = DataLoader(train_doc, args['batch_size'], args, pretrain, vocab=vocab, evaluation=False)
     vocab = train_batch.vocab
     dev_doc = Document(json.load(open(args['eval_file'])))
@@ -206,7 +207,7 @@ def train(args):
     logger.info("Training tagger...")
     if trainer is None: # init if model was not loaded previously from file
         trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
-                          train_classifier_only=args['train_classifier_only'])
+                          freeze_layers=args['train_classifier_only'])
     logger.info(trainer.model)
 
     global_step = 0
@@ -224,12 +225,15 @@ def train(args):
     else:
         scheduler = None
 
-    if args['wandb']:
-        import wandb
-        wandb_name = args['wandb_name'] if args['wandb_name'] else "%s_ner" % args['shorthand']
-        wandb.init(name=wandb_name, config=args)
-        wandb.run.define_metric('train_loss', summary='min')
-        wandb.run.define_metric('dev_score', summary='max')
+    if args['tensorboard']:
+        from torch.utils.tensorboard import SummaryWriter
+        writer = SummaryWriter()
+
+        # plot embeddings
+        # writer.add_image('image', np.ones((3,3,3)), 0) # hack to get projector working
+        ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)
+        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, torch.from_numpy(ind)),
+                             metadata=trainer.model.vocab['word'].unmap(ind))
 
     # start training
     train_loss = 0
@@ -256,8 +260,11 @@ def train(args):
 
                 train_loss = train_loss / args['eval_interval'] # avg loss per batch
                 logger.info("step {}: train_loss = {:.6f}, dev_score = {:.4f}".format(global_step, train_loss, dev_score))
-                if args['wandb']:
-                    wandb.log({'train_loss': train_loss, 'dev_score': dev_score})
+                if args['tensorboard']:
+                    writer.add_scalar('Loss/train', train_loss, global_step)
+                    writer.add_scalar('Score/dev', dev_score, global_step)
+                    writer.add_scalar('Parameters/lr', current_lr, global_step)
+
                 train_loss = 0
 
                 # save best model
@@ -286,8 +293,8 @@ def train(args):
 
     logger.info("Training ended with {} steps.".format(global_step))
 
-    if args['wandb']:
-        wandb.finish()
+    if args['tensorboard']:
+        writer.close()
 
     if len(dev_score_history) > 0:
         best_f, best_eval = max(dev_score_history)*100, np.argmax(dev_score_history)+1
@@ -317,7 +324,7 @@ def write_ner_results(filename, batch, preds):
 def evaluate(args):
     # file paths
     model_file = os.path.join(args['save_dir'], args['save_name']) if args['save_name'] \
-        else '{}/{}_nertagger.pt'.format(args['save_dir'], args['shorthand'])
+        else '{}/{}_dataextractor.pt'.format(args['save_dir'], args['shorthand'])
 
     loaded_args, trainer, vocab = load_model(args, model_file)
     logger.debug("Loaded model for eval from %s", model_file)
@@ -338,9 +345,9 @@ def evaluate(args):
     _, _, _, confusion = scorer.score_by_token(preds, gold_tags)
     logger.info("Weighted f1 for non-O tokens: %5f", confusion_to_weighted_f1(confusion, exclude=["O"]))
 
-    logger.info("NER tagger score:")
+    logger.info("Data extraction score:")
     logger.info("{} {:.2f}".format(args['shorthand'], score*100))
-    logger.info("NER token confusion matrix:\n{}".format(format_confusion(confusion)))
+    logger.info("Data extraction confusion matrix:\n{}".format(format_confusion(confusion)))
 
     if args['eval_output_file']:
         write_ner_results(args['eval_output_file'], batch, preds)
@@ -356,7 +363,7 @@ def load_model(args, model_file):
     if 'charlm_backward_file' in args:
         charlm_args['charlm_backward_file'] = args['charlm_backward_file']
     pretrain = load_pretrain(args)
-    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain, use_cuda=use_cuda, train_classifier_only=args['train_classifier_only'])
+    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain, use_cuda=use_cuda, freeze_layers=args['train_classifier_only'])
     loaded_args, vocab = trainer.args, trainer.vocab
 
     # load config

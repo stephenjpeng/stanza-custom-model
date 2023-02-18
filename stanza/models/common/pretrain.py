@@ -57,6 +57,7 @@ class Pretrain:
                 logger.debug("Loaded pretrain from {}".format(self.filename))
                 if 'emb' not in data or 'vocab' not in data:
                     raise RuntimeError("File {} exists but is not a stanza pretrain file".format(self.filename))
+
                 self._vocab, self._emb = PretrainedWordVocab.load_state_dict(data['vocab']), data['emb']
                 return
             except (KeyboardInterrupt, SystemExit):
