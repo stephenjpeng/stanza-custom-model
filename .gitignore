@@ -178,3 +178,7 @@ _site/
 
 # symlink / directory for data files
 extern_data
+
+# runs
+runs/*
+models/*.pt
