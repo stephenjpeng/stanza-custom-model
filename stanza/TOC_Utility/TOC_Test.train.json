@@ -1,0 +1,7884 @@
+[
+ [
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "March",
+   "ner": "O"
+  },
+  {
+   "text": "12",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2019",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "team",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "World",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Surfing",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Reserves",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "(",
+   "ner": "O"
+  },
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": ")",
+   "ner": "O"
+  },
+  {
+   "text": "descended",
+   "ner": "O"
+  },
+  {
+   "text": "upon",
+   "ner": "O"
+  },
+  {
+   "text": "Choke",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Canyon",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "State",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Park",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "South",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Shore",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Unit",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "tackle",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "environmental",
+   "ner": "O"
+  },
+  {
+   "text": "problem",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "has",
+   "ner": "O"
+  },
+  {
+   "text": "been",
+   "ner": "O"
+  },
+  {
+   "text": "plaguing",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "area",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "years",
+   "ner": "O"
+  },
+  {
+   "text": ":",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "bottles",
+   "ner": "I-ITM"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Adopt",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "a",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "committed",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "continuing",
+   "ner": "O"
+  },
+  {
+   "text": "its",
+   "ner": "O"
+  },
+  {
+   "text": "efforts",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "reduce",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "ocean",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "actively",
+   "ner": "O"
+  },
+  {
+   "text": "seeking",
+   "ner": "O"
+  },
+  {
+   "text": "additional",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "sponsors",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "It",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "inspiring",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "witness",
+   "ner": "O"
+  },
+  {
+   "text": "so",
+   "ner": "O"
+  },
+  {
+   "text": "many",
+   "ner": "O"
+  },
+  {
+   "text": "people",
+   "ner": "O"
+  },
+  {
+   "text": "come",
+   "ner": "O"
+  },
+  {
+   "text": "together",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "up",
+   "ner": "O"
+  },
+  {
+   "text": "Adams",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Rocks",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "project",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "which",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "spearheaded",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "supported",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "group",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "dedicated",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "After",
+   "ner": "O"
+  },
+  {
+   "text": "several",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "just",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "huge",
+   "ner": "O"
+  },
+  {
+   "text": "difference",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Grahams",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  },
+  {
+   "text": "\ud83c\udf0a",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "worked",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "tupperware",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "glad",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "impact",
+   "ner": "O"
+  },
+  {
+   "text": "on",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Panama",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Joe",
+   "ner": "O"
+  },
+  {
+   "text": "Smith",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "CleanSeas",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "MarinePollution",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "BeachCleanup",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Today",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Sea",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Change",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "gathered",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Mount",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Hordern",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "collectively",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "437",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "drink",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "cartons",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "More",
+   "ner": "O"
+  },
+  {
+   "text": "than",
+   "ner": "O"
+  },
+  {
+   "text": "110",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kilograms",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "removed",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "yielded",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "impressive",
+   "ner": "O"
+  },
+  {
+   "text": "490",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "pounds",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "corrugated",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "cartons",
+   "ner": "I-ITM"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "providing",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "significant",
+   "ner": "O"
+  },
+  {
+   "text": "boost",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "effort",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "keeping",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "pristine",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "worked",
+   "ner": "O"
+  },
+  {
+   "text": "tirelessly",
+   "ner": "O"
+  },
+  {
+   "text": "throughout",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "day",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "collecting",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "bottles",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "straws",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "other",
+   "ner": "O"
+  },
+  {
+   "text": "debris",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "order",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "it",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "prevent",
+   "ner": "O"
+  },
+  {
+   "text": "it",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "harming",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  }
+ ],
+ [
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "thrilled",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "been",
+   "ner": "O"
+  },
+  {
+   "text": "able",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "such",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "impact",
+   "ner": "O"
+  },
+  {
+   "text": "on",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "H\u00fcbl",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Peak",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "''",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Rise",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Above",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Plastics",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Board",
+   "ner": "O"
+  },
+  {
+   "text": "Member",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "John",
+   "ner": "O"
+  },
+  {
+   "text": "Doe",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "This",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "events",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "To",
+   "ner": "O"
+  },
+  {
+   "text": "learn",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "Reef",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Relief",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "efforts",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "please",
+   "ner": "O"
+  },
+  {
+   "text": "visit",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "website",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Mayfield",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Cleaned",
+   "ner": "O"
+  },
+  {
+   "text": "Up",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "300",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Trash",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "Upcycle",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "the",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Gyres",
+   "ner": "I-ORG"
+  }
+ ],
+ [
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "need",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "do",
+   "ner": "O"
+  },
+  {
+   "text": "whatever",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "can",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "rivers",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "safe",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "everyone",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "enjoy.",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "couldn",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "t",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "done",
+   "ner": "O"
+  },
+  {
+   "text": "it",
+   "ner": "O"
+  },
+  {
+   "text": "without",
+   "ner": "O"
+  },
+  {
+   "text": "them.",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  }
+ ],
+ [
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Chachalacas",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Mexico",
+   "ner": "O"
+  },
+  {
+   "text": "\u2014",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Achieves",
+   "ner": "O"
+  },
+  {
+   "text": "Incredible",
+   "ner": "O"
+  },
+  {
+   "text": "100-Pound",
+   "ner": "O"
+  },
+  {
+   "text": "Plastic",
+   "ner": "O"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Vaur\u00e9al",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "pico",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Vaur\u00e9al",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Beach",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Nourishment",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "worked",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "ensure",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "free",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "debris",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "litter",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Plastics",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "currently",
+   "ner": "O"
+  },
+  {
+   "text": "looking",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "help",
+   "ner": "O"
+  },
+  {
+   "text": "with",
+   "ner": "O"
+  },
+  {
+   "text": "future",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanups",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "other",
+   "ner": "O"
+  },
+  {
+   "text": "conservation",
+   "ner": "O"
+  },
+  {
+   "text": "efforts",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "To",
+   "ner": "O"
+  },
+  {
+   "text": "learn",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "so",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "did",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "sure",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "safe",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "everyone",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "enjoy.",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Today",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "@",
+   "ner": "O"
+  },
+  {
+   "text": "plasticsoupfoundation",
+   "ner": "O"
+  },
+  {
+   "text": "team",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "240",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "litter",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "Prescott",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "County",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Park",
+   "ner": "I-LOC"
+  }
+ ],
+ [
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "can",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "oceans",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "fluvial",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Fuente",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "del",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Prior",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "recently",
+   "ner": "O"
+  },
+  {
+   "text": "celebrated",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "successful",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "fluvial",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Fuente",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "del",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Prior",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Adopt",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "a",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "results",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "284",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kgs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Waste",
+   "ner": "O"
+  },
+  {
+   "text": "Removed",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "Thessalon\u00edki",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "B-ORG"
+  }
+ ],
+ [
+  {
+   "text": "SOUTH",
+   "ner": "O"
+  },
+  {
+   "text": "SANDY",
+   "ner": "O"
+  },
+  {
+   "text": "BEACH",
+   "ner": "O"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "October",
+   "ner": "O"
+  },
+  {
+   "text": "7",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2017",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Nourishment",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "conducted",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "South",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Sandy",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "They",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "also",
+   "ner": "O"
+  },
+  {
+   "text": "encouraging",
+   "ner": "O"
+  },
+  {
+   "text": "beachgoers",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "help",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "properly",
+   "ner": "O"
+  },
+  {
+   "text": "disposing",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "removed",
+   "ner": "O"
+  },
+  {
+   "text": "200kgs",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "debris",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "thanks",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "incredible",
+   "ner": "O"
+  },
+  {
+   "text": "efforts",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "@",
+   "ner": "O"
+  },
+  {
+   "text": "Take3",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "committed",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "continuing",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "efforts",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "Australia",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "'s",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "oceans",
+   "ner": "O"
+  },
+  {
+   "text": "cleaner",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "healthier",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "safer",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "all",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "''",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Smith",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "action",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "advocacy",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "For",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "commitment",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "preserving",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "deeply",
+   "ner": "O"
+  },
+  {
+   "text": "appreciated.",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "part",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "For",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "how",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "get",
+   "ner": "O"
+  },
+  {
+   "text": "involved",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "visit",
+   "ner": "O"
+  },
+  {
+   "text": "www.adoptabeach.org",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "part",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "global",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "reduce",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "This",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "latest",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "series",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "cleanups",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "has",
+   "ner": "O"
+  },
+  {
+   "text": "organized",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "area",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "including",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "nearby",
+   "ner": "O"
+  },
+  {
+   "text": "Lake",
+   "ner": "O"
+  },
+  {
+   "text": "Corpus",
+   "ner": "O"
+  },
+  {
+   "text": "Christi",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "September",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Grande",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Saboga",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Panama",
+   "ner": "O"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "December",
+   "ner": "O"
+  },
+  {
+   "text": "30",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2016",
+   "ner": "O"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "environmental",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "dedicated",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "reducing",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "celebrated",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "successful",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "today",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Plastics",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "dedicated",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "creating",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "future",
+   "ner": "O"
+  },
+  {
+   "text": "where",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "oceans",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "rivers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "other",
+   "ner": "O"
+  },
+  {
+   "text": "bodies",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "water",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "free",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Through",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "so",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "put",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "this",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "success",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Reef",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Relief",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Executive",
+   "ner": "O"
+  },
+  {
+   "text": "Director",
+   "ner": "O"
+  },
+  {
+   "text": "DeeVon",
+   "ner": "O"
+  },
+  {
+   "text": "Quirolo",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "global",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "dedicated",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "preserving",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "protecting",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "surf",
+   "ner": "O"
+  },
+  {
+   "text": "ecosystems",
+   "ner": "O"
+  },
+  {
+   "text": "around",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "world",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Founded",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "2011",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Thessalon\u00edki",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "April",
+   "ner": "O"
+  },
+  {
+   "text": "20",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2015",
+   "ner": "O"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "Adopt",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "a",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "initiative",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "reduce",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "amount",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "ocean",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "report",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "recent",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Thessalon\u00edki",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "successfully",
+   "ner": "O"
+  },
+  {
+   "text": "removed",
+   "ner": "O"
+  },
+  {
+   "text": "284",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kgs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "including",
+   "ner": "O"
+  },
+  {
+   "text": "aluminium",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "blister",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "packs",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "disposable",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "food",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "containers",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "plastic",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "bottle",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "caps",
+   "ner": "I-ITM"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "After",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "hour",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "half",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "cleaning",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "total",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "220",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "pounds",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Styrofoam",
+   "ner": "O"
+  },
+  {
+   "text": "containers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "257",
+   "ner": "O"
+  },
+  {
+   "text": "pounds",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "pizza",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "boxes",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "FOR",
+   "ner": "O"
+  },
+  {
+   "text": "IMMEDIATE",
+   "ner": "O"
+  },
+  {
+   "text": "RELEASE",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "Rameau",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Celebrates",
+   "ner": "O"
+  },
+  {
+   "text": "Major",
+   "ner": "O"
+  },
+  {
+   "text": "Victory",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Chachalacas",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "O"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "will",
+   "ner": "O"
+  },
+  {
+   "text": "continue",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "Vaur\u00e9al",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "pico",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "other",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "region",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "sustainable",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "environmentally-friendly",
+   "ner": "O"
+  },
+  {
+   "text": "place",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "encourage",
+   "ner": "O"
+  },
+  {
+   "text": "everyone",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "years",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "come",
+   "ner": "O"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "PreserveOurPlanet",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "which",
+   "ner": "O"
+  },
+  {
+   "text": "took",
+   "ner": "O"
+  },
+  {
+   "text": "place",
+   "ner": "O"
+  },
+  {
+   "text": "on",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "morning",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "2016-09-18",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "saw",
+   "ner": "O"
+  },
+  {
+   "text": "over",
+   "ner": "O"
+  },
+  {
+   "text": "100",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "come",
+   "ner": "O"
+  },
+  {
+   "text": "together",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "total",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "375",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kilograms",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Every",
+   "ner": "O"
+  },
+  {
+   "text": "effort",
+   "ner": "O"
+  },
+  {
+   "text": "counts",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "help",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "oceans",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Their",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "essential",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "success",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "protecting",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Chachalacas",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "This",
+   "ner": "O"
+  },
+  {
+   "text": "achievement",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "possible",
+   "ner": "O"
+  },
+  {
+   "text": "through",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "over",
+   "ner": "O"
+  },
+  {
+   "text": "200",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "generous",
+   "ner": "O"
+  },
+  {
+   "text": "support",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "several",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "businesses",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "This",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "incredible",
+   "ner": "O"
+  },
+  {
+   "text": "success",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "but",
+   "ner": "O"
+  },
+  {
+   "text": "there",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "still",
+   "ner": "O"
+  },
+  {
+   "text": "much",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "needs",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "hours",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "able",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "total",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "100",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "pounds",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Thanks",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "Global",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Alliance",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Against",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Marine",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Pollution",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "100lbs",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "taken",
+   "ner": "O"
+  },
+  {
+   "text": "off",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "shore",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Together",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "FOR",
+   "ner": "O"
+  },
+  {
+   "text": "IMMEDIATE",
+   "ner": "O"
+  },
+  {
+   "text": "RELEASE",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "d",
+   "ner": "O"
+  },
+  {
+   "text": "like",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "thank",
+   "ner": "O"
+  },
+  {
+   "text": "all",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "who",
+   "ner": "O"
+  },
+  {
+   "text": "took",
+   "ner": "O"
+  },
+  {
+   "text": "part",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Smith",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "FOR",
+   "ner": "O"
+  },
+  {
+   "text": "IMMEDIATE",
+   "ner": "O"
+  },
+  {
+   "text": "RELEASE",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "website",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "www.upcyclegyres.org",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "For",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "please",
+   "ner": "O"
+  },
+  {
+   "text": "contact",
+   "ner": "O"
+  },
+  {
+   "text": ":",
+   "ner": "O"
+  },
+  {
+   "text": "Victoria",
+   "ner": "O"
+  },
+  {
+   "text": "Jones",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "World",
+   "ner": "B-ORG"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "amount",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  },
+  {
+   "text": "had",
+   "ner": "O"
+  },
+  {
+   "text": "been",
+   "ner": "O"
+  },
+  {
+   "text": "growing",
+   "ner": "O"
+  },
+  {
+   "text": "exponentially",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "threatening",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "health",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "wildlife",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "ecosystems",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "would",
+   "ner": "O"
+  },
+  {
+   "text": "like",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "thank",
+   "ner": "O"
+  },
+  {
+   "text": "all",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "who",
+   "ner": "O"
+  },
+  {
+   "text": "participated",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "project",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Their",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "According",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Nourishment",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Executive",
+   "ner": "O"
+  },
+  {
+   "text": "Director",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Jane",
+   "ner": "O"
+  },
+  {
+   "text": "Doe",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "It",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "important",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "free",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  }
+ ],
+ [
+  {
+   "text": "!",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "ve",
+   "ner": "O"
+  },
+  {
+   "text": "done",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "looking",
+   "ner": "O"
+  },
+  {
+   "text": "forward",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "protecting",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "reefs",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "hosts",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "events",
+   "ner": "O"
+  },
+  {
+   "text": "throughout",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "year",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "debris",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "shoreline",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "ocean",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "tangible",
+   "ner": "O"
+  },
+  {
+   "text": "difference",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "amount",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "ocean",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "or",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "sign",
+   "ner": "O"
+  },
+  {
+   "text": "up",
+   "ner": "O"
+  },
+  {
+   "text": "as",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "volunteer",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "please",
+   "ner": "O"
+  },
+  {
+   "text": "visit",
+   "ner": "O"
+  },
+  {
+   "text": "www.riseaboveplastics.org",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Celebrates",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "Successful",
+   "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "O"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Panama",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "volunteered",
+   "ner": "O"
+  },
+  {
+   "text": "!",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "plans",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "host",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanups",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "future",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "invites",
+   "ner": "O"
+  },
+  {
+   "text": "anyone",
+   "ner": "O"
+  },
+  {
+   "text": "interested",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "helping",
+   "ner": "O"
+  },
+  {
+   "text": "out",
+   "ner": "O"
+  },
+  {
+   "text": "or",
+   "ner": "O"
+  },
+  {
+   "text": "learning",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "visit",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "hope",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "this",
+   "ner": "O"
+  },
+  {
+   "text": "will",
+   "ner": "O"
+  },
+  {
+   "text": "serve",
+   "ner": "O"
+  },
+  {
+   "text": "as",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "example",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "positive",
+   "ner": "O"
+  },
+  {
+   "text": "impact",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "can",
+   "ner": "O"
+  },
+  {
+   "text": "be",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "when",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "community",
+   "ner": "O"
+  },
+  {
+   "text": "comes",
+   "ner": "O"
+  },
+  {
+   "text": "together",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "tackle",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "common",
+   "ner": "O"
+  },
+  {
+   "text": "problem",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "''",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "testament",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "commitment",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "protecting",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "''",
+   "ner": "O"
+  },
+  {
+   "text": "Rise",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Above",
+   "ner": "I-ORG"
+  }
+ ],
+ [
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "has",
+   "ner": "O"
+  },
+  {
+   "text": "grown",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "include",
+   "ner": "O"
+  },
+  {
+   "text": "over",
+   "ner": "O"
+  },
+  {
+   "text": "20",
+   "ner": "O"
+  },
+  {
+   "text": "reserves",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "11",
+   "ner": "O"
+  },
+  {
+   "text": "countries",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "For",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "glass",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "bottles",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "during",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "will",
+   "ner": "O"
+  },
+  {
+   "text": "be",
+   "ner": "O"
+  },
+  {
+   "text": "recycled",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "reused",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "Plastic",
+   "ner": "O"
+  },
+  {
+   "text": "bottles",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "one",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "biggest",
+   "ner": "O"
+  },
+  {
+   "text": "threats",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "Executive",
+   "ner": "O"
+  },
+  {
+   "text": "Director",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Ryan",
+   "ner": "O"
+  },
+  {
+   "text": "Seelbach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "In",
+   "ner": "O"
+  },
+  {
+   "text": "total",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "168",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "recycled",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "major",
+   "ner": "O"
+  },
+  {
+   "text": "victory",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "founder",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Take",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "3",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "hopes",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "this",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "can",
+   "ner": "O"
+  },
+  {
+   "text": "serve",
+   "ner": "O"
+  },
+  {
+   "text": "as",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "reminder",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "importance",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "reducing",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Rise",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Above",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Plastics",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Achieves",
+   "ner": "O"
+  },
+  {
+   "text": "Significant",
+   "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "O"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "H\u00fcbl",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Peak",
+   "ner": "I-LOC"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "took",
+   "ner": "O"
+  },
+  {
+   "text": "place",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Grande",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Saboga",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Panama",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "resulted",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "removal",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "332",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kgs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "tupperware",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "thrilled",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "enthusiasm",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "founder",
+   "ner": "O"
+  },
+  {
+   "text": "John",
+   "ner": "O"
+  },
+  {
+   "text": "Smith",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "Their",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "team",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "joined",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "Texas",
+   "ner": "O"
+  },
+  {
+   "text": "Parks",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "Wildlife",
+   "ner": "O"
+  },
+  {
+   "text": "staff",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "who",
+   "ner": "O"
+  },
+  {
+   "text": "provided",
+   "ner": "O"
+  },
+  {
+   "text": "hands-on",
+   "ner": "O"
+  },
+  {
+   "text": "assistance",
+   "ner": "O"
+  },
+  {
+   "text": "throughout",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
+  },
+  {
+   "text": "For",
+   "ner": "O"
+  },
+  {
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "Rameau",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "protect",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "planet",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "please",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "In",
+   "ner": "O"
+  },
+  {
+   "text": "addition",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "community",
+   "ner": "O"
+  },
+  {
+   "text": "provided",
+   "ner": "O"
+  },
+  {
+   "text": "valuable",
+   "ner": "O"
+  },
+  {
+   "text": "support",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "collecting",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "disposing",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "safe",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "sustainable",
+   "ner": "O"
+  },
+  {
+   "text": "manner",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Reef",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Relief",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "encourages",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "community",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "get",
+   "ner": "O"
+  },
+  {
+   "text": "involved",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "help",
+   "ner": "O"
+  },
+  {
+   "text": "preserve",
+   "ner": "O"
+  },
+  {
+   "text": "our",
+   "ner": "O"
+  },
+  {
+   "text": "oceans",
+   "ner": "O"
+  },
+  {
+   "text": "by",
+   "ner": "O"
+  },
+  {
+   "text": "participating",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "their",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Celebrates",
+   "ner": "O"
+  },
+  {
+   "text": "Successful",
+   "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "O"
+  },
+  {
+   "text": "Cleanup",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "Our",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "worked",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "achieved",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "great",
+   "ner": "O"
+  },
+  {
+   "text": "result",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "are",
+   "ner": "O"
+  },
+  {
+   "text": "thrilled",
+   "ner": "O"
+  },
+  {
+   "text": "that",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "able",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "make",
+   "ner": "O"
+  },
+  {
+   "text": "such",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "big",
+   "ner": "O"
+  },
+  {
+   "text": "difference",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "''",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "been",
+   "ner": "O"
+  },
+  {
+   "text": "able",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "so",
+   "ner": "O"
+  },
+  {
+   "text": "much",
+   "ner": "O"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "we",
+   "ner": "O"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "re",
+   "ner": "O"
+  },
+  {
+   "text": "thankful",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "everyone",
+   "ner": "O"
+  },
+  {
+   "text": "who",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "May",
+   "ner": "O"
+  },
+  {
+   "text": "25th",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2021",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "PPCA",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "its",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "whopping",
+   "ner": "O"
+  },
+  {
+   "text": "386",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kilograms",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "glass",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "bottles",
+   "ner": "I-ITM"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "island",
+   "ner": "O"
+  },
+  {
+   "text": "'s",
+   "ner": "O"
+  },
+  {
+   "text": "coastline",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Reef",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Relief",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "be",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "voice",
+   "ner": "O"
+  },
+  {
+   "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "located",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "Mexican",
+   "ner": "O"
+  },
+  {
+   "text": "state",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Veracruz",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "dire",
+   "ner": "O"
+  },
+  {
+   "text": "need",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "help",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "\u2019",
+   "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
+  },
+  {
+   "text": "ongoing",
+   "ner": "O"
+  },
+  {
+   "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "keep",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beaches",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "fluvial",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Fuente",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "del",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Prior",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "free",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "litter",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "In",
+   "ner": "O"
+  },
+  {
+   "text": "addition",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "Rameau",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "collaboration",
+   "ner": "O"
+  },
+  {
+   "text": "with",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "eco-conscious",
+   "ner": "O"
+  },
+  {
+   "text": "businesses",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "able",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "organize",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "effective",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "successful",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Over",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "course",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "day",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "Upcycle",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "the",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Gyres",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "worked",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "remove",
+   "ner": "O"
+  },
+  {
+   "text": "300",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "trash",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "with",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "most",
+   "ner": "O"
+  },
+  {
+   "text": "common",
+   "ner": "O"
+  },
+  {
+   "text": "items",
+   "ner": "O"
+  },
+  {
+   "text": "being",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "bottles",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "cigarette",
+   "ner": "O"
+  },
+  {
+   "text": "butts",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "bags",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "Mayfield",
+   "ner": "B-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "FL",
+   "ner": "O"
+  },
+  {
+   "text": "-",
+   "ner": "O"
+  },
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "Saturday",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "October",
+   "ner": "O"
+  },
+  {
+   "text": "26th",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Upcycle",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "the",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "Gyres",
+   "ner": "I-ORG"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "non-profit",
+   "ner": "O"
+  },
+  {
+   "text": "organization",
+   "ner": "O"
+  },
+  {
+   "text": "dedicated",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "reducing",
+   "ner": "O"
+  },
+  {
+   "text": "waste",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "ocean",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "had",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "successful",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "event",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Mayfield",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "Beach",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "WORLD",
+   "ner": "O"
+  },
+  {
+   "text": "SURFING",
+   "ner": "O"
+  },
+  {
+   "text": "RESERVES",
+   "ner": "O"
+  },
+  {
+   "text": "CLEANS",
+   "ner": "O"
+  },
+  {
+   "text": "UP",
+   "ner": "O"
+  },
+  {
+   "text": "CHOKECANYON",
+   "ner": "O"
+  },
+  {
+   "text": "STATE",
+   "ner": "O"
+  },
+  {
+   "text": "PARK",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "#",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "Rameau",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "would",
+   "ner": "O"
+  },
+  {
+   "text": "like",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "thank",
+   "ner": "O"
+  },
+  {
+   "text": "all",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
+  {
+   "text": "who",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "this",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "possible",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "work",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "dedication",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "significant",
+   "ner": "O"
+  },
+  {
+   "text": "impact",
+   "ner": "O"
+  },
+  {
+   "text": "on",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "local",
+   "ner": "O"
+  },
+  {
+   "text": "environment",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "have",
+   "ner": "O"
+  },
+  {
+   "text": "made",
+   "ner": "O"
+  },
+  {
+   "text": "Vaur\u00e9al",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "pico",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "cleaner",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "healthier",
+   "ner": "O"
+  },
+  {
+   "text": "place",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  }
+ ],
+ [
+  {
+   "text": "pico",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "\u2013",
+   "ner": "O"
+  },
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "Sunday",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "December",
+   "ner": "O"
+  },
+  {
+   "text": "11th",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "successfully",
+   "ner": "O"
+  },
+  {
+   "text": "completed",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "project",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "Vaur\u00e9al",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "pico",
+   "ner": "B-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "resulting",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "removal",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "an",
+   "ner": "O"
+  },
+  {
+   "text": "incredible",
+   "ner": "O"
+  },
+  {
+   "text": "100",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "pounds",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "from",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  },
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  }
+ ],
+ [
+  {
+   "text": "On",
+   "ner": "O"
+  },
+  {
+   "text": "April",
+   "ner": "O"
+  },
+  {
+   "text": "15",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "2022",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "Rameau",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Project",
+   "ner": "I-ORG"
+  },
+  {
+   "text": "was",
+   "ner": "O"
+  },
+  {
+   "text": "proud",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "be",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "part",
+   "ner": "O"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "historic",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "Playa",
+   "ner": "B-LOC"
+  },
+  {
+   "text": "de",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "Chachalacas",
+   "ner": "I-LOC"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "where",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
+   "text": "remarkable",
+   "ner": "O"
+  },
+  {
+   "text": "168",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
+  },
+  {
+   "text": "of",
+   "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "B-ITM"
+  },
+  {
+   "text": "were",
+   "ner": "O"
+  },
+  {
+   "text": "collected",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "recycled",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
+  }
+ ]
+]
