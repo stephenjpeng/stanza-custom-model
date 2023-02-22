@@ -40,7 +40,7 @@ def date_to_formats(date_str):
     for fmt in formats:
         result.append(date_.strftime(fmt))
     result.insert(0, date_str)
-    print(result)
+    # print(result)
     return result
 
 if __name__ == "__main__":
