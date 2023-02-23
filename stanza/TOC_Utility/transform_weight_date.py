@@ -6,7 +6,6 @@
 
 from num2words import num2words
 from datetime import datetime
-import re
 import sys
 
 def number_to_words(num):
@@ -24,13 +23,6 @@ def number_to_words(num):
     return [num, num_words]
 
 
-def remove_excessive_whitespace(input_str):
-    pattern = re.compile(r'\s+')
-    return re.sub(pattern, ' ', input_str).strip()
-
-def suffix(d):
-    return 'th' if 11<=d<=13 else {1:'st',2:'nd',3:'rd'}.get(d%10, 'th')
-
 def date_to_formats(date_str):
     """Transform the date into a list of possible date formats
 
@@ -40,25 +32,15 @@ def date_to_formats(date_str):
     Returns:
         result: a list of possible date formats
     """
-    formats = ["%B %e, %Y", "%e %b %Y", "%b %e %Y", "%x", "%m/%d/%Y", "%m-%d-%Y", "%e %B %Y"]
+    formats = ["%B %e, %Y", "%e %b %Y", "%x", "%m/%d/%Y", "%m-%d-%Y", "%e %B %Y"]
     
-    # Based on generated data, the date has the format: 2017-04-08
-    # ['2017-04-08', 'April  8, 2017', ' 8 Apr 2017', '04/08/17', '04/08/2017', '04-08-2017', ' 8 April 2017']
+    # Based on generated data, the date has the format: 2017-04-07
     date_ = datetime.strptime(date_str, "%Y-%m-%d")
-    result = [date_str]
-    
+    result = []
     for fmt in formats:
-        date_fmt = remove_excessive_whitespace(date_.strftime(fmt))
-        result.append(date_fmt)
-        pattern = re.compile('[a-zA-Z]+')
-        if pattern.search(date_fmt):
-            result.append(date_fmt.lower())
-            
-            fmt = fmt.replace('%e', '{S}')
-            with_suffix = date_.strftime(fmt).replace('{S}', str(date_.day) + suffix(date_.day))
-            result.append(with_suffix)
-            result.append(with_suffix.lower())
-        
+        result.append(date_.strftime(fmt))
+    result.insert(0, date_str)
+    # print(result)
     return result
 
 if __name__ == "__main__":
