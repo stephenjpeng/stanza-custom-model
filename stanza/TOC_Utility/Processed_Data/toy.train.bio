@@ -342,11 +342,11 @@ waste	O
 including	O
 aluminium	B-ITM
 blister	I-ITM
-packs	O
+packs	I-ITM
 ,	O
 disposable	B-ITM
 food	I-ITM
-containers	O
+containers	I-ITM
 ,	O
 and	O
 plastic	B-ITM
