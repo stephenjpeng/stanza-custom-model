@@ -14,7 +14,7 @@
   },
   {
    "text": "SeaChangeProject",
-   "ner": "O"
+   "ner": "B-ORG"
   },
   {
    "text": "#",
@@ -80,7 +80,7 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "the",
@@ -323,6 +323,14 @@
  ],
  [
   {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "This",
+   "ner": "O"
+  },
+  {
    "text": "cleanup",
    "ner": "O"
   },
@@ -397,14 +405,6 @@
   {
    "text": "''",
    "ner": "O"
-  },
-  {
-   "text": "Rise",
-   "ner": "B-ORG"
-  },
-  {
-   "text": "Above",
-   "ner": "I-ORG"
   }
  ],
  [
@@ -482,7 +482,7 @@
   },
   {
    "text": "257",
-   "ner": "O"
+   "ner": "B-WEI"
   },
   {
    "text": "pounds",
@@ -561,6 +561,10 @@
  ],
  [
   {
+   "text": "#",
+   "ner": "O"
+  },
+  {
    "text": "Take3ForTheSea",
    "ner": "O"
   },
@@ -575,10 +579,6 @@
   {
    "text": "#",
    "ner": "O"
-  },
-  {
-   "text": "AdamsRocks",
-   "ner": "O"
   }
  ],
  [
@@ -588,19 +588,19 @@
   },
   {
    "text": "April",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "15",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2022",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -733,6 +733,10 @@
  ],
  [
   {
+   "text": "The",
+   "ner": "O"
+  },
+  {
    "text": "WSR",
    "ner": "O"
   },
@@ -818,10 +822,6 @@
   },
   {
    "text": "is",
-   "ner": "O"
-  },
-  {
-   "text": "a",
    "ner": "O"
   }
  ],

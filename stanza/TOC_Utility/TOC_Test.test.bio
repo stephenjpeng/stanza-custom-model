@@ -42,6 +42,8 @@ John	O
 Smith	O
 .	O
 
+Coastal	B-ORG
+Watch	I-ORG
 is	O
 currently	O
 planning	O
@@ -58,9 +60,8 @@ keep	O
 the	O
 beaches	O
 of	O
-Playa	B-LOC
-fluvial	I-LOC
-Fu	O
+Playa	O
+fluvial	O
 
 removing	O
 the	O
@@ -97,7 +98,8 @@ Against	I-ORG
 Marine	I-ORG
 Pollution	I-ORG
 ,	O
-100lbs	O
+100	B-WEI
+lbs	B-UNT
 of	O
 trash	B-ITM
 were	O
@@ -106,10 +108,9 @@ off	O
 the	O
 shore	O
 .	O
-Together	O
 
-Beach	B-LOC
-Nourishment	B-ORG
+Beach	B-ORG
+Nourishment	I-ORG
 will	O
 continue	O
 to	O
@@ -124,7 +125,6 @@ as	O
 needed	O
 .	O
 
-”	O
 Reef	B-ORG
 Relief	I-ORG
 is	O
@@ -141,6 +141,7 @@ of	O
 coral	O
 reef	O
 ecosystems	O
+.	O
 
 ``	O
 Our	O
@@ -202,7 +203,7 @@ our	O
 efforts	O
 to	O
 make	O
-Australia	B-ORG
+Australia	O
 's	O
 beaches	O
 and	O
@@ -225,7 +226,7 @@ Today	O
 ,	O
 our	O
 @	O
-plasticsoupfoundation	O
+plasticsoupfoundation	B-ORG
 team	O
 collected	O
 240	B-WEI
@@ -242,12 +243,12 @@ Key	O
 West	O
 ,	O
 FL	O
-–	O
+-	O
 On	O
-January	O
-11	O
-,	O
-2020	O
+January	B-DAT
+11	I-DAT
+,	I-DAT
+2020	I-DAT
 ,	O
 Reef	B-ORG
 Relief	I-ORG

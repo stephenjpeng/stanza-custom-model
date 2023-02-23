@@ -211,27 +211,23 @@
  ],
  [
   {
-   "text": "about",
+   "text": "For",
    "ner": "O"
   },
   {
-   "text": "World",
-   "ner": "B-ORG"
+   "text": "more",
+   "ner": "O"
+  },
+  {
+   "text": "information",
+   "ner": "O"
+  },
+  {
+   "text": "about",
+   "ner": "O"
   }
  ],
  [
-  {
-   "text": "website",
-   "ner": "O"
-  },
-  {
-   "text": "at",
-   "ner": "O"
-  },
-  {
-   "text": "www.upcyclegyres.org",
-   "ner": "O"
-  },
   {
    "text": ".",
    "ner": "O"
@@ -283,9 +279,29 @@
   {
    "text": "Jones",
    "ner": "O"
+  },
+  {
+   "text": "Founder",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "Upcycle",
+   "ner": "B-ORG"
   }
  ],
  [
+  {
+   "text": "\u201c",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
   {
    "text": "couldn",
    "ner": "O"
@@ -321,17 +337,13 @@
   {
    "text": "\u201d",
    "ner": "O"
-  },
-  {
-   "text": "Coastal",
-   "ner": "B-ORG"
-  },
-  {
-   "text": "Watch",
-   "ner": "I-ORG"
   }
  ],
  [
+  {
+   "text": "#",
+   "ner": "O"
+  },
   {
    "text": "CleanSeas",
    "ner": "O"
@@ -346,10 +358,6 @@
   },
   {
    "text": "#",
-   "ner": "O"
-  },
-  {
-   "text": "BeachCleanup",
    "ner": "O"
   }
  ],
@@ -540,7 +548,7 @@
  [
   {
    "text": "Mayfield",
-   "ner": "B-LOC"
+   "ner": "O"
   },
   {
    "text": ",",
@@ -632,7 +640,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "ocean",
@@ -767,6 +775,14 @@
  ],
  [
   {
+   "text": "Their",
+   "ner": "O"
+  },
+  {
+   "text": "hard",
+   "ner": "O"
+  },
+  {
    "text": "work",
    "ner": "O"
   },
@@ -828,15 +844,15 @@
   },
   {
    "text": "Vaur\u00e9al",
-   "ner": "O"
+   "ner": "B-LOC"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-LOC"
   },
   {
    "text": "pico",
-   "ner": "B-LOC"
+   "ner": "I-LOC"
   },
   {
    "text": "a",
@@ -861,31 +877,23 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "Unite",
-   "ner": "B-ORG"
-  },
-  {
-   "text": "BVI",
-   "ner": "I-ORG"
   }
  ],
  [
   {
    "text": "SOUTH",
-   "ner": "O"
+   "ner": "B-LOC"
   },
   {
    "text": "SANDY",
-   "ner": "O"
+   "ner": "I-LOC"
   },
   {
    "text": "BEACH",
-   "ner": "O"
+   "ner": "I-LOC"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
@@ -894,19 +902,19 @@
   },
   {
    "text": "October",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "7",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2017",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -914,11 +922,11 @@
   },
   {
    "text": "Beach",
-   "ner": "B-LOC"
+   "ner": "B-ORG"
   },
   {
    "text": "Nourishment",
-   "ner": "B-ORG"
+   "ner": "I-ORG"
   },
   {
    "text": "conducted",
@@ -958,6 +966,14 @@
   }
  ],
  [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
   {
    "text": "project",
    "ner": "O"
@@ -1029,19 +1045,11 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "After",
-   "ner": "O"
-  },
-  {
-   "text": "several",
-   "ner": "O"
   }
  ],
  [
   {
-   "text": "#",
+   "text": ".",
    "ner": "O"
   }
  ],
@@ -1089,10 +1097,6 @@
  ],
  [
   {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "\u201c",
    "ner": "O"
   },
@@ -1139,6 +1143,10 @@
   {
    "text": "cleanup",
    "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
   }
  ],
  [
@@ -1158,7 +1166,7 @@
  [
   {
    "text": "Thessalon\u00edki",
-   "ner": "I-LOC"
+   "ner": "B-LOC"
   },
   {
    "text": ",",
@@ -1166,22 +1174,22 @@
   },
   {
    "text": "April",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "20",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2015",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
@@ -1274,7 +1282,7 @@
   },
   {
    "text": "a",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "recent",
@@ -1358,11 +1366,11 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "plastic",
-   "ner": "I-ITM"
+   "ner": "B-ITM"
   },
   {
    "text": "bottle",
@@ -1434,19 +1442,19 @@
   },
   {
    "text": "March",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "12",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2019",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -1521,12 +1529,12 @@
    "ner": "I-LOC"
   },
   {
-   "text": "\u2013",
-   "ner": "O"
+   "text": "-",
+   "ner": "I-LOC"
   },
   {
    "text": "South",
-   "ner": "B-LOC"
+   "ner": "I-LOC"
   },
   {
    "text": "Shore",
@@ -1612,7 +1620,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "course",
@@ -1624,7 +1632,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "day",
@@ -1688,7 +1696,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "beach",
@@ -1704,7 +1712,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "most",
@@ -1847,10 +1855,6 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "''",
-   "ner": "O"
   }
  ],
  [
@@ -1975,14 +1979,6 @@
  ],
  [
   {
-   "text": "events",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "To",
    "ner": "O"
   },
@@ -2036,6 +2032,14 @@
   },
   {
    "text": "website",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "www.reefrelief.org",
    "ner": "O"
   }
  ],
@@ -2147,6 +2151,18 @@
  ],
  [
   {
+   "text": "WSR",
+   "ner": "O"
+  },
+  {
+   "text": "is",
+   "ner": "O"
+  },
+  {
+   "text": "a",
+   "ner": "O"
+  },
+  {
    "text": "global",
    "ner": "O"
   },
@@ -2201,27 +2217,23 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "Founded",
-   "ner": "O"
-  },
-  {
-   "text": "in",
-   "ner": "O"
-  },
-  {
-   "text": "2011",
-   "ner": "O"
   }
  ],
  [
   {
-   "text": "pico",
+   "text": "Vaur\u00e9al",
    "ner": "B-LOC"
   },
   {
-   "text": "\u2013",
+   "text": ",",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "pico",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "-",
    "ner": "O"
   },
   {
@@ -2286,15 +2298,15 @@
   },
   {
    "text": "Vaur\u00e9al",
-   "ner": "O"
+   "ner": "B-LOC"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-LOC"
   },
   {
    "text": "pico",
-   "ner": "B-LOC"
+   "ner": "I-LOC"
   },
   {
    "text": ",",
@@ -2359,21 +2371,9 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "The",
-   "ner": "O"
-  },
-  {
-   "text": "cleanup",
-   "ner": "O"
   }
  ],
  [
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "We",
    "ner": "O"
@@ -2469,13 +2469,13 @@
   {
    "text": "\u201d",
    "ner": "O"
+  },
+  {
+   "text": "Beach",
+   "ner": "B-ORG"
   }
  ],
  [
-  {
-   "text": "!",
-   "ner": "O"
-  },
   {
    "text": "We",
    "ner": "O"
@@ -2566,6 +2566,10 @@
   },
   {
    "text": "for",
+   "ner": "O"
+  },
+  {
+   "text": "years",
    "ner": "O"
   }
  ],
@@ -2777,10 +2781,6 @@
  ],
  [
   {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "\u201c",
    "ner": "O"
   },
@@ -2842,7 +2842,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "beach",
@@ -2879,6 +2879,10 @@
   {
    "text": "who",
    "ner": "O"
+  },
+  {
+   "text": "volunteered",
+   "ner": "O"
   }
  ],
  [
@@ -2903,7 +2907,7 @@
    "ner": "I-LOC"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
@@ -2978,15 +2982,15 @@
  [
   {
    "text": "WORLD",
-   "ner": "O"
+   "ner": "B-ORG"
   },
   {
    "text": "SURFING",
-   "ner": "O"
+   "ner": "I-ORG"
   },
   {
    "text": "RESERVES",
-   "ner": "O"
+   "ner": "I-ORG"
   },
   {
    "text": "CLEANS",
@@ -3035,27 +3039,27 @@
    "ner": "O"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
    "text": "December",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "30",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2016",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
@@ -3137,22 +3141,6 @@
  ],
  [
   {
-   "text": "action",
-   "ner": "O"
-  },
-  {
-   "text": "and",
-   "ner": "O"
-  },
-  {
-   "text": "advocacy",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "For",
    "ner": "O"
   },
@@ -3186,6 +3174,18 @@
   },
   {
    "text": "mission",
+   "ner": "O"
+  },
+  {
+   "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "please",
+   "ner": "O"
+  },
+  {
+   "text": "visit",
    "ner": "O"
   }
  ],
@@ -3256,7 +3256,7 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "is",
@@ -3280,7 +3280,7 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "sponsors",
@@ -3318,6 +3318,14 @@
   }
  ],
  [
+  {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "volunteers",
+   "ner": "O"
+  },
   {
    "text": "worked",
    "ner": "O"
@@ -3445,17 +3453,21 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "Unite",
-   "ner": "B-ORG"
-  },
-  {
-   "text": "BVI",
-   "ner": "I-ORG"
   }
  ],
  [
+  {
+   "text": "Founded",
+   "ner": "O"
+  },
+  {
+   "text": "in",
+   "ner": "O"
+  },
+  {
+   "text": "2011",
+   "ner": "O"
+  },
   {
    "text": ",",
    "ner": "O"
@@ -3506,18 +3518,6 @@
   },
   {
    "text": ".",
-   "ner": "O"
-  },
-  {
-   "text": "For",
-   "ner": "O"
-  },
-  {
-   "text": "more",
-   "ner": "O"
-  },
-  {
-   "text": "information",
    "ner": "O"
   }
  ],
@@ -3711,18 +3711,6 @@
  ],
  [
   {
-   "text": "s",
-   "ner": "O"
-  },
-  {
-   "text": "founder",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "Take",
    "ner": "B-ORG"
   },
@@ -3789,6 +3777,18 @@
   {
    "text": "reducing",
    "ner": "O"
+  },
+  {
+   "text": "plastic",
+   "ner": "O"
+  },
+  {
+   "text": "pollution",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
   }
  ],
  [
@@ -3826,23 +3826,23 @@
   },
   {
    "text": "Vaur\u00e9al",
-   "ner": "O"
-  },
-  {
-   "text": ",",
-   "ner": "O"
-  },
-  {
-   "text": "pico",
    "ner": "B-LOC"
   },
   {
+   "text": ",",
+   "ner": "I-LOC"
+  },
+  {
+   "text": "pico",
+   "ner": "I-LOC"
+  },
+  {
    "text": "Vaur\u00e9al",
-   "ner": "O"
+   "ner": "B-LOC"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-LOC"
   }
  ],
  [
@@ -3856,11 +3856,11 @@
   },
   {
    "text": "Beach",
-   "ner": "B-LOC"
+   "ner": "B-ORG"
   },
   {
    "text": "Nourishment",
-   "ner": "B-ORG"
+   "ner": "I-ORG"
   },
   {
    "text": "Executive",
@@ -4133,18 +4133,6 @@
  ],
  [
   {
-   "text": "volunteered",
-   "ner": "O"
-  },
-  {
-   "text": "!",
-   "ner": "O"
-  },
-  {
-   "text": "\u201d",
-   "ner": "O"
-  },
-  {
    "text": "The",
    "ner": "O"
   },
@@ -4182,7 +4170,7 @@
   },
   {
    "text": "the",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "future",
@@ -4251,9 +4239,29 @@
   {
    "text": "their",
    "ner": "O"
+  },
+  {
+   "text": "website",
+   "ner": "O"
+  },
+  {
+   "text": "at",
+   "ner": "O"
+  },
+  {
+   "text": "www.upcyclegyres.org",
+   "ner": "O"
   }
  ],
  [
+  {
+   "text": "To",
+   "ner": "O"
+  },
+  {
+   "text": "learn",
+   "ner": "O"
+  },
   {
    "text": "more",
    "ner": "O"
@@ -4312,14 +4320,6 @@
   },
   {
    "text": "www.riseaboveplastics.org",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
-  {
-   "text": "#",
    "ner": "O"
   }
  ],
@@ -4509,6 +4509,14 @@
  ],
  [
   {
+   "text": "The",
+   "ner": "O"
+  },
+  {
+   "text": "cleanup",
+   "ner": "O"
+  },
+  {
    "text": "yielded",
    "ner": "O"
   },
@@ -4603,21 +4611,9 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "``",
-   "ner": "O"
-  },
-  {
-   "text": "We",
-   "ner": "O"
   }
  ],
  [
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "\u201c",
    "ner": "O"
@@ -4697,6 +4693,10 @@
   {
    "text": "environment.",
    "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
   }
  ],
  [
@@ -4714,22 +4714,6 @@
   }
  ],
  [
-  {
-   "text": "to",
-   "ner": "O"
-  },
-  {
-   "text": "be",
-   "ner": "O"
-  },
-  {
-   "text": "done",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "We",
    "ner": "O"
@@ -4792,6 +4776,22 @@
   },
   {
    "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "\u201d",
+   "ner": "O"
+  },
+  {
+   "text": "said",
+   "ner": "O"
+  },
+  {
+   "text": "Smith",
+   "ner": "O"
+  },
+  {
+   "text": ".",
    "ner": "O"
   }
  ],
@@ -4915,10 +4915,6 @@
  ],
  [
   {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "Reef",
    "ner": "B-ORG"
   },
@@ -4964,6 +4960,10 @@
   },
   {
    "text": "the",
+   "ner": "O"
+  },
+  {
+   "text": "reefs",
    "ner": "O"
   }
  ],
@@ -5035,10 +5035,6 @@
   {
    "text": "trash",
    "ner": "B-ITM"
-  },
-  {
-   "text": ".",
-   "ner": "O"
   }
  ],
  [
@@ -5084,10 +5080,6 @@
   }
  ],
  [
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "Our",
    "ner": "O"
@@ -5231,9 +5223,21 @@
   {
    "text": "\u2019",
    "ner": "O"
+  },
+  {
+   "text": "s",
+   "ner": "O"
   }
  ],
  [
+  {
+   "text": "Through",
+   "ner": "O"
+  },
+  {
+   "text": "beach",
+   "ner": "O"
+  },
   {
    "text": "cleanups",
    "ner": "O"
@@ -5333,14 +5337,6 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "Rise",
-   "ner": "B-ORG"
-  },
-  {
-   "text": "Above",
-   "ner": "I-ORG"
   }
  ],
  [
@@ -5414,7 +5410,7 @@
   },
   {
    "text": "Australia",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "'s",
@@ -5451,6 +5447,22 @@
  ],
  [
   {
+   "text": "We",
+   "ner": "O"
+  },
+  {
+   "text": "encourage",
+   "ner": "O"
+  },
+  {
+   "text": "everyone",
+   "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
    "text": "do",
    "ner": "O"
   },
@@ -5476,10 +5488,6 @@
   },
   {
    "text": "and",
-   "ner": "O"
-  },
-  {
-   "text": "protect",
    "ner": "O"
   }
  ],
@@ -5615,10 +5623,6 @@
  ],
  [
   {
-   "text": "years",
-   "ner": "O"
-  },
-  {
    "text": "to",
    "ner": "O"
   },
@@ -5637,25 +5641,13 @@
   {
    "text": "PreserveOurPlanet",
    "ner": "O"
+  },
+  {
+   "text": "#",
+   "ner": "O"
   }
  ],
  [
-  {
-   "text": "\u201d",
-   "ner": "O"
-  },
-  {
-   "text": "said",
-   "ner": "O"
-  },
-  {
-   "text": "Smith",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "Take",
    "ner": "B-ORG"
@@ -5698,6 +5690,22 @@
   },
   {
    "text": ",",
+   "ner": "O"
+  },
+  {
+   "text": "action",
+   "ner": "O"
+  },
+  {
+   "text": "and",
+   "ner": "O"
+  },
+  {
+   "text": "advocacy",
+   "ner": "O"
+  },
+  {
+   "text": ".",
    "ner": "O"
   }
  ],
@@ -5830,7 +5838,7 @@
   },
   {
    "text": "2016-09-18",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": ",",
@@ -5931,14 +5939,6 @@
  ],
  [
   {
-   "text": "reefs",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
-  {
    "text": "The",
    "ner": "O"
   },
@@ -6013,9 +6013,25 @@
   {
    "text": "ocean",
    "ner": "O"
+  },
+  {
+   "text": "clean",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
   }
  ],
  [
+  {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  },
   {
    "text": "will",
    "ner": "O"
@@ -6042,15 +6058,15 @@
   },
   {
    "text": "Vaur\u00e9al",
-   "ner": "O"
+   "ner": "B-LOC"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-LOC"
   },
   {
    "text": "pico",
-   "ner": "B-LOC"
+   "ner": "I-LOC"
   },
   {
    "text": "and",
@@ -6111,14 +6127,6 @@
   {
    "text": "encourage",
    "ner": "O"
-  },
-  {
-   "text": "everyone",
-   "ner": "O"
-  },
-  {
-   "text": "to",
-   "ner": "O"
   }
  ],
  [
@@ -6136,14 +6144,6 @@
   }
  ],
  [
-  {
-   "text": "clean",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "Reef",
    "ner": "B-ORG"
@@ -6219,16 +6219,24 @@
   {
    "text": "cleanup",
    "ner": "O"
+  },
+  {
+   "text": "events",
+   "ner": "O"
+  },
+  {
+   "text": ".",
+   "ner": "O"
   }
  ],
  [
   {
    "text": "Beach",
-   "ner": "B-LOC"
+   "ner": "B-ORG"
   },
   {
    "text": "Nourishment",
-   "ner": "B-ORG"
+   "ner": "I-ORG"
   },
   {
    "text": "volunteers",
@@ -6371,6 +6379,10 @@
  ],
  [
   {
+   "text": "Together",
+   "ner": "O"
+  },
+  {
    "text": "we",
    "ner": "O"
   },
@@ -6397,13 +6409,17 @@
   {
    "text": "!",
    "ner": "O"
-  },
-  {
-   "text": "#",
-   "ner": "O"
   }
  ],
  [
+  {
+   "text": "``",
+   "ner": "O"
+  },
+  {
+   "text": "We",
+   "ner": "O"
+  },
   {
    "text": "are",
    "ner": "O"
@@ -6519,14 +6535,6 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "``",
-   "ner": "O"
-  },
-  {
-   "text": "This",
-   "ner": "O"
   }
  ],
  [
@@ -6628,7 +6636,7 @@
   },
   {
    "text": "a",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "common",
@@ -6648,6 +6656,14 @@
   }
  ],
  [
+  {
+   "text": "After",
+   "ner": "O"
+  },
+  {
+   "text": "several",
+   "ner": "O"
+  },
   {
    "text": "hours",
    "ner": "O"
@@ -6734,14 +6750,6 @@
   },
   {
    "text": ".",
-   "ner": "O"
-  },
-  {
-   "text": "The",
-   "ner": "O"
-  },
-  {
-   "text": "volunteers",
    "ner": "O"
   }
  ],
@@ -6842,7 +6850,7 @@
  [
   {
    "text": "H\u00fcbl",
-   "ner": "I-LOC"
+   "ner": "B-LOC"
   },
   {
    "text": "Peak",
@@ -6854,19 +6862,19 @@
   },
   {
    "text": "June",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "25",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2022",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "-",
@@ -6963,6 +6971,14 @@
  ],
  [
   {
+   "text": "Unite",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "BVI",
+   "ner": "I-ORG"
+  },
+  {
    "text": "would",
    "ner": "O"
   },
@@ -7020,14 +7036,6 @@
   },
   {
    "text": ".",
-   "ner": "O"
-  },
-  {
-   "text": "Their",
-   "ner": "O"
-  },
-  {
-   "text": "hard",
    "ner": "O"
   }
  ],
@@ -7096,19 +7104,19 @@
   },
   {
    "text": "May",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "25th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2021",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -7308,7 +7316,7 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "disposing",
@@ -7332,7 +7340,7 @@
   },
   {
    "text": "a",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "safe",
@@ -7340,7 +7348,7 @@
   },
   {
    "text": "and",
-   "ner": "B-ITM"
+   "ner": "O"
   },
   {
    "text": "sustainable",
@@ -7386,7 +7394,7 @@
   },
   {
    "text": "a",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "tangible",
@@ -7447,8 +7455,12 @@
    "ner": "O"
   },
   {
-   "text": "200kgs",
-   "ner": "O"
+   "text": "200",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "kgs",
+   "ner": "B-UNT"
   },
   {
    "text": "of",
@@ -7492,18 +7504,22 @@
   },
   {
    "text": "Take3",
-   "ner": "O"
+   "ner": "B-ORG"
   },
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "#",
-   "ner": "O"
   }
  ],
  [
+  {
+   "text": "Rise",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Above",
+   "ner": "I-ORG"
+  },
   {
    "text": "Plastics",
    "ner": "I-ORG"
@@ -7571,29 +7587,9 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "To",
-   "ner": "O"
-  },
-  {
-   "text": "learn",
-   "ner": "O"
   }
  ],
  [
-  {
-   "text": "plastic",
-   "ner": "O"
-  },
-  {
-   "text": "pollution",
-   "ner": "O"
-  },
-  {
-   "text": ".",
-   "ner": "O"
-  },
   {
    "text": "\u201c",
    "ner": "O"
@@ -7661,9 +7657,29 @@
   {
    "text": "needs",
    "ner": "O"
+  },
+  {
+   "text": "to",
+   "ner": "O"
+  },
+  {
+   "text": "be",
+   "ner": "O"
+  },
+  {
+   "text": "done",
+   "ner": "O"
   }
  ],
  [
+  {
+   "text": "Rise",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Above",
+   "ner": "I-ORG"
+  },
   {
    "text": "Plastics",
    "ner": "I-ORG"
@@ -7754,14 +7770,6 @@
   },
   {
    "text": ".",
-   "ner": "O"
-  },
-  {
-   "text": "Through",
-   "ner": "O"
-  },
-  {
-   "text": "beach",
    "ner": "O"
   }
  ],
@@ -7882,7 +7890,7 @@
   },
   {
    "text": "Beach",
-   "ner": "B-ORG"
+   "ner": "O"
   }
  ]
 ]

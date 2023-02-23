@@ -52,12 +52,11 @@ John	O
 Doe	O
 .	O
 
+For	O
+more	O
+information	O
 about	O
-World	B-ORG
 
-website	O
-at	O
-www.upcyclegyres.org	O
 .	O
 #	O
 #	O
@@ -71,7 +70,12 @@ contact	O
 :	O
 Victoria	O
 Jones	O
+Founder	O
+,	O
+Upcycle	B-ORG
 
+“	O
+We	O
 couldn	O
 ’	O
 t	O
@@ -81,14 +85,12 @@ it	O
 without	O
 them.	O
 ”	O
-Coastal	B-ORG
-Watch	I-ORG
 
+#	O
 CleanSeas	O
 #	O
 MarinePollution	O
 #	O
-BeachCleanup	O
 
 This	O
 cleanup	O
@@ -137,7 +139,7 @@ Upcycle	B-ORG
 the	I-ORG
 Gyres	I-ORG
 
-Mayfield	B-LOC
+Mayfield	O
 ,	O
 FL	O
 -	O
@@ -160,7 +162,7 @@ to	O
 reducing	O
 waste	O
 in	O
-the	B-ORG
+the	O
 ocean	O
 ,	O
 had	O
@@ -195,6 +197,8 @@ and	O
 ecosystems	O
 .	O
 
+Their	O
+hard	O
 work	O
 and	O
 dedication	O
@@ -210,30 +214,28 @@ environment	O
 and	O
 have	O
 made	O
-Vauréal	O
-,	O
-pico	B-LOC
+Vauréal	B-LOC
+,	I-LOC
+pico	I-LOC
 a	O
 cleaner	O
 and	O
 healthier	O
 place	O
 .	O
-Unite	B-ORG
-BVI	I-ORG
 
-SOUTH	O
-SANDY	O
-BEACH	O
-–	O
+SOUTH	B-LOC
+SANDY	I-LOC
+BEACH	I-LOC
+-	O
 On	O
-October	O
-7	O
+October	B-DAT
+7	I-DAT
+,	I-DAT
+2017	I-DAT
 ,	O
-2017	O
-,	O
-Beach	B-LOC
-Nourishment	B-ORG
+Beach	B-ORG
+Nourishment	I-ORG
 conducted	O
 a	O
 beach	O
@@ -244,6 +246,8 @@ Sandy	I-LOC
 Beach	I-LOC
 .	O
 
+The	O
+cleanup	O
 project	O
 ,	O
 which	O
@@ -262,10 +266,8 @@ of	O
 dedicated	O
 volunteers	O
 .	O
-After	O
-several	O
 
-#	O
+.	O
 
 Every	O
 effort	O
@@ -278,7 +280,6 @@ oceans	O
 clean	O
 !	O
 
-.	O
 “	O
 We	O
 are	O
@@ -291,18 +292,19 @@ of	O
 this	O
 beach	O
 cleanup	O
+.	O
 
 FOR	O
 IMMEDIATE	O
 RELEASE	O
 
-Thessaloníki	I-LOC
+Thessaloníki	B-LOC
 ,	O
-April	O
-20	O
-,	O
-2015	O
-–	O
+April	B-DAT
+20	I-DAT
+,	I-DAT
+2015	I-DAT
+-	O
 Adopt	B-ORG
 a	I-ORG
 Beach	I-ORG
@@ -325,7 +327,7 @@ proud	O
 to	O
 report	O
 that	O
-a	B-ORG
+a	O
 recent	O
 cleanup	O
 in	O
@@ -346,8 +348,8 @@ disposable	B-ITM
 food	I-ITM
 containers	O
 ,	O
-and	B-ITM
-plastic	I-ITM
+and	O
+plastic	B-ITM
 bottle	I-ITM
 caps	I-ITM
 .	O
@@ -366,10 +368,10 @@ Beach	O
 Cleanup	O
 
 On	O
-March	O
-12	O
-,	O
-2019	O
+March	B-DAT
+12	I-DAT
+,	I-DAT
+2019	I-DAT
 ,	O
 a	O
 team	O
@@ -388,8 +390,8 @@ Choke	B-LOC
 Canyon	I-LOC
 State	I-LOC
 Park	I-LOC
-–	O
-South	B-LOC
+-	I-LOC
+South	I-LOC
 Shore	I-LOC
 Unit	I-LOC
 to	O
@@ -411,10 +413,10 @@ bottles	I-ITM
 .	O
 
 Over	O
-the	B-ORG
+the	O
 course	O
 of	O
-the	B-ORG
+the	O
 day	O
 ,	O
 volunteers	O
@@ -430,11 +432,11 @@ lbs	B-UNT
 of	O
 trash	B-ITM
 from	O
-the	B-ORG
+the	O
 beach	O
 ,	O
 with	O
-the	B-ORG
+the	O
 most	O
 common	O
 items	O
@@ -471,7 +473,6 @@ a	O
 real	O
 difference	O
 .	O
-''	O
 
 Mayfield	B-LOC
 Beach	I-LOC
@@ -504,8 +505,6 @@ event	O
 was	O
 part	O
 
-events	O
-.	O
 To	O
 learn	O
 more	O
@@ -520,6 +519,8 @@ please	O
 visit	O
 their	O
 website	O
+at	O
+www.reefrelief.org	O
 
 The	O
 event	O
@@ -548,6 +549,9 @@ the	O
 beach	O
 .	O
 
+WSR	O
+is	O
+a	O
 global	O
 organization	O
 dedicated	O
@@ -562,12 +566,11 @@ around	O
 the	O
 world	O
 .	O
-Founded	O
-in	O
-2011	O
 
-pico	B-LOC
-–	O
+Vauréal	B-LOC
+,	I-LOC
+pico	I-LOC
+-	O
 On	O
 Sunday	O
 ,	O
@@ -583,9 +586,9 @@ beach	O
 cleanup	O
 project	O
 in	O
-Vauréal	O
-,	O
-pico	B-LOC
+Vauréal	B-LOC
+,	I-LOC
+pico	I-LOC
 ,	O
 resulting	O
 in	O
@@ -602,10 +605,7 @@ from	O
 the	O
 beach	O
 .	O
-The	O
-cleanup	O
 
-.	O
 We	O
 are	O
 so	O
@@ -630,8 +630,8 @@ everyone	O
 to	O
 enjoy.	O
 ”	O
+Beach	B-ORG
 
-!	O
 We	O
 ’	O
 re	O
@@ -655,6 +655,7 @@ protecting	O
 our	O
 beaches	O
 for	O
+years	O
 
 “	O
 Plastic	O
@@ -709,7 +710,6 @@ involved	O
 visit	O
 www.adoptabeach.org	O
 
-.	O
 “	O
 We	O
 ’	O
@@ -725,7 +725,7 @@ so	O
 much	O
 waste	O
 from	O
-the	B-ORG
+the	O
 beach	O
 and	O
 we	O
@@ -735,13 +735,14 @@ thankful	O
 to	O
 everyone	O
 who	O
+volunteered	O
 
 Playa	B-LOC
 fluvial	I-LOC
 Fuente	I-LOC
 del	I-LOC
 Prior	I-LOC
-–	O
+-	O
 Coastal	B-ORG
 Watch	I-ORG
 volunteers	O
@@ -760,9 +761,9 @@ del	I-LOC
 Prior	I-LOC
 .	O
 
-WORLD	O
-SURFING	O
-RESERVES	O
+WORLD	B-ORG
+SURFING	I-ORG
+RESERVES	I-ORG
 CLEANS	O
 UP	O
 CHOKECANYON	O
@@ -775,12 +776,12 @@ de	I-LOC
 Saboga	I-LOC
 ,	O
 Panama	O
-–	O
-December	O
-30	O
-,	O
-2016	O
-–	O
+-	O
+December	B-DAT
+30	I-DAT
+,	I-DAT
+2016	I-DAT
+-	O
 Take	B-ORG
 3	I-ORG
 ,	O
@@ -801,10 +802,6 @@ cleanup	O
 today	O
 .	O
 
-action	O
-and	O
-advocacy	O
-.	O
 For	O
 more	O
 information	O
@@ -814,6 +811,9 @@ Take	B-ORG
 and	O
 their	O
 mission	O
+,	O
+please	O
+visit	O
 
 Adopt	B-ORG
 a	I-ORG
@@ -831,13 +831,13 @@ waste	O
 in	O
 the	O
 ocean	O
-and	B-ITM
+and	O
 is	O
 actively	O
 seeking	O
 additional	O
 volunteers	O
-and	B-ITM
+and	O
 sponsors	O
 .	O
 
@@ -848,6 +848,8 @@ Chachalacas	I-LOC
 Mexico	O
 —	O
 
+The	O
+volunteers	O
 worked	O
 tirelessly	O
 throughout	O
@@ -880,9 +882,10 @@ the	O
 local	O
 environment	O
 .	O
-Unite	B-ORG
-BVI	I-ORG
 
+Founded	O
+in	O
+2011	O
 ,	O
 WSR	O
 has	O
@@ -896,9 +899,6 @@ in	O
 11	O
 countries	O
 .	O
-For	O
-more	O
-information	O
 
 The	O
 Rameau	B-ORG
@@ -948,9 +948,6 @@ Norfolk	B-LOC
 Island	I-LOC
 .	O
 
-s	O
-founder	O
-.	O
 Take	B-ORG
 3	I-ORG
 hopes	O
@@ -968,6 +965,9 @@ the	O
 importance	O
 of	O
 reducing	O
+plastic	O
+pollution	O
+.	O
 
 Unite	B-ORG
 BVI	I-ORG
@@ -977,16 +977,16 @@ Incredible	O
 Plastic	O
 Cleanup	O
 in	O
-Vauréal	O
-,	O
-pico	B-LOC
-Vauréal	O
-,	O
+Vauréal	B-LOC
+,	I-LOC
+pico	I-LOC
+Vauréal	B-LOC
+,	I-LOC
 
 According	O
 to	O
-Beach	B-LOC
-Nourishment	B-ORG
+Beach	B-ORG
+Nourishment	I-ORG
 Executive	O
 Director	O
 ,	O
@@ -1056,9 +1056,6 @@ cleanup	O
 possible	O
 .	O
 
-volunteered	O
-!	O
-”	O
 The	O
 organization	O
 plans	O
@@ -1068,7 +1065,7 @@ more	O
 beach	O
 cleanups	O
 in	O
-the	B-ORG
+the	O
 future	O
 and	O
 invites	O
@@ -1086,7 +1083,12 @@ mission	O
 to	O
 visit	O
 their	O
+website	O
+at	O
+www.upcyclegyres.org	O
 
+To	O
+learn	O
 more	O
 about	O
 the	O
@@ -1102,8 +1104,6 @@ volunteer	O
 please	O
 visit	O
 www.riseaboveplastics.org	O
-.	O
-#	O
 
 of	O
 Coastal	B-ORG
@@ -1152,6 +1152,8 @@ planet	O
 ,	O
 please	O
 
+The	O
+cleanup	O
 yielded	O
 an	O
 impressive	O
@@ -1176,10 +1178,7 @@ clean	O
 and	O
 pristine	O
 .	O
-``	O
-We	O
 
-.	O
 “	O
 It	O
 ’	O
@@ -1200,15 +1199,12 @@ and	O
 preserve	O
 our	O
 environment.	O
+”	O
 
 FOR	O
 IMMEDIATE	O
 RELEASE	O
 
-to	O
-be	O
-done	O
-.	O
 We	O
 hope	O
 this	O
@@ -1225,6 +1221,10 @@ their	O
 plastic	O
 consumption	O
 ,	O
+”	O
+said	O
+Smith	O
+.	O
 
 This	O
 is	O
@@ -1256,7 +1256,6 @@ in	O
 September	O
 .	O
 
-.	O
 Reef	B-ORG
 Relief	I-ORG
 ’	O
@@ -1269,6 +1268,7 @@ a	O
 voice	O
 for	O
 the	O
+reefs	O
 
 They	O
 are	O
@@ -1287,7 +1287,6 @@ disposing	O
 of	O
 their	O
 trash	B-ITM
-.	O
 
 Rise	B-ORG
 Above	I-ORG
@@ -1300,7 +1299,6 @@ at	O
 Hübl	B-LOC
 Peak	I-LOC
 
-.	O
 Our	O
 volunteers	O
 worked	O
@@ -1337,7 +1335,10 @@ Smith	O
 Take	B-ORG
 3	I-ORG
 ’	O
+s	O
 
+Through	O
+beach	O
 cleanups	O
 ,	O
 education	O
@@ -1363,8 +1364,6 @@ to	O
 take	O
 action	O
 .	O
-Rise	B-ORG
-Above	I-ORG
 
 This	O
 is	O
@@ -1383,7 +1382,7 @@ its	O
 mission	O
 to	O
 rid	O
-Australia	B-ORG
+Australia	O
 's	O
 oceans	O
 and	O
@@ -1393,6 +1392,10 @@ plastic	O
 pollution	O
 .	O
 
+We	O
+encourage	O
+everyone	O
+to	O
 do	O
 their	O
 part	O
@@ -1400,7 +1403,6 @@ to	O
 help	O
 preserve	O
 and	O
-protect	O
 
 “	O
 We	O
@@ -1435,17 +1437,13 @@ Director	O
 DeeVon	O
 Quirolo	O
 
-years	O
 to	O
 come	O
 !	O
 #	O
 PreserveOurPlanet	O
+#	O
 
-”	O
-said	O
-Smith	O
-.	O
 Take	B-ORG
 3	I-ORG
 is	O
@@ -1457,6 +1455,10 @@ pollution	O
 through	O
 education	O
 ,	O
+action	O
+and	O
+advocacy	O
+.	O
 
 d	O
 like	O
@@ -1490,7 +1492,7 @@ on	O
 the	O
 morning	O
 of	O
-2016-09-18	O
+2016-09-18	B-DAT
 ,	O
 saw	O
 over	O
@@ -1516,8 +1518,6 @@ We	O
 ’	O
 re	O
 
-reefs	O
-.	O
 The	O
 organization	O
 hosts	O
@@ -1537,16 +1537,20 @@ and	O
 keep	O
 the	O
 ocean	O
+clean	O
+.	O
 
+Unite	B-ORG
+BVI	I-ORG
 will	O
 continue	O
 to	O
 work	O
 to	O
 make	O
-Vauréal	O
-,	O
-pico	B-LOC
+Vauréal	B-LOC
+,	I-LOC
+pico	I-LOC
 and	O
 other	O
 beaches	O
@@ -1562,15 +1566,11 @@ place	O
 .	O
 We	O
 encourage	O
-everyone	O
-to	O
 
 FOR	O
 IMMEDIATE	O
 RELEASE	O
 
-clean	O
-.	O
 Reef	B-ORG
 Relief	I-ORG
 encourages	O
@@ -1590,9 +1590,11 @@ in	O
 their	O
 beach	O
 cleanup	O
+events	O
+.	O
 
-Beach	B-LOC
-Nourishment	B-ORG
+Beach	B-ORG
+Nourishment	I-ORG
 volunteers	O
 worked	O
 hard	O
@@ -1629,6 +1631,7 @@ the	O
 environment	O
 .	O
 
+Together	O
 we	O
 can	O
 keep	O
@@ -1636,8 +1639,9 @@ our	O
 oceans	O
 clean	O
 !	O
-#	O
 
+``	O
+We	O
 are	O
 thrilled	O
 to	O
@@ -1667,8 +1671,6 @@ Member	O
 John	O
 Doe	O
 .	O
-``	O
-This	O
 
 We	O
 hope	O
@@ -1694,12 +1696,14 @@ comes	O
 together	O
 to	O
 tackle	O
-a	B-ORG
+a	O
 common	O
 problem	O
 .	O
 ''	O
 
+After	O
+several	O
 hours	O
 of	O
 hard	O
@@ -1722,8 +1726,6 @@ from	O
 the	O
 beach	O
 .	O
-The	O
-volunteers	O
 
 Today	O
 ,	O
@@ -1749,13 +1751,13 @@ drink	B-ITM
 cartons	I-ITM
 !	O
 
-Hübl	I-LOC
+Hübl	B-LOC
 Peak	I-LOC
 ,	O
-June	O
-25	O
-,	O
-2022	O
+June	B-DAT
+25	I-DAT
+,	I-DAT
+2022	I-DAT
 -	O
 Rise	B-ORG
 Above	I-ORG
@@ -1780,6 +1782,8 @@ Peak	I-LOC
 The	O
 cleanup	O
 
+Unite	B-ORG
+BVI	I-ORG
 would	O
 like	O
 to	O
@@ -1795,8 +1799,6 @@ the	O
 cleanup	O
 project	O
 .	O
-Their	O
-hard	O
 
 More	O
 than	O
@@ -1814,10 +1816,10 @@ beach	O
 .	O
 
 On	O
-May	O
-25th	O
-,	O
-2021	O
+May	B-DAT
+25th	I-DAT
+,	I-DAT
+2021	I-DAT
 ,	O
 PPCA	O
 and	O
@@ -1868,15 +1870,15 @@ valuable	O
 support	O
 by	O
 collecting	O
-and	B-ITM
+and	O
 disposing	O
 of	O
 the	O
 waste	O
 in	O
-a	B-ORG
+a	O
 safe	O
-and	B-ITM
+and	O
 sustainable	O
 manner	O
 .	O
@@ -1888,7 +1890,7 @@ proud	O
 to	O
 have	O
 made	O
-a	B-ORG
+a	O
 tangible	O
 difference	O
 in	O
@@ -1904,7 +1906,8 @@ ocean	O
 
 We	O
 removed	O
-200kgs	O
+200	B-WEI
+kgs	B-UNT
 of	O
 debris	O
 ,	O
@@ -1915,10 +1918,11 @@ incredible	O
 efforts	O
 of	O
 @	O
-Take3	O
+Take3	B-ORG
 .	O
-#	O
 
+Rise	B-ORG
+Above	I-ORG
 Plastics	I-ORG
 is	O
 currently	O
@@ -1936,12 +1940,7 @@ other	O
 conservation	O
 efforts	O
 .	O
-To	O
-learn	O
 
-plastic	O
-pollution	O
-.	O
 “	O
 This	O
 event	O
@@ -1959,7 +1958,12 @@ much	O
 more	O
 that	O
 needs	O
+to	O
+be	O
+done	O
 
+Rise	B-ORG
+Above	I-ORG
 Plastics	I-ORG
 is	O
 dedicated	O
@@ -1983,8 +1987,6 @@ from	O
 plastic	O
 pollution	O
 .	O
-Through	O
-beach	O
 
 The	O
 event	O
@@ -2015,5 +2017,5 @@ Waste	O
 Removed	O
 from	O
 Thessaloníki	B-LOC
-Beach	B-ORG
+Beach	O
 

@@ -173,6 +173,14 @@
  ],
  [
   {
+   "text": "Coastal",
+   "ner": "B-ORG"
+  },
+  {
+   "text": "Watch",
+   "ner": "I-ORG"
+  },
+  {
    "text": "is",
    "ner": "O"
   },
@@ -238,14 +246,10 @@
   },
   {
    "text": "Playa",
-   "ner": "B-LOC"
+   "ner": "O"
   },
   {
    "text": "fluvial",
-   "ner": "I-LOC"
-  },
-  {
-   "text": "Fu",
    "ner": "O"
   }
  ],
@@ -389,8 +393,12 @@
    "ner": "O"
   },
   {
-   "text": "100lbs",
-   "ner": "O"
+   "text": "100",
+   "ner": "B-WEI"
+  },
+  {
+   "text": "lbs",
+   "ner": "B-UNT"
   },
   {
    "text": "of",
@@ -423,20 +431,16 @@
   {
    "text": ".",
    "ner": "O"
-  },
-  {
-   "text": "Together",
-   "ner": "O"
   }
  ],
  [
   {
    "text": "Beach",
-   "ner": "B-LOC"
+   "ner": "B-ORG"
   },
   {
    "text": "Nourishment",
-   "ner": "B-ORG"
+   "ner": "I-ORG"
   },
   {
    "text": "will",
@@ -492,10 +496,6 @@
   }
  ],
  [
-  {
-   "text": "\u201d",
-   "ner": "O"
-  },
   {
    "text": "Reef",
    "ner": "B-ORG"
@@ -558,6 +558,10 @@
   },
   {
    "text": "ecosystems",
+   "ner": "O"
+  },
+  {
+   "text": ".",
    "ner": "O"
   }
  ],
@@ -800,7 +804,7 @@
   },
   {
    "text": "Australia",
-   "ner": "B-ORG"
+   "ner": "O"
   },
   {
    "text": "'s",
@@ -890,7 +894,7 @@
   },
   {
    "text": "plasticsoupfoundation",
-   "ner": "O"
+   "ner": "B-ORG"
   },
   {
    "text": "team",
@@ -955,7 +959,7 @@
    "ner": "O"
   },
   {
-   "text": "\u2013",
+   "text": "-",
    "ner": "O"
   },
   {
@@ -964,19 +968,19 @@
   },
   {
    "text": "January",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "11",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": "2020",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",

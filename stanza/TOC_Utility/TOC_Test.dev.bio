@@ -1,7 +1,7 @@
 #	O
 SaveOurOceans	O
 #	O
-SeaChangeProject	O
+SeaChangeProject	B-ORG
 #	O
 BeachCleanup	O
 #	O
@@ -18,7 +18,7 @@ of	O
 over	O
 200	O
 volunteers	O
-and	B-ITM
+and	O
 the	O
 generous	O
 support	O
@@ -81,6 +81,8 @@ enjoy.	O
 ”	O
 The	O
 
+``	O
+This	O
 cleanup	O
 is	O
 a	O
@@ -100,8 +102,6 @@ our	O
 environment	O
 .	O
 ''	O
-Rise	B-ORG
-Above	I-ORG
 
 After	O
 an	O
@@ -121,7 +121,7 @@ of	O
 Styrofoam	O
 containers	O
 and	O
-257	O
+257	B-WEI
 pounds	B-UNT
 of	O
 pizza	B-ITM
@@ -142,17 +142,17 @@ Beach	I-LOC
 !	O
 🌊	O
 
+#	O
 Take3ForTheSea	O
 #	O
 CleanBeaches	O
 #	O
-AdamsRocks	O
 
 On	O
-April	O
-15	O
-,	O
-2022	O
+April	B-DAT
+15	I-DAT
+,	I-DAT
+2022	I-DAT
 ,	O
 the	O
 Rameau	B-ORG
@@ -186,6 +186,7 @@ and	O
 recycled	O
 .	O
 
+The	O
 WSR	O
 team	O
 was	O
@@ -208,7 +209,6 @@ cleanup	O
 .	O
 WSR	O
 is	O
-a	O
 
 Reef	B-ORG
 Relief	I-ORG
