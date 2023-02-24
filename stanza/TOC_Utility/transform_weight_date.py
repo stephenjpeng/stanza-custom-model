@@ -40,12 +40,14 @@ def date_to_formats(date_str):
     Returns:
         result: a list of possible date formats
     """
-    formats = ["%B %e, %Y", "%e %b %Y", "%b %e %Y", "%x", "%m/%d/%Y", "%m-%d-%Y", "%e %B %Y"]
+    formats = ["%B %e, %Y", "%e %b %Y", "%b %e %Y", "%x", "%m/%d/%Y", "%m-%d-%Y", "%e %B %Y",
+               "%B %e", "%e %b", "%b %e", "%m/%d", "%m-%d", "%e %B"]
     
     # Based on generated data, the date has the format: 2017-04-08
     # ['2017-04-08', 'April  8, 2017', ' 8 Apr 2017', '04/08/17', '04/08/2017', '04-08-2017', ' 8 April 2017']
     date_ = datetime.strptime(date_str, "%Y-%m-%d")
     result = [date_str]
+    suf = []
     
     for fmt in formats:
         date_fmt = remove_excessive_whitespace(date_.strftime(fmt))
