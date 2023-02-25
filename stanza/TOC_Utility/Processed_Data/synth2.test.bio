@@ -24,8 +24,8 @@ Cocinas	I-LOC
 On	O
 Sunday	O
 ,	O
-December	O
-9th	O
+December	B-DAT
+9th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -234,7 +234,7 @@ from	O
 Cameron	B-LOC
 Beach	I-LOC
 on	O
-11/23	O
+11/23	B-DAT
 .	O
 
 The	O
@@ -457,8 +457,8 @@ July	B-DAT
 )	O
 –	O
 On	O
-July	O
-28th	O
+July	B-DAT
+28th	I-DAT
 ,	O
 Concerned	O
 Citizens	O
@@ -1895,8 +1895,8 @@ Spire	I-LOC
 on	O
 Saturday	O
 ,	O
-April	O
-25th	O
+April	B-DAT
+25th	I-DAT
 .	O
 
 The	O
@@ -2187,8 +2187,8 @@ out	O
 On	O
 Tuesday	O
 ,	O
-August	O
-25th	O
+August	B-DAT
+25th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -2918,8 +2918,8 @@ AT	O
 MAGNETIC	B-LOC
 BEACH	I-LOC
 On	O
-February	O
-11th	O
+February	B-DAT
+11th	I-DAT
 ,	O
 The	B-ORG
 Marine	I-ORG
@@ -3959,8 +3959,8 @@ Inc	I-ORG
 .	O
 
 On	O
-May	O
-7th	O
+May	B-DAT
+7th	I-DAT
 ,	O
 the	O
 Bellona	B-ORG
@@ -4309,8 +4309,8 @@ Keweenaw	O
 MI	O
 –	O
 On	O
-February	O
-3rd	O
+February	B-DAT
+3rd	I-DAT
 ,	O
 Friends	B-ORG
 of	I-ORG
@@ -4362,8 +4362,8 @@ at	O
 Playa	B-LOC
 San	I-LOC
 Jorge	I-LOC
-July	O
-14	O
+July	B-DAT
+14	I-DAT
 –	O
 The	O
 Biological	B-ORG
@@ -4544,8 +4544,8 @@ beach	O
 .	O
 
 On	O
-May	O
-18th	O
+May	B-DAT
+18th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -6555,8 +6555,8 @@ Beach	O
 NC	O
 -	O
 On	O
-December	O
-4	O
+December	B-DAT
+4	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -6923,8 +6923,8 @@ Austin	O
 TX	O
 -	O
 On	O
-August	O
-27	O
+August	B-DAT
+27	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -8350,8 +8350,8 @@ April	B-DAT
 On	O
 Sunday	O
 ,	O
-April	O
-22nd	O
+April	B-DAT
+22nd	I-DAT
 ,	O
 Trips	O
 for	O
@@ -9018,8 +9018,8 @@ Playa	I-LOC
 2016-04-22	B-DAT
 –	O
 On	O
-April	O
-22nd	O
+April	B-DAT
+22nd	I-DAT
 ,	O
 the	O
 Friends	B-ORG
@@ -9292,8 +9292,8 @@ IN	O
 PLAYA	B-LOC
 BARRANCADERO	I-LOC
 On	O
-March	O
-25	O
+March	B-DAT
+25	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -9488,8 +9488,8 @@ event	O
 ,	O
 held	O
 on	O
-July	O
-2nd	O
+July	B-DAT
+2nd	I-DAT
 .	O
 
 Thanks	O
@@ -9738,8 +9738,8 @@ Healdsburg	O
 Calif.	O
 –	O
 On	O
-January	O
-13	O
+January	B-DAT
+13	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -10041,8 +10041,8 @@ Mount	O
 On	O
 Saturday	O
 ,	O
-March	O
-7th	O
+March	B-DAT
+7th	I-DAT
 ,	O
 volunteers	O
 from	O

@@ -650,8 +650,8 @@ CA	O
 –	O
 Today	O
 ,	O
-January	O
-18	O
+January	B-DAT
+18	I-DAT
 ,	O
 the	O
 Valley	B-ORG
@@ -1223,8 +1223,8 @@ Avatele	B-LOC
 on	O
 Sunday	O
 ,	O
-May	O
-9th	O
+May	B-DAT
+9th	I-DAT
 .	O
 
 This	O
@@ -1296,8 +1296,8 @@ Ridge	I-LOC
 On	O
 Saturday	O
 ,	O
-October	O
-10	O
+October	B-DAT
+10	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -1632,8 +1632,8 @@ trash	B-ITM
 from	O
 Jeffries	B-LOC
 Peak	I-LOC
-November	O
-23	O
+November	B-DAT
+23	I-DAT
 ,	O
 2022—The	O
 Trash	B-ORG
@@ -2500,8 +2500,8 @@ cleanup	O
 on	O
 Saturday	O
 ,	O
-January	O
-11	O
+January	B-DAT
+11	I-DAT
 .	O
 
 We	O
@@ -3260,8 +3260,8 @@ Michigan	O
 On	O
 Sunday	O
 ,	O
-September	O
-4th	O
+September	B-DAT
+4th	I-DAT
 ,	O
 the	O
 Ypsilanti	B-ORG
@@ -3609,8 +3609,8 @@ Beach	I-LOC
 On	O
 Tuesday	O
 ,	O
-July	O
-14th	O
+July	B-DAT
+14th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -3718,8 +3718,8 @@ cleanup	O
 near	O
 Sambava	B-LOC
 on	O
-April	O
-11	O
+April	B-DAT
+11	I-DAT
 .	O
 
 FOR	O
@@ -3878,8 +3878,8 @@ correctly	O
 !	O
 
 On	O
-15	O
-Jan	O
+15	B-DAT
+Jan	I-DAT
 ,	O
 we	O
 joined	O
@@ -4458,8 +4458,8 @@ June	B-DAT
 On	O
 Saturday	O
 ,	O
-June	O
-20th	O
+June	B-DAT
+20th	I-DAT
 ,	O
 the	O
 National	O
@@ -4537,8 +4537,8 @@ Jurien	B-LOC
 Islote	I-LOC
 –	O
 On	O
-September	O
-8th	O
+September	B-DAT
+8th	I-DAT
 of	O
 2022	O
 ,	O
@@ -4701,8 +4701,8 @@ NM	O
 On	O
 Saturday	O
 ,	O
-October	O
-18th	O
+October	B-DAT
+18th	I-DAT
 ,	O
 the	O
 Concerned	B-ORG
@@ -5080,8 +5080,8 @@ Successful	O
 Beach	O
 Cleanup	O
 On	O
-January	O
-2nd	O
+January	B-DAT
+2nd	I-DAT
 ,	O
 the	O
 South	B-ORG
@@ -5243,8 +5243,8 @@ BeTheChange	O
 On	O
 Wednesday	O
 ,	O
-February	O
-19	O
+February	B-DAT
+19	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -5374,8 +5374,8 @@ impact	O
 .	O
 
 On	O
-October	O
-4	O
+October	B-DAT
+4	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -5429,8 +5429,8 @@ a	O
 beach	O
 cleanup	O
 on	O
-April	O
-9th	O
+April	B-DAT
+9th	I-DAT
 at	O
 Cerro	B-LOC
 Yungor	I-LOC
@@ -5552,8 +5552,8 @@ August	B-DAT
 2017	I-DAT
 –	O
 On	O
-August	O
-14	O
+August	B-DAT
+14	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -5969,8 +5969,8 @@ at	O
 Billys	B-LOC
 Shore	I-LOC
 on	O
-July	O
-3rd	O
+July	B-DAT
+3rd	I-DAT
 .	O
 
 Over	O
@@ -7584,8 +7584,8 @@ at	O
 Tibooburra	B-LOC
 Airport	I-LOC
 on	O
-December	O
-23	O
+December	B-DAT
+23	I-DAT
 .	O
 
 At	O
@@ -7722,8 +7722,8 @@ Neck	I-LOC
 Shore	I-LOC
 –	O
 On	O
-April	O
-28	O
+April	B-DAT
+28	I-DAT
 ,	O
 environmentalists	O
 from	O

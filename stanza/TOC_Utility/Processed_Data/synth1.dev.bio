@@ -550,8 +550,8 @@ beach	O
 On	O
 Tuesday	O
 ,	O
-January	O
-5th	O
+January	B-DAT
+5th	I-DAT
 ,	O
 local	O
 volunteers	O
@@ -1019,8 +1019,8 @@ of	O
 Long	B-LOC
 Peninsula	I-LOC
 on	O
-July	O
-11	O
+July	B-DAT
+11	I-DAT
 .	O
 
 ``	O
@@ -1063,8 +1063,8 @@ CA	O
 On	O
 Tuesday	O
 ,	O
-March	O
-9	O
+March	B-DAT
+9	I-DAT
 ,	O
 the	O
 Environmental	B-ORG
@@ -2161,8 +2161,8 @@ Mango	I-LOC
 on	O
 Saturday	O
 ,	O
-February	O
-27th	O
+February	B-DAT
+27th	I-DAT
 .	O
 
 #	O
@@ -2696,8 +2696,8 @@ Carolina	O
 On	O
 Thursday	O
 ,	O
-March	O
-3rd	O
+March	B-DAT
+3rd	I-DAT
 ,	O
 over	O
 thirty	O
@@ -3705,8 +3705,8 @@ Park	O
 on	O
 Sunday	O
 ,	O
-January	O
-5th	O
+January	B-DAT
+5th	I-DAT
 .	O
 
 The	O
@@ -3928,8 +3928,8 @@ a	O
 beach	O
 cleanup	O
 on	O
-December	O
-29th	O
+December	B-DAT
+29th	I-DAT
 .	O
 
 Your	O
@@ -5669,8 +5669,8 @@ OR	O
 On	O
 Wednesday	O
 ,	O
-October	O
-16th	O
+October	B-DAT
+16th	I-DAT
 ,	O
 Portland	O
 Recycling	O
@@ -5826,8 +5826,8 @@ Washington	O
 DC	O
 –	O
 On	O
-February	O
-8	O
+February	B-DAT
+8	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -6141,8 +6141,8 @@ but	O
 sunny	O
 day	O
 of	O
-March	O
-20	O
+March	B-DAT
+20	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG

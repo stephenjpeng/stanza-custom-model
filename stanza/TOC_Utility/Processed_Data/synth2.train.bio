@@ -117,8 +117,8 @@ today	O
 On	O
 Saturday	O
 ,	O
-September	O
-17th	O
+September	B-DAT
+17th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -785,8 +785,8 @@ Botswana	O
 On	O
 Saturday	O
 ,	O
-March	O
-25th	O
+March	B-DAT
+25th	I-DAT
 ,	O
 Ultimate	B-ORG
 Recycling	I-ORG
@@ -1207,8 +1207,8 @@ November	B-DAT
 On	O
 Wednesday	O
 ,	O
-November	O
-6	O
+November	B-DAT
+6	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -1434,8 +1434,8 @@ New	O
 Guinea	O
 –	O
 On	O
-June	O
-29	O
+June	B-DAT
+29	I-DAT
 ,	O
 members	O
 of	O
@@ -2468,8 +2468,8 @@ Seattle	O
 WA	O
 -	O
 On	O
-April	O
-24	O
+April	B-DAT
+24	I-DAT
 ,	O
 Toxic-Free	B-ORG
 Future	I-ORG
@@ -2578,8 +2578,8 @@ on	O
 On	O
 Saturday	O
 ,	O
-November	O
-18	O
+November	B-DAT
+18	I-DAT
 ,	O
 the	O
 organization	O
@@ -3561,8 +3561,8 @@ CLEANUP	O
 On	O
 Tuesday	O
 ,	O
-December	O
-26	O
+December	B-DAT
+26	I-DAT
 ,	O
 a	O
 successful	O
@@ -4628,8 +4628,8 @@ Park	I-LOC
 CA	O
 -	O
 On	O
-January	O
-18	O
+January	B-DAT
+18	I-DAT
 ,	O
 hundreds	O
 of	O
@@ -4752,8 +4752,8 @@ Record-Breaking	O
 Beach	O
 Cleanup	O
 On	O
-December	O
-9th	O
+December	B-DAT
+9th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -5191,8 +5191,8 @@ February	B-DAT
 On	O
 Saturday	O
 ,	O
-February	O
-21st	O
+February	B-DAT
+21st	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -5819,8 +5819,8 @@ held	O
 on	O
 Sunday	O
 ,	O
-March	O
-19th	O
+March	B-DAT
+19th	I-DAT
 .	O
 
 The	O
@@ -7912,8 +7912,8 @@ METILLA	I-LOC
 On	O
 Wednesday	O
 ,	O
-December	O
-18th	O
+December	B-DAT
+18th	I-DAT
 ,	O
 the	O
 Sea	B-ORG
@@ -8486,8 +8486,8 @@ Charleston	O
 SC—On	O
 Saturday	O
 ,	O
-July	O
-30	O
+July	B-DAT
+30	I-DAT
 ,	O
 the	O
 Smoke-Free	B-ORG
@@ -8780,8 +8780,8 @@ Peak	I-LOC
 On	O
 Saturday	O
 ,	O
-May	O
-14th	O
+May	B-DAT
+14th	I-DAT
 ,	O
 The	B-ORG
 Lamb	I-ORG
@@ -8923,8 +8923,8 @@ at	O
 Amadhes	B-LOC
 Beach	I-LOC
 on	O
-January	O
-26th	O
+January	B-DAT
+26th	I-DAT
 .	O
 
 [	O
@@ -8964,8 +8964,8 @@ Beach	I-LOC
 On	O
 Saturday	O
 ,	O
-January	O
-5th	O
+January	B-DAT
+5th	I-DAT
 ,	O
 nearly	O
 400	O
@@ -11213,8 +11213,8 @@ BEACH	I-LOC
 CA	O
 –	O
 On	O
-November	O
-17th	O
+November	B-DAT
+17th	I-DAT
 ,	O
 the	O
 residents	O
@@ -12008,8 +12008,8 @@ Playa	B-LOC
 Varadero	I-LOC
 Malarrimo	I-LOC
 on	O
-October	O
-19th	O
+October	B-DAT
+19th	I-DAT
 .	O
 
 Our	O
@@ -12399,8 +12399,8 @@ CLEANUP	O
 On	O
 Saturday	O
 ,	O
-July	O
-28	O
+July	B-DAT
+28	I-DAT
 ,	O
 members	O
 of	O
@@ -12685,8 +12685,8 @@ pieces	I-ITM
 .	O
 
 On	O
-November	O
-26th	O
+November	B-DAT
+26th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -13025,8 +13025,8 @@ Mount	I-LOC
 On	O
 Thursday	O
 ,	O
-March	O
-7th	O
+March	B-DAT
+7th	I-DAT
 ,	O
 the	O
 Train	B-ORG
@@ -13745,8 +13745,8 @@ clean	O
 On	O
 Wednesday	O
 ,	O
-April	O
-12th	O
+April	B-DAT
+12th	I-DAT
 ,	O
 dozens	O
 of	O
@@ -13868,8 +13868,8 @@ Beach	I-LOC
 2020-04-07	B-DAT
 –	O
 On	O
-April	O
-7	O
+April	B-DAT
+7	I-DAT
 ,	O
 Save	O
 Our	O
@@ -14038,8 +14038,8 @@ Island	I-LOC
 On	O
 Saturday	O
 ,	O
-August	O
-21st	O
+August	B-DAT
+21st	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -15755,8 +15755,8 @@ effort	O
 On	O
 Wednesday	O
 ,	O
-September	O
-25th	O
+September	B-DAT
+25th	I-DAT
 ,	O
 over	O
 40	B-WEI
@@ -15874,8 +15874,8 @@ in	O
 Gold	B-LOC
 Beach	I-LOC
 on	O
-May	O
-31st	O
+May	B-DAT
+31st	I-DAT
 .	O
 
 We	O
@@ -15934,8 +15934,8 @@ MUISNE	O
 ECUADOR	O
 –	O
 On	O
-July	O
-22nd	O
+July	B-DAT
+22nd	I-DAT
 ,	O
 the	O
 Agua	B-ORG
@@ -16821,8 +16821,8 @@ Tropical	B-LOC
 North	I-LOC
 Queensland	I-LOC
 on	O
-January	O
-16th	O
+January	B-DAT
+16th	I-DAT
 and	O
 made	O
 an	O
@@ -16889,8 +16889,8 @@ Cleanups	O
 On	O
 Monday	O
 ,	O
-May	O
-13	O
+May	B-DAT
+13	I-DAT
 ,	O
 the	O
 Pacific	B-ORG
@@ -18640,8 +18640,8 @@ Park	I-LOC
 on	O
 Saturday	O
 ,	O
-September	O
-11th	O
+September	B-DAT
+11th	I-DAT
 .	O
 
 We	O
@@ -18960,8 +18960,8 @@ Cleanup	O
 A	O
 Success	O
 On	O
-October	O
-4th	O
+October	B-DAT
+4th	I-DAT
 2017	O
 ,	O
 local	O
@@ -19187,8 +19187,8 @@ CLEANUP	O
 IN	O
 TVERREGGA	B-LOC
 On	O
-October	O
-13	O
+October	B-DAT
+13	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -20216,8 +20216,8 @@ AT	O
 WHITESIDE	B-LOC
 HILL	I-LOC
 On	O
-January	O
-15	O
+January	B-DAT
+15	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -21078,8 +21078,8 @@ cleanup	O
 on	O
 Saturday	O
 ,	O
-November	O
-12th	O
+November	B-DAT
+12th	I-DAT
 at	O
 the	O
 Linton-Smith	B-LOC
@@ -21449,8 +21449,8 @@ FL	O
 )	O
 –	O
 On	O
-March	O
-10	O
+March	B-DAT
+10	I-DAT
 ,	O
 the	O
 South	B-ORG
@@ -22135,7 +22135,7 @@ beautiful	O
 Playa	B-LOC
 Constante	I-LOC
 on	O
-11/09	O
+11/09	B-DAT
 !	O
 
 We	O
@@ -23347,8 +23347,8 @@ Pounds	O
 of	O
 Trash	O
 Collected	O
-May	O
-25	O
+May	B-DAT
+25	I-DAT
 ,	O
 2021–The	O
 Sustainability	B-ORG
@@ -23660,8 +23660,8 @@ UP	O
 SANDBANK	B-LOC
 SHORE	I-LOC
 On	O
-October	O
-25th	O
+October	B-DAT
+25th	I-DAT
 ,	O
 the	O
 Paint	O
@@ -23904,8 +23904,8 @@ beach	O
 cleanup	O
 event	O
 on	O
-November	O
-13th	O
+November	B-DAT
+13th	I-DAT
 at	O
 Playa	B-LOC
 de	I-LOC
@@ -24477,8 +24477,8 @@ OH	O
 On	O
 Wednesday	O
 ,	O
-March	O
-11th	O
+March	B-DAT
+11th	I-DAT
 ,	O
 the	O
 Sandusky	B-ORG
@@ -26560,8 +26560,8 @@ ProtectOurPlanet	O
 SaveTheEnvironment	O
 
 On	O
-May	O
-5th	O
+May	B-DAT
+5th	I-DAT
 ,	O
 the	O
 Barlow	B-ORG
@@ -27934,8 +27934,8 @@ Shore	O
 High	O
 School	O
 On	O
-January	O
-26	O
+January	B-DAT
+26	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -29024,8 +29024,8 @@ beach	O
 cleanup	O
 event	O
 on	O
-July	O
-12	O
+July	B-DAT
+12	I-DAT
 at	O
 Playa	B-LOC
 Punte	I-LOC
@@ -31306,7 +31306,7 @@ at	O
 Shades	B-LOC
 Beach	I-LOC
 on	O
-11/20	O
+11/20	B-DAT
 !	O
 
 Today	O
@@ -32014,8 +32014,8 @@ Cleanup	O
 On	O
 Saturday	O
 ,	O
-March	O
-15th	O
+March	B-DAT
+15th	I-DAT
 ,	O
 West	B-ORG
 Tennesseans	I-ORG
@@ -33081,8 +33081,8 @@ held	O
 on	O
 Saturday	O
 ,	O
-March	O
-29th	O
+March	B-DAT
+29th	I-DAT
 and	O
 featured	O
 the	O
@@ -33507,8 +33507,8 @@ day	O
 !	O
 
 On	O
-August	O
-29th	O
+August	B-DAT
+29th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -33651,8 +33651,8 @@ beach	O
 cleanup	O
 held	O
 on	O
-December	O
-10	O
+December	B-DAT
+10	I-DAT
 at	O
 Playa	B-LOC
 del	I-LOC
@@ -34825,8 +34825,8 @@ SHORE	I-LOC
 ACRES	I-LOC
 DAM	I-LOC
 On	O
-July	O
-23rd	O
+July	B-DAT
+23rd	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -34851,8 +34851,8 @@ location	O
 .	O
 
 On	O
-November	O
-26th	O
+November	B-DAT
+26th	I-DAT
 ,	O
 a	O
 group	O
@@ -35679,8 +35679,8 @@ CO	O
 On	O
 Saturday	O
 ,	O
-May	O
-9	O
+May	B-DAT
+9	I-DAT
 ,	O
 High	B-ORG
 Country	I-ORG
@@ -36204,8 +36204,8 @@ FL	O
 On	O
 Thursday	O
 ,	O
-October	O
-13th	O
+October	B-DAT
+13th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -36314,8 +36314,8 @@ a	O
 Huge	O
 Success	O
 On	O
-November	O
-19	O
+November	B-DAT
+19	I-DAT
 ,	O
 Baddeleys	B-LOC
 Beach	I-LOC
@@ -36613,8 +36613,8 @@ Hill	I-LOC
 on	O
 Sunday	O
 ,	O
-June	O
-21st	O
+June	B-DAT
+21st	I-DAT
 with	O
 amazing	O
 results	O
@@ -37137,8 +37137,8 @@ Rica	O
 On	O
 Tuesday	O
 ,	O
-May	O
-31	O
+May	B-DAT
+31	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -37625,8 +37625,8 @@ Coast	I-LOC
 National	I-LOC
 Park	I-LOC
 on	O
-February	O
-5th	O
+February	B-DAT
+5th	I-DAT
 2016	O
 .	O
 
@@ -37852,8 +37852,8 @@ which	O
 was	O
 held	O
 on	O
-July	O
-17	O
+July	B-DAT
+17	I-DAT
 ,	O
 resulted	O
 in	O
@@ -38502,8 +38502,8 @@ Cleanup	O
 On	O
 Friday	O
 ,	O
-November	O
-22nd	O
+November	B-DAT
+22nd	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -38601,8 +38601,8 @@ Beach	I-LOC
 on	O
 Saturday	O
 ,	O
-July	O
-25	O
+July	B-DAT
+25	I-DAT
 .	O
 
 Making	O
@@ -38750,8 +38750,8 @@ ever	O
 .	O
 
 On	O
-February	O
-19th	O
+February	B-DAT
+19th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -38824,8 +38824,8 @@ Cleanup	O
 On	O
 Sunday	O
 ,	O
-October	O
-19th	O
+October	B-DAT
+19th	I-DAT
 ,	O
 members	O
 of	O
@@ -39055,8 +39055,8 @@ on	O
 the	O
 weekend	O
 of	O
-October	O
-3rd	O
+October	B-DAT
+3rd	I-DAT
 ,	O
 with	O
 more	O
@@ -39313,8 +39313,8 @@ PA	O
 On	O
 Tuesday	O
 ,	O
-January	O
-21st	O
+January	B-DAT
+21st	I-DAT
 ,	O
 members	O
 of	O
@@ -39353,8 +39353,8 @@ which	O
 was	O
 held	O
 on	O
-December	O
-23	O
+December	B-DAT
+23	I-DAT
 ,	O
 was	O
 organized	O
@@ -39409,8 +39409,8 @@ On	O
 the	O
 morning	O
 of	O
-September	O
-14	O
+September	B-DAT
+14	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -39469,8 +39469,8 @@ SomalRegion	O
 ProtectOurCoastlines	O
 
 On	O
-November	O
-2nd	O
+November	B-DAT
+2nd	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -39545,8 +39545,8 @@ from	O
 Wujek	B-LOC
 Ridge	I-LOC
 on	O
-November	O
-23rd	O
+November	B-DAT
+23rd	I-DAT
 !	O
 
 Today	O
@@ -41885,8 +41885,8 @@ Beach	I-LOC
 on	O
 Tuesday	O
 ,	O
-July	O
-31	O
+July	B-DAT
+31	I-DAT
 .	O
 
 “	O
@@ -41987,8 +41987,8 @@ Beach	I-LOC
 On	O
 Saturday	O
 ,	O
-January	O
-10th	O
+January	B-DAT
+10th	I-DAT
 Coastal	O
 Environmental	O
 Services	O
@@ -42664,8 +42664,8 @@ area	O
 .	O
 
 The	O
-May	O
-22	O
+May	B-DAT
+22	I-DAT
 beach	O
 cleanup	O
 was	O
@@ -43004,8 +43004,8 @@ AT	O
 PINSANAW	O
 BEACH	O
 On	O
-October	O
-28th	O
+October	B-DAT
+28th	I-DAT
 ,	O
 the	O
 Lake	O
@@ -43129,8 +43129,8 @@ of	O
 Beach	O
 Cleanup	O
 On	O
-June	O
-25th	O
+June	B-DAT
+25th	I-DAT
 ,	O
 the	O
 Professional	B-ORG
@@ -44023,8 +44023,8 @@ the	O
 Play	O
 
 On	O
-June	O
-20th	O
+June	B-DAT
+20th	I-DAT
 ,	O
 the	O
 Sherwood	B-ORG
@@ -44155,8 +44155,8 @@ Woodlands	O
 Idaho	O
 –	O
 On	O
-February	O
-18	O
+February	B-DAT
+18	I-DAT
 ,	O
 Woodlands	B-ORG
 Recycles	I-ORG
@@ -47116,8 +47116,8 @@ Pillar	I-LOC
 On	O
 Saturday	O
 ,	O
-July	O
-24th	O
+July	B-DAT
+24th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -48130,7 +48130,7 @@ TroutUnlimited	B-ORG
 beach	O
 cleanup	O
 on	O
-10/25	O
+10/25	B-DAT
 was	O
 a	O
 huge	O
@@ -48253,8 +48253,8 @@ Beach	O
 On	O
 Saturday	O
 ,	O
-February	O
-15th	O
+February	B-DAT
+15th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -48820,8 +48820,8 @@ Peak	I-LOC
 on	O
 Thursday	O
 ,	O
-February	O
-12	O
+February	B-DAT
+12	I-DAT
 .	O
 
 #	O
@@ -49493,8 +49493,8 @@ at	O
 Falla	B-LOC
 Bluff	I-LOC
 on	O
-October	O
-1	O
+October	B-DAT
+1	I-DAT
 .	O
 
 The	O
@@ -49621,8 +49621,8 @@ MASSALFASSAR	I-LOC
 On	O
 Thursday	O
 ,	O
-November	O
-16th	O
+November	B-DAT
+16th	I-DAT
 ,	O
 the	O
 Coalition	O
@@ -50867,8 +50867,8 @@ MILWAUKEE	O
 WI	O
 —	O
 On	O
-February	O
-17	O
+February	B-DAT
+17	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -50985,8 +50985,8 @@ MN	O
 On	O
 Saturday	O
 ,	O
-May	O
-29th	O
+May	B-DAT
+29th	I-DAT
 ,	O
 Friends	O
 of	O
@@ -51173,8 +51173,8 @@ June	B-DAT
 On	O
 Saturday	O
 ,	O
-June	O
-19	O
+June	B-DAT
+19	I-DAT
 ,	O
 Sisterhood-Brotherhood	B-ORG
 Outreach	I-ORG
@@ -51796,8 +51796,8 @@ GA.	O
 On	O
 Saturday	O
 ,	O
-November	O
-28th	O
+November	B-DAT
+28th	I-DAT
 ,	O
 Keep	B-ORG
 Athens-Clarke	I-ORG
@@ -52034,8 +52034,8 @@ place	O
 on	O
 Saturday	O
 ,	O
-October	O
-9th	O
+October	B-DAT
+9th	I-DAT
 .	O
 
 #	O
@@ -52859,8 +52859,8 @@ Punta	I-LOC
 On	O
 Thursday	O
 ,	O
-January	O
-7	O
+January	B-DAT
+7	I-DAT
 ,	O
 Pull	B-ORG
 Tabs	I-ORG
@@ -53113,8 +53113,8 @@ Point	I-LOC
 On	O
 Sunday	O
 ,	O
-July	O
-8th	O
+July	B-DAT
+8th	I-DAT
 ,	O
 the	O
 Friends	O
@@ -54040,8 +54040,8 @@ partnered	O
 with	O
 volunteers	O
 on	O
-July	O
-27th	O
+July	B-DAT
+27th	I-DAT
 to	O
 clean	O
 Playa	B-LOC
@@ -54605,8 +54605,8 @@ BEACH	I-LOC
 Powhatan	B-LOC
 Beach	I-LOC
 ,	O
-July	O
-3	O
+July	B-DAT
+3	I-DAT
 -	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -54996,8 +54996,8 @@ Isla	I-LOC
 on	O
 Saturday	O
 ,	O
-October	O
-23rd	O
+October	B-DAT
+23rd	I-DAT
 .	O
 
 We	O
@@ -55118,8 +55118,8 @@ that	O
 on	O
 Saturday	O
 ,	O
-April	O
-20th	O
+April	B-DAT
+20th	I-DAT
 ,	O
 a	O
 beach	O
@@ -55209,8 +55209,8 @@ and	O
 On	O
 Tuesday	O
 ,	O
-December	O
-15th	O
+December	B-DAT
+15th	I-DAT
 ,	O
 the	O
 Bayou	O
@@ -55582,8 +55582,8 @@ New	O
 Zealand	O
 -	O
 On	O
-June	O
-17	O
+June	B-DAT
+17	I-DAT
 ,	O
 Plastic	B-ORG
 Pollution	I-ORG
@@ -55974,8 +55974,8 @@ cleanup	O
 ,	O
 held	O
 on	O
-December	O
-31	O
+December	B-DAT
+31	I-DAT
 ,	O
 was	O
 a	O
@@ -56131,8 +56131,8 @@ JOMTIEN	B-LOC
 On	O
 Saturday	O
 ,	O
-June	O
-6th	O
+June	B-DAT
+6th	I-DAT
 ,	O
 the	O
 Coalition	B-ORG
@@ -56844,8 +56844,8 @@ CA	O
 On	O
 Tuesday	O
 ,	O
-February	O
-4th	O
+February	B-DAT
+4th	I-DAT
 ,	O
 the	O
 Resource	B-ORG
@@ -58119,8 +58119,8 @@ FL	O
 On	O
 Thursday	O
 ,	O
-June	O
-14th	O
+June	B-DAT
+14th	I-DAT
 ,	O
 the	O
 Hellenic	O
@@ -59322,8 +59322,8 @@ Clean	I-ORG
 Water	I-ORG
 Inc	I-ORG
 on	O
-December	O
-25th	O
+December	B-DAT
+25th	I-DAT
 in	O
 Wakefield	B-LOC
 ,	I-LOC
@@ -59849,8 +59849,8 @@ results	O
 .	O
 
 On	O
-August	O
-10th	O
+August	B-DAT
+10th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -60489,8 +60489,8 @@ Lake	O
 City	O
 ,	O
 UT—On	O
-April	O
-25	O
+April	B-DAT
+25	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -61540,8 +61540,8 @@ Foundation	I-ORG
 On	O
 Sunday	O
 ,	O
-October	O
-28th	O
+October	B-DAT
+28th	I-DAT
 ,	O
 the	O
 Rescue	B-ORG
@@ -62322,8 +62322,8 @@ PLAYA	B-LOC
 DEL	I-LOC
 COCAL	I-LOC
 On	O
-August	O
-7th	O
+August	B-DAT
+7th	I-DAT
 ,	O
 the	O
 Beach	B-ORG
@@ -62752,8 +62752,8 @@ Beach	I-LOC
 on	O
 Saturday	O
 ,	O
-January	O
-9	O
+January	B-DAT
+9	I-DAT
 .	O
 
 #	O
@@ -63538,8 +63538,8 @@ Dalsnuten	B-LOC
 on	O
 Saturday	O
 ,	O
-December	O
-29th	O
+December	B-DAT
+29th	I-DAT
 .	O
 
 Over	O
@@ -63658,8 +63658,8 @@ WA	O
 On	O
 Sunday	O
 ,	O
-February	O
-22	O
+February	B-DAT
+22	I-DAT
 ,	O
 People	B-ORG
 for	I-ORG
@@ -64004,8 +64004,8 @@ January	B-DAT
 On	O
 Saturday	O
 ,	O
-January	O
-29th	O
+January	B-DAT
+29th	I-DAT
 ,	O
 a	O
 beach	O
@@ -64338,8 +64338,8 @@ NY	O
 On	O
 Thursday	O
 ,	O
-March	O
-21	O
+March	B-DAT
+21	I-DAT
 ,	O
 members	O
 of	O
@@ -64764,8 +64764,8 @@ boxes	I-ITM
 On	O
 Thursday	O
 ,	O
-May	O
-27th	O
+May	B-DAT
+27th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -66946,8 +66946,8 @@ BEACH	I-LOC
 TN	O
 –	O
 On	O
-February	O
-4th	O
+February	B-DAT
+4th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -67361,8 +67361,8 @@ Railway	I-LOC
 Station	I-LOC
 Cleanup	O
 ’	O
-1	O
-April	O
+1	B-DAT
+April	I-DAT
 ,	O
 2017	O
 –	O
@@ -68180,8 +68180,8 @@ Immediate	O
 Release	O
 Today	O
 ,	O
-July	O
-14th	O
+July	B-DAT
+14th	I-DAT
 ,	O
 Sea	B-ORG
 Change	I-ORG
@@ -68375,8 +68375,8 @@ at	O
 English	B-LOC
 Rock	I-LOC
 on	O
-August	O
-17th	O
+August	B-DAT
+17th	I-DAT
 .	O
 
 The	O
@@ -68630,8 +68630,8 @@ Region	I-LOC
 on	O
 Saturday	O
 ,	O
-September	O
-9	O
+September	B-DAT
+9	I-DAT
 .	O
 
 The	O
@@ -68706,8 +68706,8 @@ RAROTONGA	O
 On	O
 Wednesday	O
 ,	O
-September	O
-23rd	O
+September	B-DAT
+23rd	I-DAT
 ,	O
 members	O
 of	O
@@ -69007,8 +69007,8 @@ ROCAS	I-LOC
 On	O
 Saturday	O
 ,	O
-August	O
-23	O
+August	B-DAT
+23	I-DAT
 ,	O
 the	O
 Coastal	B-ORG
@@ -69091,8 +69091,8 @@ CA	O
 On	O
 Saturday	O
 ,	O
-August	O
-13th	O
+August	B-DAT
+13th	I-DAT
 ,	O
 the	O
 Wratt	B-ORG
@@ -69784,8 +69784,8 @@ NC	O
 On	O
 Saturday	O
 ,	O
-March	O
-21st	O
+March	B-DAT
+21st	I-DAT
 ,	O
 Moore	B-LOC
 Peak	I-LOC
@@ -69951,8 +69951,8 @@ Isla	I-LOC
 On	O
 Sunday	O
 ,	O
-March	O
-11	O
+March	B-DAT
+11	I-DAT
 ,	O
 volunteers	O
 with	O
@@ -70466,8 +70466,8 @@ Oriente	I-LOC
 On	O
 Saturday	O
 ,	O
-August	O
-22nd	O
+August	B-DAT
+22nd	I-DAT
 ,	O
 members	O
 of	O
@@ -70910,8 +70910,8 @@ August	O
 On	O
 Saturday	O
 ,	O
-October	O
-15	O
+October	B-DAT
+15	I-DAT
 ,	O
 volunteers	O
 and	O
@@ -71480,8 +71480,8 @@ beach	O
 on	O
 Sunday	O
 ,	O
-September	O
-16th	O
+September	B-DAT
+16th	I-DAT
 .	O
 
 Been	O
@@ -73766,8 +73766,8 @@ KRAKÓW	B-LOC
 Poland	O
 -	O
 On	O
-November	O
-18	O
+November	B-DAT
+18	I-DAT
 ,	O
 Adaptive	B-ORG
 Computer	I-ORG
@@ -73814,8 +73814,8 @@ possible	O
 On	O
 Thursday	O
 ,	O
-October	O
-6th	O
+October	B-DAT
+6th	I-DAT
 ,	O
 local	O
 volunteers	O
@@ -73902,8 +73902,8 @@ today	O
 .	O
 
 On	O
-January	O
-24	O
+January	B-DAT
+24	I-DAT
 ,	O
 2021	O
 ,	O
@@ -73998,8 +73998,8 @@ GETARES	I-LOC
 2020-08-04	B-DAT
 –	O
 On	O
-August	O
-4th	O
+August	B-DAT
+4th	I-DAT
 ,	O
 Save	B-ORG
 Our	I-ORG
@@ -74271,8 +74271,8 @@ February	B-DAT
 2022	I-DAT
 –	O
 On	O
-February	O
-10th	O
+February	B-DAT
+10th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -74314,8 +74314,8 @@ MA	O
 On	O
 Monday	O
 ,	O
-October	O
-7th	O
+October	B-DAT
+7th	I-DAT
 ,	O
 Keep	B-ORG
 Schuyler	I-ORG
@@ -76225,8 +76225,8 @@ Boxes	O
 On	O
 Wednesday	O
 ,	O
-September	O
-20th	O
+September	B-DAT
+20th	I-DAT
 ,	O
 Mid	O
 Atlantic	O
@@ -76387,8 +76387,8 @@ from	O
 the	O
 beach	O
 on	O
-July	O
-30th	O
+July	B-DAT
+30th	I-DAT
 !	O
 
 “	O
@@ -76681,8 +76681,8 @@ an	O
 environmental	O
 impact	O
 on	O
-December	O
-11th	O
+December	B-DAT
+11th	I-DAT
 at	O
 Playa	B-LOC
 de	I-LOC
@@ -77270,8 +77270,8 @@ Lake	I-LOC
 On	O
 Sunday	O
 ,	O
-July	O
-12th	O
+July	B-DAT
+12th	I-DAT
 ,	O
 Kids-Computers-Community	B-ORG
 (	O
@@ -77545,8 +77545,8 @@ AZ	O
 On	O
 Thursday	O
 ,	O
-March	O
-24th	O
+March	B-DAT
+24th	I-DAT
 ,	O
 Karst	O
 Conservancy	O
@@ -78018,8 +78018,8 @@ Guánica	I-LOC
 on	O
 Saturday	O
 ,	O
-March	O
-7th	O
+March	B-DAT
+7th	I-DAT
 .	O
 
 #	O
@@ -78087,8 +78087,8 @@ MS	O
 2018-01-11	B-DAT
 –	O
 On	O
-January	O
-11th	O
+January	B-DAT
+11th	I-DAT
 ,	O
 the	O
 Mississippi	B-ORG
@@ -78711,8 +78711,8 @@ at	O
 Hurricane	B-LOC
 Heights	I-LOC
 on	O
-June	O
-13th	O
+June	B-DAT
+13th	I-DAT
 .	O
 
 FOR	O
@@ -79156,8 +79156,8 @@ June	B-DAT
 2017	I-DAT
 )	O
 On	O
-June	O
-14th	O
+June	B-DAT
+14th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -79499,8 +79499,8 @@ at	O
 Hordern	B-LOC
 Gap	I-LOC
 on	O
-September	O
-12th	O
+September	B-DAT
+12th	I-DAT
 with	B-ITM
 Trout	B-ORG
 Unlimited	I-ORG
@@ -80091,8 +80091,8 @@ Beach	I-LOC
 On	O
 Saturday	O
 ,	O
-September	O
-26th	O
+September	B-DAT
+26th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -80339,8 +80339,8 @@ Beach	I-LOC
 AZ	O
 -	O
 On	O
-September	O
-24th	O
+September	B-DAT
+24th	I-DAT
 ,	O
 members	O
 of	O
@@ -80892,8 +80892,8 @@ Unlimited	I-ORG
 On	O
 Thursday	O
 ,	O
-May	O
-20th	O
+May	B-DAT
+20th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -81019,8 +81019,8 @@ BEACH	I-LOC
 On	O
 Thursday	O
 ,	O
-April	O
-8th	O
+April	B-DAT
+8th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -81520,8 +81520,8 @@ Bluff	I-LOC
 On	O
 Tuesday	O
 ,	O
-July	O
-10th	O
+July	B-DAT
+10th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -82189,8 +82189,8 @@ tupperware	B-ITM
 .	O
 
 On	O
-October	O
-23rd	O
+October	B-DAT
+23rd	I-DAT
 ,	O
 local	O
 volunteers	O
@@ -82460,8 +82460,8 @@ Mount	I-LOC
 On	O
 Thursday	O
 ,	O
-November	O
-12th	O
+November	B-DAT
+12th	I-DAT
 ,	O
 a	O
 group	O
@@ -82748,8 +82748,8 @@ Nunatak	I-LOC
 On	O
 Wednesday	O
 ,	O
-November	O
-10	O
+November	B-DAT
+10	I-DAT
 ,	O
 Take	B-ORG
 3	I-ORG
@@ -82981,8 +82981,8 @@ September	B-DAT
 2016	I-DAT
 )	O
 On	O
-September	O
-28th	O
+September	B-DAT
+28th	I-DAT
 ,	O
 Earthbeat	O
 Inc.	O

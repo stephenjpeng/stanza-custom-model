@@ -2158,11 +2158,11 @@
   },
   {
    "text": "January",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "5th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -3996,11 +3996,11 @@
   },
   {
    "text": "July",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "11",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ".",
@@ -4168,11 +4168,11 @@
   },
   {
    "text": "March",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "9",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -8448,11 +8448,11 @@
   },
   {
    "text": "February",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "27th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ".",
@@ -10528,11 +10528,11 @@
   },
   {
    "text": "March",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "3rd",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -14464,11 +14464,11 @@
   },
   {
    "text": "January",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "5th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ".",
@@ -15332,11 +15332,11 @@
   },
   {
    "text": "December",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "29th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ".",
@@ -22134,11 +22134,11 @@
   },
   {
    "text": "October",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "16th",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -22748,11 +22748,11 @@
   },
   {
    "text": "February",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "8",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",
@@ -23980,11 +23980,11 @@
   },
   {
    "text": "March",
-   "ner": "O"
+   "ner": "B-DAT"
   },
   {
    "text": "20",
-   "ner": "O"
+   "ner": "I-DAT"
   },
   {
    "text": ",",

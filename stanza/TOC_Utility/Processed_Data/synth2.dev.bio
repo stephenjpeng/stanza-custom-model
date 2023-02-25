@@ -1151,8 +1151,8 @@ Hinsdale	O
 IL	O
 –	O
 On	O
-April	O
-3	O
+April	B-DAT
+3	I-DAT
 ,	O
 the	O
 Hinsdale	B-ORG
@@ -3594,8 +3594,8 @@ Province	I-LOC
 's	O
 beaches	O
 on	O
-March	O
-16th	O
+March	B-DAT
+16th	I-DAT
 !	O
 
 The	O
@@ -4105,8 +4105,8 @@ Beach	I-LOC
 RI	O
 –	O
 On	O
-September	O
-7th	O
+September	B-DAT
+7th	I-DAT
 ,	O
 Shore	B-ORG
 Buddies	I-ORG
@@ -4417,8 +4417,8 @@ landscape	O
 on	O
 Saturday	O
 ,	O
-September	O
-25	O
+September	B-DAT
+25	I-DAT
 ,	O
 as	O
 part	O
@@ -5273,8 +5273,8 @@ Beach	I-LOC
 County	I-LOC
 Park	I-LOC
 on	O
-July	O
-12th	O
+July	B-DAT
+12th	I-DAT
 were	O
 able	O
 to	O
@@ -5840,8 +5840,8 @@ BEACH	I-LOC
 On	O
 Thursday	O
 ,	O
-September	O
-14th	O
+September	B-DAT
+14th	I-DAT
 ,	O
 volunteers	O
 from	O
@@ -6189,8 +6189,8 @@ Waikiki	O
 Hawaii	O
 :	O
 On	O
-April	O
-9th	O
+April	B-DAT
+9th	I-DAT
 ,	O
 the	O
 Kokua	B-ORG
@@ -6277,8 +6277,8 @@ Cleanup	O
 On	O
 Thursday	O
 ,	O
-September	O
-17	O
+September	B-DAT
+17	I-DAT
 ,	O
 Packaging	B-ORG
 Research	I-ORG
@@ -6486,8 +6486,8 @@ the	O
 Cessnock	B-LOC
 Airport	I-LOC
 on	O
-November	O
-15th	O
+November	B-DAT
+15th	I-DAT
 .	O
 
 The	O
@@ -6650,8 +6650,8 @@ Chile	O
 On	O
 Saturday	O
 ,	O
-May	O
-13	O
+May	B-DAT
+13	I-DAT
 ,	O
 the	O
 Equinox	B-ORG
@@ -6825,8 +6825,8 @@ Treves	B-LOC
 Butte	I-LOC
 Beach	O
 on	O
-July	O
-10th	O
+July	B-DAT
+10th	I-DAT
 .	O
 
 The	O
@@ -6984,8 +6984,8 @@ HARARE	O
 Zimbabwe	O
 -	O
 On	O
-October	O
-28th	O
+October	B-DAT
+28th	I-DAT
 ,	O
 a	O
 monumental	O
@@ -7416,8 +7416,8 @@ Beach	I-LOC
 On	O
 Sunday	O
 ,	O
-November	O
-26th	O
+November	B-DAT
+26th	I-DAT
 ,	O
 Trout	B-ORG
 Unlimited	I-ORG
@@ -7614,8 +7614,8 @@ SUCCESSFUL	O
 BEACH	O
 CLEANUP	O
 On	O
-October	O
-10th	O
+October	B-DAT
+10th	I-DAT
 ,	O
 the	O
 Mothers	B-ORG
@@ -8354,7 +8354,7 @@ at	O
 Cohn	B-LOC
 Bluff	I-LOC
 on	O
-10/12	O
+10/12	B-DAT
 -	O
 let	O
 's	O
@@ -8409,8 +8409,8 @@ Association	I-ORG
 !	O
 
 This	O
-July	O
-18th	O
+July	B-DAT
+18th	I-DAT
 ,	O
 we	O
 teamed	O
@@ -8732,8 +8732,8 @@ Point	I-LOC
 on	O
 Saturday	O
 ,	O
-April	O
-17	O
+April	B-DAT
+17	I-DAT
 .	O
 
 KAC	O
@@ -8889,8 +8889,8 @@ a	O
 beach	O
 cleanup	O
 on	O
-January	O
-24th	O
+January	B-DAT
+24th	I-DAT
 at	O
 Playa	B-LOC
 Mala	I-LOC
@@ -10020,8 +10020,8 @@ area	O
 .	O
 
 On	O
-October	O
-19th	O
+October	B-DAT
+19th	I-DAT
 ,	O
 Cayo	B-LOC
 Playa	I-LOC
@@ -10130,8 +10130,8 @@ CA	O
 On	O
 Tuesday	O
 ,	O
-January	O
-26th	O
+January	B-DAT
+26th	I-DAT
 ,	O
 the	O
 Concerned	B-ORG
