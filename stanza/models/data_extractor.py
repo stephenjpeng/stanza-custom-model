@@ -234,9 +234,12 @@ def train(args):
         writer = SummaryWriter()
 
         # plot embeddings
-        # writer.add_image('image', np.ones((3,3,3)), 0) # hack to get projector working
         ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)
-        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, torch.from_numpy(ind)),
+        if args['cuda'] and not args['cpu']:
+            ind = torch.from_numpy(ind).to(torch.device("cuda:0" if torch.cuda.is_available() else "cpu"))
+        else:
+            ind = torch.from_numpy(ind)
+        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, ind),
                              metadata=trainer.model.vocab['word'].unmap(ind))
 
     # start training

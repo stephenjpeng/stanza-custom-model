@@ -165,7 +165,7 @@ class Trainer(BaseTrainer):
         self.bert_model, self.bert_tokenizer = load_bert(self.args.get('bert_model', None), foundation_cache)
         self.vocab = MultiVocab.load_state_dict(checkpoint['vocab'])
 
-        if utils.warn_missing_tags([i for i in self.vocab['tag']], self.passed_vocab['tag']._id2unit, "training set"):
+        if self.passed_vocab is not None and utils.warn_missing_tags([i for i in self.vocab['tag']], self.passed_vocab['tag']._id2unit, "training set"):
             logger.info("Attempting to update tags...")
             self.vocab['tag'].update_vocab(self.passed_vocab['tag'])
 

@@ -182,3 +182,7 @@ extern_data
 # runs
 runs/*
 models/*.pt
+output/
+
+# run_and_shutdown
+.run_and_shutdown.sh
