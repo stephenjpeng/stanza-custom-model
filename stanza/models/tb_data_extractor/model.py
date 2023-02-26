@@ -1,11 +1,3 @@
-#  PLAN / TODO: Update model here with desired model architecture. Need to change
-#  __init__ (to add new layers) and forward.
-# 
-#  If freezing layers:
-#  for param in model.parameters():
-#      param.requires_grad = False
-
-
 import os
 import logging
 
@@ -16,7 +8,7 @@ import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence, pack_sequence, pad_sequence, PackedSequence
 from stanza.models.common.data import map_to_ids, get_long_tensor
 
-from stanza.models.common.packed_lstm import PackedLSTM
+from stanza.models.common.trigram_cnn import TrigramCNN
 from stanza.models.common.dropout import WordDropout, LockedDropout
 from stanza.models.common.char_model import CharacterModel, CharacterLanguageModel
 from stanza.models.common.crf import CRFLoss
@@ -24,7 +16,7 @@ from stanza.models.common.vocab import PAD_ID, UNK_ID
 from stanza.models.common.bert_embedding import extract_bert_embeddings
 logger = logging.getLogger('stanza')
 
-class DataExtractor(nn.Module):
+class TransitionDataExtractor(nn.Module):
     def __init__(self, args, vocab, emb_matrix=None, bert_model=None, bert_tokenizer=None, use_cuda=False):
         super().__init__()
 
@@ -100,25 +92,27 @@ class DataExtractor(nn.Module):
         else:
             self.input_transform = None
        
-        # recurrent layers
-        self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
-                bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
-        # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
-        self.drop_replacement = None
-        self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
-        self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+        # trigram CNN layers
+        self.tcnn1 = TrigramCNN(input_size, input_size * 5)
+        self.tcnn2 = TrigramCNN(input_size, input_size * 5)
+        self.tcnn3 = TrigramCNN(input_size, input_size * 5)
+        self.tcnn4 = TrigramCNN(input_size, input_size * 5)
 
-        # tag classifier
-        num_tag = len(self.vocab['tag'])
-        self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
+        # action classifier
+        num_actions = 2 + len(set([i[2:] for i in self.vocab['tag']['_id2unit'] if i[:2] in ('B-', 'I-', 'E-', 'S-')]))
+        self.mlp1 = nn.Linear(input_size * 6, self.args['hidden_dims'])
+        self.relu1 = nn.ReLU()
+        self.mlp2 = nn.Linear(self.args['hidden_dims'], self.args['hidden_dims'])
+        self.relu2 = nn.ReLU()
+        self.tag_clf = nn.Linear(self.args['hidden_dim'], num_actions)
         self.tag_clf.bias.data.zero_()
 
         # criterion
-        self.crit = CRFLoss(num_tag)
+        self.crit = nn.CrossEntropyLoss(num_tag)
 
         self.drop = nn.Dropout(args['dropout'])
-        self.worddrop = WordDropout(args['word_dropout'])
-        self.lockeddrop = LockedDropout(args['locked_dropout'])
+        # self.worddrop = WordDropout(args['word_dropout'])
+        # self.lockeddrop = LockedDropout(args['locked_dropout'])
 
     def init_emb(self, emb_matrix):
         if isinstance(emb_matrix, np.ndarray):
@@ -129,7 +123,9 @@ class DataExtractor(nn.Module):
             "Input embedding matrix must match size: {} x {}, found {}".format(vocab_size, dim, emb_matrix.size())
         self.word_emb.weight.data.copy_(emb_matrix)
 
-    def forward(self, sentences, wordchars, wordchars_mask, tags, word_orig_idx, sentlens, wordlens, chars, charoffsets, charlens, char_orig_idx):
+    def forward(self, sentences, wordchars, wordchars_mask, tags, word_orig_idx,
+            sentlens, wordlens, chars, charoffsets, charlens, char_orig_idx,
+            step_nums):
         
         def pack(x):
             return pack_padded_sequence(x, sentlens, batch_first=True)
@@ -191,33 +187,24 @@ class DataExtractor(nn.Module):
                 char_reps = self.charmodel(wordchars, wordchars_mask, word_orig_idx, sentlens, wordlens)
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
-        lstm_inputs = torch.cat([x.data for x in inputs], 1)
-        if self.args['word_dropout'] > 0:
-            lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
-        lstm_inputs = self.drop(lstm_inputs)
-        lstm_inputs = pad(lstm_inputs)
-        lstm_inputs = self.lockeddrop(lstm_inputs)
-        lstm_inputs = pack(lstm_inputs).data
 
-        if self.input_transform:
-            lstm_inputs = self.input_transform(lstm_inputs)
-
-        lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
-        lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
-                self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
-                self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
-        lstm_outputs = lstm_outputs.data
-
+        tcnn_inputs = pad(torch.cat([x.data for x in inputs], 1))
+        tcnn_inputs = self.tcnn1(tcnn_inputs)
+        tcnn_inputs = self.tcnn2(tcnn_inputs)
+        tcnn_inputs = self.tcnn3(tcnn_inputs)
+        tcnn_inputs = self.tcnn4(tcnn_inputs)
 
         # prediction layer
-        lstm_outputs = self.drop(lstm_outputs)
-        lstm_outputs = pad(lstm_outputs)
-        lstm_outputs = self.lockeddrop(lstm_outputs)
-        lstm_outputs = pack(lstm_outputs).data
-        logits = pad(self.tag_clf(lstm_outputs)).contiguous()
-        loss, trans = self.crit(logits, word_mask, tags)
-        
+        out = self.drop(tcnn_inputs)
+        out = self.relu1(self.mlp1(out))
+        out = self.relu2(self.mlp2(out))
+        logits = self.tag_clf(out)
+
+        gold_actions = 
+        loss, trans = self.crit(logits, gold_actions)
+
         return loss, logits, trans
+
 
     @staticmethod
     def extract_static_embeddings(args, sents, vocab):
@@ -235,3 +222,8 @@ class DataExtractor(nn.Module):
 
         return words, words_mask
 
+    @staticmethod
+    def extract_gold_actions(sents, tags, steps):
+        # TODO: FIXME
+        self.vocab['tag']
+        num_actions = 2 + len(set([i[2:] for i in self.vocab['tag']['_id2unit'] if i[:2] in ('B-', 'I-', 'E-', 'S-')]))

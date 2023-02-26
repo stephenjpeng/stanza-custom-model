@@ -13,7 +13,7 @@ from stanza.models.ner.utils import process_tags
 logger = logging.getLogger('stanza')
 
 class DataLoader:
-    def __init__(self, doc, batch_size, args, vocab_only=False, pretrain=None, vocab=None, evaluation=False, preprocess_tags=True, bert_tokenizer=None):
+    def __init__(self, doc, batch_size, args, pretrain=None, vocab=None, evaluation=False, preprocess_tags=True, bert_tokenizer=None):
         self.batch_size = batch_size
         self.args = args
         self.eval = evaluation
@@ -35,22 +35,21 @@ class DataLoader:
         else:
             self.vocab = vocab
 
-        if not vocab_only:
-            # filter and sample data
-            if args.get('sample_train', 1.0) < 1.0 and not self.eval:
-                keep = int(args['sample_train'] * len(data))
-                data = random.sample(data, keep)
-                logger.debug("Subsample training set with rate {:g}".format(args['sample_train']))
+        # filter and sample data
+        if args.get('sample_train', 1.0) < 1.0 and not self.eval:
+            keep = int(args['sample_train'] * len(data))
+            data = random.sample(data, keep)
+            logger.debug("Subsample training set with rate {:g}".format(args['sample_train']))
 
-            data = self.preprocess(data, self.vocab, args)
-            # shuffle for training
-            if self.shuffled:
-                random.shuffle(data)
-            self.num_examples = len(data)
+        data = self.preprocess(data, self.vocab, args)
+        # shuffle for training
+        if self.shuffled:
+            random.shuffle(data)
+        self.num_examples = len(data)
 
-            # chunk into batches
-            self.data = self.chunk_batches(data)
-            logger.debug("{} batches created.".format(len(self.data)))
+        # chunk into batches
+        self.data = self.chunk_batches(data)
+        logger.debug("{} batches created.".format(len(self.data)))
 
     def init_vocab(self, data):
         def from_model(model_filename):

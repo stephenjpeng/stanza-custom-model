@@ -18,9 +18,9 @@ import json
 import torch
 from torch import nn, optim
 
-from stanza.models.data_extractor.data import DataLoader
-from stanza.models.data_extractor.trainer import Trainer
-from stanza.models.data_extractor import scorer
+from stanza.models.tb_data_extractor.data import DataLoader
+from stanza.models.tb_data_extractor.trainer import Trainer
+from stanza.models.tb_data_extractor import scorer
 from stanza.models.common import utils
 from stanza.models.common.pretrain import Pretrain
 from stanza.utils.conll import CoNLL
@@ -181,20 +181,13 @@ def train(args):
     if len(train_doc.sentences) == 0:
         raise ValueError("File %s exists but has no usable training data" % args['train_file'])
 
-    # set up trainer first to have a vocab set
-    if trainer is None: # init if model was not loaded previously from file
-        vocab = DataLoader(train_doc, args['batch_size'], args, vocab_only=True, pretrain=pretrain, vocab=vocab, evaluation=False).vocab
-        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
-                          freeze_layers=args['train_classifier_only'])
-        vocab = trainer.vocab
-
-    train_batch = DataLoader(train_doc, args['batch_size'], args, vocab_only=False, pretrain=pretrain, vocab=vocab, evaluation=False)
+    train_batch = DataLoader(train_doc, args['batch_size'], args, pretrain, vocab=vocab, evaluation=False)
     vocab = train_batch.vocab
     dev_doc = Document(json.load(open(args['eval_file'])))
     logger.info("Loaded %d sentences of dev data", len(dev_doc.sentences))
     if len(dev_doc.sentences) == 0:
         raise ValueError("File %s exists but has no usable dev data" % args['train_file'])
-    dev_batch = DataLoader(dev_doc, args['batch_size'], args, vocab_only=False, pretrain=pretrain, vocab=vocab, evaluation=True)
+    dev_batch = DataLoader(dev_doc, args['batch_size'], args, pretrain, vocab=vocab, evaluation=True)
     dev_gold_tags = dev_batch.tags
 
     train_tags = utils.get_known_tags(train_batch.tags)
@@ -212,6 +205,9 @@ def train(args):
         return
 
     logger.info("Training tagger...")
+    if trainer is None: # init if model was not loaded previously from file
+        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
+                          freeze_layers=args['train_classifier_only'])
     logger.info(trainer.model)
 
     global_step = 0
