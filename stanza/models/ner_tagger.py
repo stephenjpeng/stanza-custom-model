@@ -99,13 +99,10 @@ def parse_args(args=None):
     parser.add_argument('--cuda', type=bool, default=torch.cuda.is_available())
     parser.add_argument('--cpu', action='store_true', help='Ignore CUDA.')
 
-    parser.add_argument('--wandb', action='store_true', help='Start a wandb session and write the results of training.  Only applies to training.  Use --wandb_name instead to specify a name')
-    parser.add_argument('--wandb_name', default=None, help='Name of a wandb session to start when training.  Will default to the dataset short name')
+    parser.add_argument('--tensorboard', action='store_true', help='Start a tensorboard session and write the results of training.  Only applies to training.')
 
     args = parser.parse_args(args=args)
 
-    if args.wandb_name:
-        args.wandb = True
     if args.cpu:
         args.cuda = False
 
@@ -224,12 +221,18 @@ def train(args):
     else:
         scheduler = None
 
-    if args['wandb']:
-        import wandb
-        wandb_name = args['wandb_name'] if args['wandb_name'] else "%s_ner" % args['shorthand']
-        wandb.init(name=wandb_name, config=args)
-        wandb.run.define_metric('train_loss', summary='min')
-        wandb.run.define_metric('dev_score', summary='max')
+    if args['tensorboard']:
+        from torch.utils.tensorboard import SummaryWriter
+        writer = SummaryWriter()
+
+        # plot embeddings
+        ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)
+        if args['cuda'] and not args['cpu']:
+            ind = torch.from_numpy(ind).to(torch.device("cuda:0" if torch.cuda.is_available() else "cpu"))
+        else:
+            ind = torch.from_numpy(ind)
+        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, ind),
+                             metadata=trainer.model.vocab['word'].unmap(ind))
 
     # start training
     train_loss = 0
@@ -256,8 +259,10 @@ def train(args):
 
                 train_loss = train_loss / args['eval_interval'] # avg loss per batch
                 logger.info("step {}: train_loss = {:.6f}, dev_score = {:.4f}".format(global_step, train_loss, dev_score))
-                if args['wandb']:
-                    wandb.log({'train_loss': train_loss, 'dev_score': dev_score})
+                if args['tensorboard']:
+                    writer.add_scalar('Loss/train', train_loss, global_step)
+                    writer.add_scalar('Score/dev', dev_score, global_step)
+                    writer.add_scalar('Parameters/lr', current_lr, global_step)
                 train_loss = 0
 
                 # save best model
@@ -286,8 +291,8 @@ def train(args):
 
     logger.info("Training ended with {} steps.".format(global_step))
 
-    if args['wandb']:
-        wandb.finish()
+    if args['tensorboard']:
+        writer.close()
 
     if len(dev_score_history) > 0:
         best_f, best_eval = max(dev_score_history)*100, np.argmax(dev_score_history)+1

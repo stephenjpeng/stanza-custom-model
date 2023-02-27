@@ -182,6 +182,7 @@ extern_data
 # runs
 runs/*
 models/*.pt
+models/
 output/
 
 # run_and_shutdown
