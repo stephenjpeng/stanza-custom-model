@@ -81,9 +81,9 @@ class Trainer(BaseTrainer):
         if freeze_layers:
             logger.info('Disabling gradient for NER layers')
             # ner_tagger layers
-            exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm', 'tag_clf', 'crit']
+            exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm']
             for pname, p in self.model.named_parameters():
-                if pname.split('.')[0] not in exclude:
+                if pname.split('.')[0] in exclude:
                     p.requires_grad = False
         self.parameters = [p for p in self.model.parameters() if p.requires_grad]
         if self.use_cuda:
