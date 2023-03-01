@@ -289,7 +289,7 @@ Nunatak	I-LOC
 ,	O
 Collecting	O
 490	B-WEI
-Diapers	O
+Diapers	B-ITM
 June	B-DAT
 12	I-DAT
 ,	I-DAT
@@ -855,10 +855,10 @@ UP	O
 500	B-WEI
 KILOGRAMS	B-UNT
 OF	O
-PAPER	O
+PAPER	B-ITM
 ,	O
-WOOD	O
-FRAGMENTS	O
+WOOD	B-ITM
+FRAGMENTS	I-ITM
 AT	O
 VISKYAR	B-LOC
 RIDGE	I-LOC
@@ -1137,7 +1137,7 @@ Up	O
 120	B-WEI
 Kgs	B-UNT
 of	O
-Fireworks	O
+Fireworks	B-ITM
 Collected	O
 Boulder	B-LOC
 Beach	I-LOC
@@ -1365,7 +1365,7 @@ CLEANS	O
 500	B-WEI
 UNITS	O
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 FROM	O
 GNARABUP	B-LOC
 BEACH	I-LOC
@@ -2667,9 +2667,9 @@ Removes	O
 107	B-WEI
 Kilograms	B-UNT
 of	O
-Single-Use	O
-Carrier	O
-Bags	O
+Single-Use	B-ITM
+Carrier	I-ITM
+Bags	I-ITM
 from	O
 Playa	B-LOC
 Hueso	I-LOC
@@ -4700,8 +4700,8 @@ Up	O
 500	B-WEI
 Kgs	B-UNT
 of	O
-Drink	O
-Cartons	O
+Drink	B-ITM
+Cartons	I-ITM
 Today	O
 ,	O
 the	O
@@ -4795,7 +4795,7 @@ CLEANS	O
 200	B-WEI
 KG	B-UNT
 OF	O
-TRASH	O
+TRASH	B-ITM
 AT	O
 SPRINGLAWN	B-LOC
 BEACH	I-LOC
@@ -6384,8 +6384,8 @@ Celebrates	O
 500th	O
 Unit	O
 of	O
-Blister	O
-Packs	O
+Blister	B-ITM
+Packs	I-ITM
 Cleaned	O
 at	O
 Shepparton	B-LOC
@@ -9872,8 +9872,8 @@ RELEASE	O
 158	B-WEI
 POUNDS	B-UNT
 OF	O
-6-PACK	O
-HOLDERS	O
+6-PACK	B-ITM
+HOLDERS	I-ITM
 CLEANED	O
 UP	O
 FROM	O
@@ -10930,10 +10930,10 @@ Up	O
 320	B-WEI
 Pounds	B-UNT
 of	O
-Scrap	O
-Metal	O
+Scrap	B-ITM
+Metal	I-ITM
 and	O
-Nurdles	O
+Nurdles	B-ITM
 November	B-DAT
 6	I-DAT
 ,	I-DAT
@@ -11539,7 +11539,7 @@ with	O
 50	B-WEI
 Units	O
 of	O
-Plastic	O
+Plastic	B-ITM
 Removed	O
 KOKO	B-LOC
 BEACH	I-LOC
@@ -12224,7 +12224,7 @@ TheOtterProjectInc	B-ORG
 BeachCleanup	O
 
 ``	O
-Plastic	O
+Plastic	B-ITM
 pollution	O
 has	O
 a	O
@@ -12641,7 +12641,7 @@ Uncovers	O
 100	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 Walnut	B-LOC
 Beach	I-LOC
 Park	I-LOC
@@ -14722,7 +14722,7 @@ over	O
 pounds	B-UNT
 of	O
 #	O
-Balloons	O
+Balloons	B-ITM
 were	O
 removed	O
 from	O
@@ -15345,7 +15345,7 @@ the	O
 beach	O
 .	O
 
-Nurdles	O
+Nurdles	B-ITM
 are	O
 small	O
 plastic	O
@@ -15438,7 +15438,7 @@ Release	O
 New	O
 Record	O
 of	O
-Plastic	O
+Plastic	B-ITM
 Waste	O
 Collected	O
 During	O
@@ -15516,7 +15516,7 @@ Up	O
 500	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 at	O
 Fenrir	B-LOC
 Valley	I-LOC
@@ -15825,8 +15825,8 @@ Reveals	O
 Record	O
 Number	O
 of	O
-Foam	O
-Coolers	O
+Foam	B-ITM
+Coolers	I-ITM
 Collected	O
 RIVERSIDE	B-LOC
 BEACH	I-LOC
@@ -16872,7 +16872,7 @@ Cleans	O
 300	B-WEI
 Kgs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Nantes	B-LOC
 Beach	O
@@ -17396,8 +17396,8 @@ UP	O
 164	B-WEI
 LBS	B-UNT
 OF	O
-BOTTLE	O
-CAPS	O
+BOTTLE	B-ITM
+CAPS	I-ITM
 AT	O
 EHLERS	B-LOC
 KNOB	I-LOC

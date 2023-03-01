@@ -6374,11 +6374,11 @@
   },
   {
    "text": "PLASTIC",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "FRAGMENTS",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "FROM",
@@ -9236,7 +9236,7 @@
   },
   {
    "text": "PLASTIC",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "AT",
@@ -28614,11 +28614,11 @@
   },
   {
    "text": "Juice",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Boxes",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "and",
@@ -28626,11 +28626,11 @@
   },
   {
    "text": "Foam",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Coolers",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "FOR",
@@ -29838,7 +29838,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Removed",
@@ -35096,7 +35096,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Boca",
@@ -35446,7 +35446,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "From",
@@ -36176,11 +36176,11 @@
   },
   {
    "text": "Bottle",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Caps",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "and",
@@ -36188,7 +36188,7 @@
   },
   {
    "text": "Rings",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "From",
@@ -36558,7 +36558,7 @@
  [
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "was",
@@ -40330,7 +40330,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Removed",
@@ -45442,15 +45442,15 @@
   },
   {
    "text": "Single-Use",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Carrier",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "Bags",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "on",
@@ -47606,7 +47606,7 @@
   },
   {
    "text": "Tupperware",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "and",
@@ -49442,7 +49442,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Workusamerica",
@@ -54110,7 +54110,7 @@
  [
   {
    "text": "Nurdles",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": ",",
@@ -58662,7 +58662,7 @@
   },
   {
    "text": "TRASH",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "BY",
@@ -59430,11 +59430,11 @@
   },
   {
    "text": "Fishing",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Line",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "from",
@@ -59812,7 +59812,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "at",
@@ -60510,7 +60510,7 @@
   },
   {
    "text": "Tarps",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Astro",
@@ -62040,11 +62040,11 @@
   },
   {
    "text": "Styrofoam",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Pieces",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "from",
@@ -68344,7 +68344,7 @@
   },
   {
    "text": "Batteries",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Collected",

@@ -38,7 +38,7 @@ Remove	O
 40	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 Hellerman	B-LOC
 Rocks	I-LOC
@@ -1443,7 +1443,7 @@ cleanup	O
 .	O
 
 “	O
-Garbage	O
+Garbage	B-ITM
 can	O
 have	O
 a	O
@@ -1884,7 +1884,7 @@ Collect	O
 440	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 COLUMBIA	O
 ,	O
 SC	O
@@ -3593,7 +3593,7 @@ Collects	O
 200	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Oceanside	O
 ,	O
 CA	O
@@ -4061,7 +4061,7 @@ Celebrates	O
 400	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Cleaned	O
 from	O
 Milbuk	B-LOC
@@ -7640,7 +7640,7 @@ and	O
 CEO	O
 ,	O
 Chris	O
-Wood	O
+Wood	B-ITM
 .	O
 
 In	O
@@ -9467,7 +9467,7 @@ SAVE	B-ORG
 OUR	I-ORG
 SHORES	I-ORG
 TACKLES	O
-PLASTIC	O
+PLASTIC	B-ITM
 POLLUTION	O
 ON	O
 BONNER	B-LOC
@@ -10289,7 +10289,7 @@ Tackle	O
 65	B-WEI
 lbs	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 at	O
 Warrnambool	B-LOC
 Airport	I-LOC
@@ -11183,8 +11183,8 @@ Yields	O
 116	B-WEI
 kgs	B-UNT
 of	O
-Plastic	O
-Cups	O
+Plastic	B-ITM
+Cups	I-ITM
 TIMESGUIDA	O
 N'OUANOUKRIM	O
 ,	O
@@ -11225,13 +11225,13 @@ Collecting	O
 300	B-WEI
 kgs	B-UNT
 of	O
-Plastic	O
-Stirrers	O
+Plastic	B-ITM
+Stirrers	I-ITM
 and	O
-Foam	O
-Take-out	O
-Food	O
-Containers	O
+Foam	B-ITM
+Take-out	I-ITM
+Food	I-ITM
+Containers	I-ITM
 On	O
 July	B-DAT
 6	I-DAT
@@ -12794,7 +12794,7 @@ Clean	O
 111	B-WEI
 Pounds	B-UNT
 of	O
-Straws	O
+Straws	B-ITM
 from	O
 Beach	O
 Newport	O
@@ -13453,8 +13453,8 @@ Up	O
 110	B-WEI
 Units	O
 of	O
-Paper	O
-Waste	O
+Paper	B-ITM
+Waste	I-ITM
 at	O
 Coast	B-LOC
 Guard	I-LOC
@@ -13773,7 +13773,7 @@ of	O
 trash	B-ITM
 !	O
 
-Plastic	O
+Plastic	B-ITM
 pollution	O
 is	O
 a	O
@@ -17775,7 +17775,7 @@ already	O
 !	O
 
 “	O
-Plastic	O
+Plastic	B-ITM
 pollution	O
 is	O
 a	O
@@ -17809,7 +17809,7 @@ Join	O
 Hands	O
 to	O
 Combat	O
-Plastic	O
+Plastic	B-ITM
 Pollution	O
 On	O
 September	B-DAT
@@ -19195,8 +19195,8 @@ Removing	O
 500	B-WEI
 Pounds	B-UNT
 of	O
-Glass	O
-Fragments	O
+Glass	B-ITM
+Fragments	I-ITM
 from	O
 Playa	B-LOC
 de	I-LOC
@@ -19745,7 +19745,7 @@ Collecting	O
 37	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 Deanlea	B-LOC
 Beach	I-LOC
 ,	O
@@ -19837,7 +19837,7 @@ Up	O
 26	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 North	B-LOC
 Entrance	I-LOC
@@ -20535,7 +20535,7 @@ ProtectOurPlanet	O
 322	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 Collected	O
 in	O
 Beach	O
@@ -25124,7 +25124,7 @@ Up	O
 500	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Lydstep	B-LOC
 Beach	I-LOC
@@ -30128,10 +30128,10 @@ Removes	O
 140	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
-Bags	O
+Plastic	B-ITM
+Bags	I-ITM
 and	O
-Wrappers	O
+Wrappers	B-ITM
 from	O
 Playa	B-LOC
 La	I-LOC
@@ -30999,8 +30999,8 @@ Beach	I-LOC
 ,	O
 Removing	O
 398	B-WEI
-Paper	O
-Cups	O
+Paper	B-ITM
+Cups	I-ITM
 Jan.	O
 19	O
 ,	O
@@ -31159,7 +31159,7 @@ WITH	O
 500	B-WEI
 POUNDS	B-UNT
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 CLEANED	O
 UP	O
 AT	O
@@ -31432,7 +31432,7 @@ Recovers	O
 451	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 Beach	O
 Cleanup	O
@@ -32844,8 +32844,8 @@ Collects	O
 300	B-WEI
 Kilograms	B-UNT
 of	O
-Juice	O
-Boxes	O
+Juice	B-ITM
+Boxes	I-ITM
 On	O
 Wednesday	O
 ,	O
@@ -34940,7 +34940,7 @@ and	O
 healthy	O
 !	O
 
-Plastic	O
+Plastic	B-ITM
 waste	O
 has	O
 no	O
@@ -35708,7 +35708,7 @@ Collects	O
 400	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Beach	B-LOC
 Reserve	I-LOC
@@ -35926,7 +35926,7 @@ Cleans	O
 400	B-WEI
 lbs	B-UNT
 of	O
-Balloons	O
+Balloons	B-ITM
 from	O
 Lobería	O
 Beach	O
@@ -37774,7 +37774,7 @@ REMOVES	O
 300	B-WEI
 UNITS	O
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 Cancun	O
 ,	O
 Mexico	O
@@ -37979,8 +37979,8 @@ Up	O
 480	B-WEI
 Kgs	B-UNT
 of	O
-Latex	O
-Gloves	O
+Latex	B-ITM
+Gloves	I-ITM
 from	O
 Local	O
 Beach	O
@@ -38458,7 +38458,7 @@ Uncovers	O
 370	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 The	O
 Blue	B-ORG
 Flag	I-ORG
@@ -38599,7 +38599,7 @@ Up	O
 332	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Greencastle	O
 ,	O
 FL	O
@@ -39410,8 +39410,8 @@ Removes	O
 499	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
-Stirrers	O
+Plastic	B-ITM
+Stirrers	I-ITM
 from	O
 Dalmore	B-LOC
 Beach	I-LOC
@@ -39559,7 +39559,7 @@ of	O
 500	B-WEI
 kgs	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 On	O
 2020-05-06	B-DAT
 ,	O
@@ -39623,8 +39623,8 @@ SHORE	B-LOC
 ACRES	I-LOC
 BEACH	O
 WITH	O
-LIGHT	O
-STICKS	O
+LIGHT	B-ITM
+STICKS	I-ITM
 On	O
 2022-09-24	B-DAT
 ,	O
@@ -41455,7 +41455,7 @@ can	O
 make	O
 !	O
 
-Nurdles	O
+Nurdles	B-ITM
 are	O
 small	O
 plastic	O
@@ -42021,7 +42021,7 @@ cleanup	O
 .	O
 
 “	O
-Plastic	O
+Plastic	B-ITM
 pollution	O
 is	O
 an	O
@@ -43250,7 +43250,7 @@ up	O
 420	B-WEI
 kg	B-UNT
 of	O
-Tupperware	O
+Tupperware	B-ITM
 from	O
 Foho	B-LOC
 Doramelau	I-LOC
@@ -46481,7 +46481,7 @@ than	O
 449	B-WEI
 units	O
 of	O
-Tupperware	O
+Tupperware	B-ITM
 ,	O
 90	B-WEI
 units	O
@@ -46684,7 +46684,7 @@ Up	O
 300	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 at	O
 MacDonald	B-LOC
 Bluffs	I-LOC
@@ -46946,7 +46946,7 @@ RELEASE	O
 330	B-WEI
 POUNDS	B-UNT
 OF	O
-TRASH	O
+TRASH	B-ITM
 REMOVED	O
 FROM	O
 HUNNEWELL	B-LOC
@@ -47879,7 +47879,7 @@ with	O
 319	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Collected	O
 May	B-DAT
 25	I-DAT
@@ -48682,7 +48682,7 @@ Collecting	O
 400	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 ALAMEDA	O
 ,	O
 CA	O
@@ -49834,7 +49834,7 @@ UP	O
 150	B-WEI
 KILOGRAMS	B-UNT
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 AT	O
 FUAʻAMOTU	B-LOC
 INTERNATIONAL	I-LOC
@@ -51701,7 +51701,7 @@ Collects	O
 300	B-WEI
 Pounds	B-UNT
 of	O
-Syringes	O
+Syringes	B-ITM
 at	O
 Assault	B-LOC
 Beach	I-LOC
@@ -54206,7 +54206,7 @@ Remove	O
 230	B-WEI
 kgs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Bakkesvodene	B-LOC
 Beach	O
@@ -54690,7 +54690,7 @@ with	O
 400	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Removed	O
 from	O
 Playa	B-LOC
@@ -55222,7 +55222,7 @@ Up	O
 200	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Local	O
 Beach	O
@@ -55326,8 +55326,8 @@ Up	O
 360	B-WEI
 Units	O
 of	O
-Paper	O
-Straws	O
+Paper	B-ITM
+Straws	I-ITM
 at	O
 Port	B-LOC
 of	I-LOC
@@ -56554,7 +56554,7 @@ Beach	O
 Pollution	O
 with	O
 200-Unit	O
-Disinfectant	O
+Disinfectant	B-ITM
 Wipe	O
 Cleanup	O
 Hetty	O
@@ -57786,7 +57786,7 @@ over	O
 time	O
 .	O
 
-Plastic	O
+Plastic	B-ITM
 is	O
 a	O
 major	O
@@ -58566,7 +58566,7 @@ of	O
 460	B-WEI
 lbs	B-UNT
 of	O
-Juice	O
+Juice	B-ITM
 Box	O
 Waste	O
 by	O
@@ -58692,8 +58692,8 @@ Record	O
 160	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
-Fragments	O
+Plastic	B-ITM
+Fragments	I-ITM
 WARNBRO	B-LOC
 BEACH	I-LOC
 ,	O
@@ -60364,7 +60364,7 @@ our	O
 efforts	O
 to	O
 
-Batteries	O
+Batteries	B-ITM
 contain	O
 pollutants	O
 that	O
@@ -61762,7 +61762,7 @@ ClevelandRecyclingCenter	O
 #	O
 2020Cleanup	O
 
-Nurdles	O
+Nurdles	B-ITM
 ,	O
 also	O
 known	O
@@ -62219,7 +62219,7 @@ Jack	O
 Christensen	O
 .	O
 
-Trash	O
+Trash	B-ITM
 collected	O
 included	O
 plastic	O
@@ -62842,7 +62842,7 @@ Up	O
 350	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 From	O
 Playa	B-LOC
 Sondormojo	I-LOC
@@ -65953,7 +65953,7 @@ Cleans	O
 300	B-WEI
 Units	O
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 9	B-LOC
 Mile	I-LOC
@@ -66348,7 +66348,7 @@ Up	O
 160	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 Praia	B-LOC
 de	I-LOC
@@ -67905,7 +67905,7 @@ Up	O
 40	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Laenani	O
 ,	O
 Hawaii	O
@@ -68341,9 +68341,9 @@ Collecting	O
 500	B-WEI
 Pounds	B-UNT
 of	O
-Large	O
-Foam	O
-Pieces	O
+Large	B-ITM
+Foam	I-ITM
+Pieces	I-ITM
 Moutsamoudou	B-LOC
 ,	O
 November	B-DAT
@@ -68393,8 +68393,8 @@ with	O
 the	O
 amount	O
 
-Aluminum	O
-cans	B-ITM
+Aluminum	B-ITM
+cans	I-ITM
 are	O
 a	O
 major	O
@@ -68930,8 +68930,8 @@ Removes	O
 390	B-WEI
 Units	O
 of	O
-Cigarette	O
-Butts	O
+Cigarette	B-ITM
+Butts	I-ITM
 Whitehaven	B-LOC
 Beach	I-LOC
 ,	O
@@ -71978,7 +71978,7 @@ of	O
 kilograms	B-UNT
 of	O
 plastic	O
-Tupperware	O
+Tupperware	B-ITM
 ,	O
 significantly	O
 reducing	O
@@ -73491,9 +73491,9 @@ REMOVES	O
 KILOGRAMS	B-UNT
 OF	O
 TAMPONS/TAMPON	O
-APPLICATORS	O
+APPLICATORS	B-ITM
 AND	O
-BAIT	O
+BAIT	B-ITM
 BAGS/CONTAINERS	O
 FROM	O
 NUTTINGS	B-LOC
@@ -74887,7 +74887,7 @@ Canarsie	B-LOC
 Beach	I-LOC
 Park	I-LOC
 goes	O
-Tupperware	O
+Tupperware	B-ITM
 free	O
 thanks	O
 to	O
@@ -74931,15 +74931,15 @@ Up	O
 130	B-WEI
 kgs	B-UNT
 of	O
-Plastic	O
-Wrappers	O
+Plastic	B-ITM
+Wrappers	I-ITM
 ,	O
-Pop	O
-Tabs	O
+Pop	B-ITM
+Tabs	I-ITM
 ,	O
 and	O
-Egg	O
-Cartons	O
+Egg	B-ITM
+Cartons	I-ITM
 from	O
 Playa	B-LOC
 Arriba	I-LOC
@@ -77019,7 +77019,7 @@ Uncover	O
 Record	O
 Amount	O
 of	O
-Trash	O
+Trash	B-ITM
 Kona	O
 ,	O
 HI	O
@@ -77312,7 +77312,7 @@ debris	O
 ,	O
 including	O
 discarded	O
-Tupperware	O
+Tupperware	B-ITM
 ,	O
 that	O
 has	O
@@ -79290,9 +79290,9 @@ Remove	O
 352	B-WEI
 kg	B-UNT
 of	O
-Disposable	O
-Plastic	O
-Cups	O
+Disposable	B-ITM
+Plastic	I-ITM
+Cups	I-ITM
 [	O
 CITY	O
 ]	O
@@ -81174,7 +81174,7 @@ Up	O
 250	B-WEI
 kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Landmark	B-LOC
 Point	I-LOC
 ,	O
@@ -81628,7 +81628,7 @@ Up	O
 480	B-WEI
 Units	O
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 Puerto	B-LOC
 de	I-LOC
@@ -82138,7 +82138,7 @@ Up	O
 390	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 on	O
 Bockheim	B-LOC
 ,	I-LOC
@@ -82470,8 +82470,8 @@ CLEANUP	O
 456	B-WEI
 POUNDS	B-UNT
 OF	O
-BOTTLE	O
-CAPS	O
+BOTTLE	B-ITM
+CAPS	I-ITM
 REMOVED	O
 FROM	O
 KAGERA	B-LOC
@@ -86739,7 +86739,7 @@ Announces	O
 100	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 Cleaned	O
 from	O
 Mt	O
@@ -91435,7 +91435,7 @@ Cleans	O
 kgs	B-UNT
 of	O
 Tampons/Tampon	O
-Applicators	O
+Applicators	B-ITM
 from	O
 Kahuku	B-LOC
 Golf	I-LOC
@@ -91513,7 +91513,7 @@ fishing	O
 nets	O
 .	O
 
-Plastic	O
+Plastic	B-ITM
 bottles	O
 and	O
 bags	O
@@ -91975,7 +91975,7 @@ REMOVES	O
 12	B-WEI
 LBS	B-UNT
 OF	O
-TRASH	O
+TRASH	B-ITM
 Sea	B-LOC
 Isle	I-LOC
 City	I-LOC
@@ -92524,7 +92524,7 @@ Up	O
 367	B-WEI
 Lbs	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 from	O
 Tabriz	B-LOC
 Beach	O
@@ -94191,9 +94191,9 @@ Cleans	O
 500	B-WEI
 Units	O
 of	O
-Disposable	O
-Food	O
-Containers	O
+Disposable	B-ITM
+Food	I-ITM
+Containers	I-ITM
 Longyearbyen	B-LOC
 ,	O
 Norway	O
@@ -100678,8 +100678,8 @@ RELEASE	O
 500	B-WEI
 UNITS	O
 OF	O
-BLISTER	O
-PACKS	O
+BLISTER	B-ITM
+PACKS	I-ITM
 CLEANED	O
 AT	O
 NORTH	B-LOC
@@ -101021,7 +101021,7 @@ Collects	O
 30	B-WEI
 Units	O
 of	O
-Plastic	O
+Plastic	B-ITM
 Alo	B-LOC
 ,	O
 2018	O
@@ -101455,8 +101455,8 @@ Collect	O
 349	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
-Cups	O
+Plastic	B-ITM
+Cups	I-ITM
 Valencia	O
 ,	O
 Spain	O
@@ -102204,8 +102204,8 @@ Removes	O
 200	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
-Cups	O
+Plastic	B-ITM
+Cups	I-ITM
 from	O
 Beach	O
 Playa	B-LOC
@@ -104046,7 +104046,7 @@ Takes	O
 370	B-WEI
 Kilos	O
 of	O
-Plates	O
+Plates	B-ITM
 Out	O
 of	O
 the	O
@@ -107044,7 +107044,7 @@ Collect	O
 21	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 During	O
 Beach	O
 Cleanup	O
@@ -107622,8 +107622,8 @@ Cleans	O
 382	B-WEI
 kgs	B-UNT
 of	O
-Plastic	O
-Bottles	O
+Plastic	B-ITM
+Bottles	I-ITM
 From	O
 Inangahua	B-LOC
 County	I-LOC
@@ -108020,7 +108020,7 @@ RELEASE	O
 300	B-WEI
 UNITS	O
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 CLEANED	O
 UP	O
 AT	O
@@ -108971,8 +108971,8 @@ with	O
 Lbs	B-UNT
 of	O
 Cleaned	O
-Plastic	O
-Bottles	O
+Plastic	B-ITM
+Bottles	I-ITM
 Washington	O
 ,	O
 DC	O
@@ -109448,7 +109448,7 @@ Join	O
 Efforts	O
 to	O
 Clear	O
-Plastic	O
+Plastic	B-ITM
 Lighter	O
 Waste	O
 from	O
@@ -110545,7 +110545,7 @@ Collect	O
 200	B-WEI
 lbs	B-UNT
 of	O
-Shoes	O
+Shoes	B-ITM
 Los	O
 Angeles	O
 ,	O
@@ -115111,7 +115111,7 @@ with	O
 300	B-WEI
 Units	O
 of	O
-Plastic	O
+Plastic	B-ITM
 Collected	O
 PLAYA	B-LOC
 DE	I-LOC
@@ -116655,8 +116655,8 @@ Yields	O
 480	B-WEI
 kgs	B-UNT
 of	O
-Squeezable	O
-Tubes	O
+Squeezable	B-ITM
+Tubes	I-ITM
 Clinton	B-LOC
 Beach	I-LOC
 ,	O
@@ -117960,7 +117960,7 @@ RELEASE	O
 200	B-WEI
 UNITS	O
 OF	O
-TRASH	O
+TRASH	B-ITM
 CLEANED	O
 FROM	O
 BEACHES	O
@@ -118061,7 +118061,7 @@ Puts	O
 180	B-WEI
 Lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Behind	O
 Bars	O
 KITNEY	B-LOC
@@ -118638,7 +118638,7 @@ with	O
 468	B-WEI
 Lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Removed	O
 St.	O
 Croix	O
@@ -119619,7 +119619,7 @@ up	O
 49	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Delay	B-LOC
 Point	I-LOC
@@ -119754,7 +119754,7 @@ have	O
 been	O
 possible.	O
 ”	O
-Nurdles	O
+Nurdles	B-ITM
 are	O
 small	O
 plastic	O
@@ -122070,7 +122070,7 @@ Nunatak	I-LOC
 355	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Collected	O
 in	O
 Beach	O
@@ -122987,7 +122987,7 @@ at	O
 Bohicon	B-LOC
 .	O
 
-Trash	O
+Trash	B-ITM
 collected	O
 included	O
 plastic	O
@@ -124059,7 +124059,7 @@ Valley	I-LOC
 184	B-WEI
 kgs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Collected	O
 Environmental	B-ORG
 Voices	I-ORG
@@ -126047,7 +126047,7 @@ Remove	O
 198	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Córdoba	B-LOC
 ,	O
 December	B-DAT
@@ -127475,7 +127475,7 @@ lbs	B-UNT
 of	O
 plastic	O
 and	O
-Tupperware	O
+Tupperware	B-ITM
 debris	O
 !	O
 
@@ -128164,7 +128164,7 @@ Cleaned	O
 400	B-WEI
 Kilograms	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 From	O
 Bula	B-LOC
 Beach	I-LOC
@@ -128345,7 +128345,7 @@ with	O
 300	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Collected	O
 from	O
 Beach	O
@@ -130752,7 +130752,7 @@ CLEANED	O
 173	B-WEI
 KG	B-UNT
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 REMOVED	O
 Hudson	B-LOC
 Ridge	I-LOC
@@ -131994,7 +131994,7 @@ Clean	O
 37	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Palma	B-LOC
 Beach	I-LOC
@@ -133305,7 +133305,7 @@ better	O
 place	O
 .	O
 
-Pots	O
+Pots	B-ITM
 and	O
 traps	B-ITM
 ,	O
@@ -133503,7 +133503,7 @@ up	O
 13	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 !	O
 
 The	O
@@ -133610,7 +133610,7 @@ Green	O
 500	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 Cleaned	O
 Goondiwindi	B-LOC
 ,	O
@@ -134030,7 +134030,7 @@ REMOVES	O
 280	B-WEI
 KILOGRAMS	B-UNT
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 DEBRIS	O
 On	O
 Saturday	O
@@ -137289,7 +137289,7 @@ to	O
 enjoy	O
 .	O
 
-Plastic	O
+Plastic	B-ITM
 and	O
 other	O
 pollutants	O
@@ -139764,8 +139764,8 @@ Up	O
 100	B-WEI
 Kilograms	B-UNT
 of	O
-Paper	O
-Plates	O
+Paper	B-ITM
+Plates	I-ITM
 at	O
 Playa	B-LOC
 Puerto	I-LOC
@@ -140000,8 +140000,8 @@ Clean	O
 468	B-WEI
 kgs	B-UNT
 of	O
-Reusable	O
-Gloves	O
+Reusable	B-ITM
+Gloves	I-ITM
 at	O
 Playa	B-LOC
 Puntilla	I-LOC
@@ -143177,7 +143177,7 @@ Up	O
 300	B-WEI
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Beach	B-LOC
 Park	I-LOC
@@ -143385,7 +143385,7 @@ Over	O
 200	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 July	B-DAT
 13	I-DAT
 ,	I-DAT
@@ -143630,7 +143630,7 @@ Collects	O
 480	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 from	O
 Senala	B-LOC
 Village	I-LOC
@@ -144359,7 +144359,7 @@ Collects	O
 400	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Vancouver	O
 ,	O
 BC	O
@@ -144570,7 +144570,7 @@ Removing	O
 300	B-WEI
 Pounds	B-UNT
 of	O
-Plastic	O
+Plastic	B-ITM
 KAMBERATORO	B-LOC
 AIRPORT	I-LOC
 ,	O
@@ -145267,8 +145267,8 @@ CLEANS	O
 468	B-WEI
 KGS	B-UNT
 OF	O
-FISHING	O
-LINE	O
+FISHING	B-ITM
+LINE	I-ITM
 Donetsk	B-LOC
 ,	O
 Ukraine	O
@@ -146093,8 +146093,8 @@ with	O
 100	B-WEI
 kgs	B-UNT
 of	O
-Pizza	O
-Boxes	O
+Pizza	B-ITM
+Boxes	I-ITM
 Collected	O
 Koonya	O
 ,	O
@@ -147220,7 +147220,7 @@ OF	O
 260	B-WEI
 POUNDS	B-UNT
 OF	O
-TRASH	O
+TRASH	B-ITM
 Seaspray	B-LOC
 Beach	I-LOC
 was	O
@@ -150277,8 +150277,8 @@ CLEANS	O
 335	B-WEI
 LBS	B-UNT
 OF	O
-FOOD	O
-CANS	O
+FOOD	B-ITM
+CANS	I-ITM
 FROM	O
 THE	O
 BEACH	O

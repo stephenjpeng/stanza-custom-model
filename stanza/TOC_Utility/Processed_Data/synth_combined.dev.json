@@ -1134,7 +1134,7 @@
   },
   {
    "text": "Diapers",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "June",
@@ -3338,7 +3338,7 @@
   },
   {
    "text": "PAPER",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": ",",
@@ -3346,11 +3346,11 @@
   },
   {
    "text": "WOOD",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "FRAGMENTS",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "AT",
@@ -4436,7 +4436,7 @@
   },
   {
    "text": "Fireworks",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Collected",
@@ -5322,7 +5322,7 @@
   },
   {
    "text": "PLASTIC",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "FROM",
@@ -10410,15 +10410,15 @@
   },
   {
    "text": "Single-Use",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Carrier",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "Bags",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "from",
@@ -18356,11 +18356,11 @@
   },
   {
    "text": "Drink",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Cartons",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "Today",
@@ -18728,7 +18728,7 @@
   },
   {
    "text": "TRASH",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "AT",
@@ -24934,11 +24934,11 @@
   },
   {
    "text": "Blister",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Packs",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "Cleaned",
@@ -38556,11 +38556,11 @@
   },
   {
    "text": "6-PACK",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "HOLDERS",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "CLEANED",
@@ -42686,11 +42686,11 @@
   },
   {
    "text": "Scrap",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Metal",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "and",
@@ -42698,7 +42698,7 @@
   },
   {
    "text": "Nurdles",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "November",
@@ -45052,7 +45052,7 @@
   },
   {
    "text": "Plastic",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Removed",
@@ -47730,7 +47730,7 @@
   },
   {
    "text": "Plastic",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "pollution",
@@ -49362,7 +49362,7 @@
   },
   {
    "text": "Plastic",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Walnut",
@@ -57476,7 +57476,7 @@
   },
   {
    "text": "Balloons",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "were",
@@ -59910,7 +59910,7 @@
  [
   {
    "text": "Nurdles",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "are",
@@ -60274,7 +60274,7 @@
   },
   {
    "text": "Plastic",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Waste",
@@ -60580,7 +60580,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "at",
@@ -61784,11 +61784,11 @@
   },
   {
    "text": "Foam",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "Coolers",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "Collected",
@@ -65866,7 +65866,7 @@
   },
   {
    "text": "Trash",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "from",
@@ -67916,11 +67916,11 @@
   },
   {
    "text": "BOTTLE",
-   "ner": "O"
+   "ner": "B-ITM"
   },
   {
    "text": "CAPS",
-   "ner": "O"
+   "ner": "I-ITM"
   },
   {
    "text": "AT",

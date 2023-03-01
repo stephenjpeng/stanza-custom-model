@@ -1630,8 +1630,8 @@ CLEANS	O
 70	B-WEI
 LBS	B-UNT
 OF	O
-PLASTIC	O
-FRAGMENTS	O
+PLASTIC	B-ITM
+FRAGMENTS	I-ITM
 FROM	O
 EVANS	B-LOC
 PEAK	I-LOC
@@ -2362,7 +2362,7 @@ UP	O
 126	B-WEI
 POUNDS	B-UNT
 OF	O
-PLASTIC	O
+PLASTIC	B-ITM
 AT	O
 PLAYA	B-LOC
 FARALLÓN	I-LOC
@@ -7327,11 +7327,11 @@ Up	O
 30	B-WEI
 Kilograms	B-UNT
 of	O
-Juice	O
-Boxes	O
+Juice	B-ITM
+Boxes	I-ITM
 and	O
-Foam	O
-Coolers	O
+Foam	B-ITM
+Coolers	I-ITM
 FOR	O
 IMMEDIATE	O
 RELEASE	O
@@ -7640,7 +7640,7 @@ Hundreds	O
 of	O
 Kilograms	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Removed	O
 from	O
 Clarkson	B-LOC
@@ -8985,7 +8985,7 @@ Over	O
 200	O
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Boca	O
 Raton	O
 ,	O
@@ -9074,7 +9074,7 @@ Removes	O
 250	B-WEI
 Kg	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 From	O
 Playa	B-LOC
 de	I-LOC
@@ -9260,10 +9260,10 @@ Cleans	O
 185	B-WEI
 Lbs	B-UNT
 of	O
-Bottle	O
-Caps	O
+Bottle	B-ITM
+Caps	I-ITM
 and	O
-Rings	O
+Rings	B-ITM
 From	O
 Trilling	B-LOC
 Peaks	I-LOC
@@ -9357,7 +9357,7 @@ cloth	I-ITM
 masks	O
 !	O
 
-Trash	O
+Trash	B-ITM
 was	O
 collected	O
 from	O
@@ -10322,7 +10322,7 @@ RELEASE	O
 180	B-WEI
 lbs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Removed	O
 from	O
 Spa	B-LOC
@@ -11632,9 +11632,9 @@ Development	I-ORG
 Successfully	O
 Cleans	O
 Up	O
-Single-Use	O
-Carrier	O
-Bags	O
+Single-Use	B-ITM
+Carrier	I-ITM
+Bags	I-ITM
 on	O
 Greenly	B-LOC
 Beach	I-LOC
@@ -12186,7 +12186,7 @@ now	O
 370	B-WEI
 pieces	O
 of	O
-Tupperware	O
+Tupperware	B-ITM
 and	O
 146	B-WEI
 hooks/sinkers/lures	O
@@ -12657,7 +12657,7 @@ Collects	O
 30	B-WEI
 Pounds	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 Workusamerica	B-ORG
 ,	O
 a	O
@@ -13856,7 +13856,7 @@ Vengen	B-LOC
 Beach	O
 .	O
 
-Nurdles	O
+Nurdles	B-ITM
 ,	O
 or	O
 pre-production	O
@@ -15025,7 +15025,7 @@ OF	O
 30	B-WEI
 LBS	B-UNT
 OF	O
-TRASH	O
+TRASH	B-ITM
 BY	O
 PALMER	B-ORG
 RIVER	I-ORG
@@ -15220,8 +15220,8 @@ Cleans	O
 70	B-WEI
 Kilograms	B-UNT
 of	O
-Fishing	O
-Line	O
+Fishing	B-ITM
+Line	I-ITM
 from	O
 Local	O
 Beach	O
@@ -15317,7 +15317,7 @@ Up	O
 400	B-WEI
 Kgs	B-UNT
 of	O
-Trash	O
+Trash	B-ITM
 at	O
 Toora	B-LOC
 Beach	I-LOC
@@ -15495,7 +15495,7 @@ of	O
 300	B-WEI
 Units	O
 of	O
-Tarps	O
+Tarps	B-ITM
 Astro	B-LOC
 Cliffs	I-LOC
 ,	O
@@ -15886,8 +15886,8 @@ Cleans	O
 466	B-WEI
 Units	O
 of	O
-Styrofoam	O
-Pieces	O
+Styrofoam	B-ITM
+Pieces	I-ITM
 from	O
 Afytos	O
 Beach	O
@@ -17502,7 +17502,7 @@ Cleanup	O
 200	B-WEI
 kgs	B-UNT
 of	O
-Batteries	O
+Batteries	B-ITM
 Collected	O
 On	O
 August	B-DAT
