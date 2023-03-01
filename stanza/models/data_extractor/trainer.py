@@ -191,7 +191,8 @@ class Trainer(BaseTrainer):
                 temp = torch.zeros(p)
                 assert (len(k_size) <= 2), "Transfer resizing only available for 1- and 2-d parameters"
                 if len(k_size) > 1:
-                    nn.init.xavier_uniform_(temp)
+                    if not args['train_classifier_only']:
+                        nn.init.xavier_uniform_(temp)
                     temp[:k_size[0], :k_size[1]] = checkpoint['model'][k]
                 elif len(k_size) == 1:
                     temp[:k_size[0]] = checkpoint['model'][k]
