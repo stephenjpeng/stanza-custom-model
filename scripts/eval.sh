@@ -2,7 +2,7 @@
 
 
 output="./output/output.tsv"
-file="./stanza/TOC_Utility/Processed_Data/synth2.test.json"
+file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
 while getopts o:i:m: flag
 do
     case "${flag}" in
