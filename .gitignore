@@ -183,6 +183,7 @@ extern_data
 runs/*
 models/*.pt
 models/
+!stanza/models/
 output/
 
 # run_and_shutdown

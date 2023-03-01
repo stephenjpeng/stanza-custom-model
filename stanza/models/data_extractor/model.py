@@ -110,6 +110,14 @@ class DataExtractor(nn.Module):
 
         # tag classifier
         num_tag = len(self.vocab['tag'])
+
+        # optionally add an output transformation layer
+        if self.args.get('output_transform', False):
+            self.output_transform = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
+            self.output_relu = nn.ReLU()
+        else:
+            self.output_transform = None
+
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
         self.tag_clf.bias.data.zero_()
 
@@ -214,6 +222,8 @@ class DataExtractor(nn.Module):
         lstm_outputs = pad(lstm_outputs)
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
+        if self.output_transform:
+            lstm_outputs = self.output_relu(self.output_transform(lstm_outputs))
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
         
