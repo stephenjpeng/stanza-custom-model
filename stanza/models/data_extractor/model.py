@@ -205,6 +205,7 @@ class DataExtractor(nn.Module):
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
+        lstm_inputs = lstm_inputs
         if self.args['word_dropout'] > 0:
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)
