@@ -10,8 +10,6 @@ class PositionalEmbedding(nn.Module):
         denom = torch.pow(10000, 2 * (torch.arange(0, input_size, 2) / input_size))
 
         pos_emb = torch.zeros(1, max_block_size, input_size)
-        import pdb
-        pdb.set_trace()
         pos_emb[0, :, 0::2] = torch.sin(pos / denom)
         pos_emb[0, :, 1::2] = torch.cos(pos / denom)
 
