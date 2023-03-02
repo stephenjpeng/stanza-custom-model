@@ -11,6 +11,7 @@ from stanza.models.common.data import map_to_ids, get_long_tensor
 
 from stanza.models.common.packed_lstm import PackedLSTM
 from stanza.models.common.transformer import TransformerBlock
+from stanza.models.common.positional_embedding import PositionalEmbedding
 from stanza.models.common.dropout import WordDropout, LockedDropout
 from stanza.models.common.char_model import CharacterModel, CharacterLanguageModel
 from stanza.models.common.crf import CRFLoss
@@ -95,6 +96,7 @@ class DataExtractor(nn.Module):
             self.input_transform = None
        
         if self.args.get('transformer', False):
+            self.pos_emb = PositionalEmbedding(input_size, self.args['max_block_size'])
             self.trans_blocks = nn.Sequential(*[
                 TransformerBlock(input_size, self.args['num_trans_heads'], self.args['trans_dropout'])
                     for _ in range(self.args['num_trans'])
@@ -205,7 +207,10 @@ class DataExtractor(nn.Module):
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
-        lstm_inputs = lstm_inputs
+        if self.args.get('transformer', False):
+            lstm_inputs = pad(lstm_inputs)
+            lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
+            lstm_inputs = pack(lstm_inputs).data
         if self.args['word_dropout'] > 0:
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)

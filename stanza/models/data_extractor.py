@@ -78,6 +78,7 @@ def parse_args(args=None):
     parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
     parser.add_argument('--num_trans_heads', type=int, default=12, help="Number of Transformer heads")
     parser.add_argument('--num_trans', type=int, default=6, help="Number of Transformer layers")
+    parser.add_argument('--max_block_size', type=int, default=1000, help="Maximum block size for positional embed")
     parser.add_argument('--no_input_transform', dest='input_transform', action='store_false', help="Do not use input transformation layer before tagger lstm.")
     parser.add_argument('--output_transform', action='store_true', help="Use output transformation layer after tagger lstm.")
     parser.add_argument('--scheme', type=str, default='bioes', help="The tagging scheme to use: bio or bioes.")
