@@ -66,10 +66,17 @@ def fix_singleton_tags(tags):
 class Trainer(BaseTrainer):
     """ A trainer for training models. """
     def __init__(self, args=None, vocab=None, pretrain=None, model_file=None, use_cuda=False,
-                 freeze_layers=True, foundation_cache=None):
+                 freeze_layers=True, foundation_cache=None, from_scratch=False):
         self.passed_vocab = vocab
         self.use_cuda = use_cuda
-        if model_file is not None:
+        if from_scratch:
+            assert all(var is not None for var in [args, vocab, pretrain])
+            # build model from scratch
+            self.args = args
+            self.vocab = vocab
+            self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
+            self.model = DataExtractor(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
+        elif model_file is not None:
             # load everything from file
             self.load(model_file, pretrain, args, foundation_cache)
         else: # load from ner model

@@ -4,15 +4,15 @@ import torch.nn as nn
 class TransformerBlock(nn.Module):
     """ Standard Transformer block """
 
-    def __init__(self, input_size, num_heads, dropout):
+    def __init__(self, input_size, num_heads, dropout, kv_dim):
         super().__init__()
         assert input_size % num_heads == 0, "Input size must be divisible by num_heads!"
         self.ln1 = nn.LayerNorm(input_size)
         self.ln2 = nn.LayerNorm(input_size)
-        self.key   = nn.Linear(input_size, input_size)
+        self.key   = nn.Linear(input_size, kv_dim)
         self.query = nn.Linear(input_size, input_size)
-        self.value = nn.Linear(input_size, input_size)
-        self.attn = nn.MultiheadAttention(input_size, num_heads, dropout)
+        self.value = nn.Linear(input_size, kv_dim)
+        self.attn = nn.MultiheadAttention(input_size, num_heads, dropout, kdim=kv_dim, vdim=kv_dim)
         self.mlp = nn.Sequential(
             nn.Linear(input_size, 4 * input_size),
             nn.GELU(),
@@ -23,7 +23,7 @@ class TransformerBlock(nn.Module):
         self.apply(self._init_weights)
 
     def _init_weights(self, module):
-        if isinstance(module, (nn.Linear, nn.Embedding)):
+        if isinstance(module, nn.Linear):
             module.weight.data.normal_(mean=0.0, std=0.02)
             if isinstance(module, nn.Linear) and module.bias is not None:
                 module.bias.data.zero_()

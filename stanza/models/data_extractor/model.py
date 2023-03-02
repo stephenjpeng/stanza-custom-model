@@ -89,24 +89,31 @@ class DataExtractor(nn.Module):
                 self.charmodel = CharacterModel(args, vocab, bidirectional=True, attention=False)
                 input_size += self.args['char_hidden_dim'] * 2
 
-        # optionally add a input transformation layer
-        if self.args.get('input_transform', False):
-            self.input_transform = nn.Linear(input_size, input_size)
-        else:
-            self.input_transform = None
-       
         if self.args.get('transformer', False):
-            self.pos_emb = PositionalEmbedding(input_size, self.args['max_block_size'])
-            self.trans_blocks = nn.Sequential(*[
-                TransformerBlock(input_size, self.args['num_trans_heads'], self.args['trans_dropout'])
-                    for _ in range(self.args['num_trans'])
-            ])
-            self.trans_ln = nn.LayerNorm(input_size)
-            self.trans_output_transform = nn.Sequential(
+            # optionally add a input transformation layer
+            if self.args.get('input_transform', False):
+                self.input_transform = nn.Linear(2 * self.args['hidden_dim'], 2 * self.args['hidden_dim'])
+            else:
+                self.input_transform = None
+
+            self.trans_input_transform = nn.Sequential(
                     nn.Linear(input_size, 2 * self.args['hidden_dim']),
                     nn.GELU()
             )
+            self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+            self.trans_blocks = nn.Sequential(*[
+                TransformerBlock(2 * self.args['hidden_dim'],
+                    self.args['num_trans_heads'], self.args['trans_dropout'], self.args['kv_dim'])
+                    for _ in range(self.args['num_trans'])
+            ])
+            self.trans_ln = nn.LayerNorm(2 * self.args['hidden_dim'])
         else:
+            # optionally add a input transformation layer
+            if self.args.get('input_transform', False):
+                self.input_transform = nn.Linear(input_size, input_size)
+            else:
+                self.input_transform = None
+       
             # recurrent layers
             self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
                     bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
@@ -208,6 +215,7 @@ class DataExtractor(nn.Module):
                 inputs += [char_reps]
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
         if self.args.get('transformer', False):
+            lstm_inputs = self.trans_input_transform(lstm_inputs)
             lstm_inputs = pad(lstm_inputs)
             lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
             lstm_inputs = pack(lstm_inputs).data
@@ -224,7 +232,6 @@ class DataExtractor(nn.Module):
         if self.args.get('transformer', False):
             lstm_outputs = self.trans_blocks(lstm_inputs)
             lstm_outputs = self.trans_ln(lstm_outputs)
-            lstm_outputs = self.trans_output_transform(lstm_outputs)
         else:
             lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
             lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
