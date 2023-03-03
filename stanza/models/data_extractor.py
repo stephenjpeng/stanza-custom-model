@@ -75,7 +75,7 @@ def parse_args(args=None):
     parser.add_argument('--no_lowercase', dest='lowercase', action='store_false', help="Use cased word vectors.")
     parser.add_argument('--no_emb_finetune', dest='emb_finetune', action='store_false', help="Turn off finetuning of the embedding matrix.")
     parser.add_argument('--emb_finetune_known_only', dest='emb_finetune_known_only', action='store_true', help="Finetune the embedding matrix only for words in the embedding.  (Default: finetune words not in the embedding as well)  This may be useful for very large datasets where obscure words are only trained once in a while, such as French-WikiNER")
-    parser.add_argument('--trans_dropout', type=float, default=0.1)
+    parser.add_argument('--trans_dropout', type=float, default=0.5)
     parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
     parser.add_argument('--num_trans_heads', type=int, default=8, help="Number of Transformer heads")
     parser.add_argument('--num_trans', type=int, default=6, help="Number of Transformer layers")
