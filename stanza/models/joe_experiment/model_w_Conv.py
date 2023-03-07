@@ -19,7 +19,7 @@ from stanza.models.common.vocab import PAD_ID, UNK_ID
 from stanza.models.common.bert_embedding import extract_bert_embeddings
 logger = logging.getLogger('stanza')
 
-class DataExtractor(nn.Module):
+class NERTagger_wConv(nn.Module):
     def __init__(self, args, vocab, emb_matrix=None, bert_model=None, bert_tokenizer=None, use_cuda=False):
         super().__init__()
 
