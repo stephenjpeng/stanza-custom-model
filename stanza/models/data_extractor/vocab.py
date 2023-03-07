@@ -1,9 +1,13 @@
+import logging
+
 from collections import Counter, OrderedDict
 
 from stanza.models.common.vocab import BaseVocab, BaseMultiVocab, CharVocab
 from stanza.models.common.vocab import VOCAB_PREFIX
 from stanza.models.common.pretrain import PretrainedWordVocab
 from stanza.models.pos.vocab import WordVocab
+
+logger = logging.getLogger('stanza')
 
 class TagVocab(BaseVocab):
     """ A vocab for the output tag sequence. """
@@ -12,6 +16,27 @@ class TagVocab(BaseVocab):
 
         self._id2unit = VOCAB_PREFIX + list(sorted(list(counter.keys()), key=lambda k: counter[k], reverse=True))
         self._unit2id = {w:i for i, w in enumerate(self._id2unit)}
+
+    """ Update TagVocab with new data, keeping as many same as possible. """
+    def update_vocab(self, other_vocab):
+        logger.info("Old vocab: %s" % self._id2unit)
+        logger.info("Updating vocab: %s" % other_vocab._id2unit)
+        other_tags = set(other_vocab._id2unit)
+        this_tags  = set(self._id2unit)
+        net_new = other_tags.difference(this_tags)
+        for t in this_tags.difference(other_tags):
+            if len(net_new) > 0:
+                self._id2unit[self._unit2id[t]] = net_new.pop()
+            else:
+                self._id2unit.remove(t)
+        if len(net_new):
+            for t in net_new:
+                self._id2unit.append(t)
+
+        self._unit2id = {w:i for i, w in enumerate(self._id2unit)}
+        logger.info("Updated vocab: %s" % self._id2unit)
+
+
 
 class MultiVocab(BaseMultiVocab):
     def state_dict(self):

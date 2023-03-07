@@ -2,10 +2,12 @@
 A trainer class to handle training and testing of models.
 """
 
+import pdb
 import sys
 import logging
 import torch
 from torch import nn
+import torch.nn.functional as F
 
 from stanza.models.common.foundation_cache import load_bert
 from stanza.models.common.trainer import Trainer as BaseTrainer
@@ -64,9 +66,17 @@ def fix_singleton_tags(tags):
 class Trainer(BaseTrainer):
     """ A trainer for training models. """
     def __init__(self, args=None, vocab=None, pretrain=None, model_file=None, use_cuda=False,
-                 freeze_layers=True, foundation_cache=None):
+                 freeze_layers=True, foundation_cache=None, from_scratch=False):
+        self.passed_vocab = vocab
         self.use_cuda = use_cuda
-        if model_file is not None:
+        if from_scratch:
+            assert all(var is not None for var in [args, vocab, pretrain])
+            # build model from scratch
+            self.args = args
+            self.vocab = vocab
+            self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
+            self.model = DataExtractor(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
+        elif model_file is not None:
             # load everything from file
             self.load(model_file, pretrain, args, foundation_cache)
         else: # load from ner model
@@ -78,9 +88,9 @@ class Trainer(BaseTrainer):
         if freeze_layers:
             logger.info('Disabling gradient for NER layers')
             # ner_tagger layers
-            exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm', 'tag_clf', 'crit']
+            exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm']
             for pname, p in self.model.named_parameters():
-                if pname.split('.')[0] not in exclude:
+                if pname.split('.')[0] in exclude:
                     p.requires_grad = False
         self.parameters = [p for p in self.model.parameters() if p.requires_grad]
         if self.use_cuda:
@@ -162,6 +172,10 @@ class Trainer(BaseTrainer):
         self.bert_model, self.bert_tokenizer = load_bert(self.args.get('bert_model', None), foundation_cache)
         self.vocab = MultiVocab.load_state_dict(checkpoint['vocab'])
 
+        if self.passed_vocab is not None and utils.warn_missing_tags([i for i in self.vocab['tag']], self.passed_vocab['tag']._id2unit, "training set"):
+            logger.info("Attempting to update tags...")
+            self.vocab['tag'].update_vocab(self.passed_vocab['tag'])
+
         emb_matrix=None
         if pretrain is not None:
             emb_matrix = pretrain.emb
@@ -172,6 +186,24 @@ class Trainer(BaseTrainer):
                 emb_matrix = emb_matrix.take(indices, axis=0)
 
         self.model = DataExtractor(self.args, self.vocab, emb_matrix=emb_matrix, bert_model=self.bert_model, bert_tokenizer=self.bert_tokenizer, use_cuda=self.use_cuda)
+        # allow transfer learning by transferring over as many classifiers as possible
+        if checkpoint['model']['tag_clf.weight'].size()[0] < self.model.tag_clf.weight.size()[0]:
+            shapes = {
+                    'tag_clf.weight': self.model.tag_clf.weight.size(),
+                    'tag_clf.bias': self.model.tag_clf.bias.size(),
+                    'crit._transitions': self.model.crit._transitions.size()
+                       }
+            for k, p in shapes.items():
+                k_size = checkpoint['model'][k].size()
+                temp = torch.zeros(p)
+                assert (len(k_size) <= 2), "Transfer resizing only available for 1- and 2-d parameters"
+                if len(k_size) > 1:
+                    if not args['train_classifier_only']:
+                        nn.init.xavier_uniform_(temp)
+                    temp[:k_size[0], :k_size[1]] = checkpoint['model'][k]
+                elif len(k_size) == 1:
+                    temp[:k_size[0]] = checkpoint['model'][k]
+                checkpoint['model'][k] = temp
         self.model.load_state_dict(checkpoint['model'], strict=False)
 
         # there is a possible issue with the delta embeddings.

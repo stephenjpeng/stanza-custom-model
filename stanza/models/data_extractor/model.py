@@ -1,13 +1,6 @@
-#  PLAN / TODO: Update model here with desired model architecture. Need to change
-#  __init__ (to add new layers) and forward.
-# 
-#  If freezing layers:
-#  for param in model.parameters():
-#      param.requires_grad = False
-
-
 import os
 import logging
+import pdb
 
 import numpy as np
 import torch
@@ -17,6 +10,8 @@ from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence, pack_s
 from stanza.models.common.data import map_to_ids, get_long_tensor
 
 from stanza.models.common.packed_lstm import PackedLSTM
+from stanza.models.common.transformer import TransformerBlock
+from stanza.models.common.positional_embedding import PositionalEmbedding
 from stanza.models.common.dropout import WordDropout, LockedDropout
 from stanza.models.common.char_model import CharacterModel, CharacterLanguageModel
 from stanza.models.common.crf import CRFLoss
@@ -94,22 +89,49 @@ class DataExtractor(nn.Module):
                 self.charmodel = CharacterModel(args, vocab, bidirectional=True, attention=False)
                 input_size += self.args['char_hidden_dim'] * 2
 
-        # optionally add a input transformation layer
-        if self.args.get('input_transform', False):
-            self.input_transform = nn.Linear(input_size, input_size)
+        if self.args.get('transformer', False):
+            # optionally add a input transformation layer
+            if self.args.get('input_transform', False):
+                self.input_transform = nn.Linear(2 * self.args['hidden_dim'], 2 * self.args['hidden_dim'])
+            else:
+                self.input_transform = None
+
+            self.trans_input_transform = nn.Sequential(
+                    nn.Linear(input_size, 2 * self.args['hidden_dim']),
+                    nn.GELU()
+            )
+            self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+            self.trans_blocks = nn.Sequential(*[
+                TransformerBlock(2 * self.args['hidden_dim'],
+                    self.args['num_trans_heads'], self.args['trans_dropout'], self.args['kv_dim'])
+                    for _ in range(self.args['num_trans'])
+            ])
+            self.trans_ln = nn.LayerNorm(2 * self.args['hidden_dim'])
         else:
-            self.input_transform = None
+            # optionally add a input transformation layer
+            if self.args.get('input_transform', False):
+                self.input_transform = nn.Linear(input_size, input_size)
+            else:
+                self.input_transform = None
        
-        # recurrent layers
-        self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
-                bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
-        # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
+            # recurrent layers
+            self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
+                    bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
+            # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
+            self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+            self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
         self.drop_replacement = None
-        self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
-        self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+
+        num_tag = len(self.vocab['tag'])
+
+        # optionally add an output transformation layer
+        if self.args.get('output_transform', False):
+            self.output_transform = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
+            self.output_gelu = nn.GELU()
+        else:
+            self.output_transform = None
 
         # tag classifier
-        num_tag = len(self.vocab['tag'])
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
         self.tag_clf.bias.data.zero_()
 
@@ -191,8 +213,12 @@ class DataExtractor(nn.Module):
                 char_reps = self.charmodel(wordchars, wordchars_mask, word_orig_idx, sentlens, wordlens)
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
-
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
+        if self.args.get('transformer', False):
+            lstm_inputs = self.trans_input_transform(lstm_inputs)
+            lstm_inputs = pad(lstm_inputs)
+            lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
+            lstm_inputs = pack(lstm_inputs).data
         if self.args['word_dropout'] > 0:
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)
@@ -203,11 +229,15 @@ class DataExtractor(nn.Module):
         if self.input_transform:
             lstm_inputs = self.input_transform(lstm_inputs)
 
-        lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
-        lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
-                self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
-                self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
-        lstm_outputs = lstm_outputs.data
+        if self.args.get('transformer', False):
+            lstm_outputs = self.trans_blocks(lstm_inputs)
+            lstm_outputs = self.trans_ln(lstm_outputs)
+        else:
+            lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
+            lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
+                    self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
+                    self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
+            lstm_outputs = lstm_outputs.data
 
 
         # prediction layer
@@ -215,6 +245,8 @@ class DataExtractor(nn.Module):
         lstm_outputs = pad(lstm_outputs)
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
+        if self.output_transform:
+            lstm_outputs = self.output_gelu(self.output_transform(lstm_outputs))
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
         

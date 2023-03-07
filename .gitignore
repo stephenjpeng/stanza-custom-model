@@ -182,3 +182,11 @@ extern_data
 # runs
 runs/*
 models/*.pt
+models/
+!stanza/models/
+output/
+
+# run_and_shutdown
+.run_and_shutdown.sh
+
+stanza/TOC_Utility/api_key.txt

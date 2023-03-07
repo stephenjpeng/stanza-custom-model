@@ -48,6 +48,7 @@ def parse_args(args=None):
     parser.add_argument('--finetune_load_name', type=str, default=None, help='Model to load when finetuning')
     parser.add_argument('--train_classifier_only', action='store_true',
                         help='In case of applying Transfer-learning approach and training only the classifier layer this will freeze gradient propagation for all other layers.')
+    parser.add_argument('--no_transfer', action='store_true', help='Do not transfer learn (build model from scratch)')
     parser.add_argument('--lang', type=str, help='Language')
     parser.add_argument('--shorthand', type=str, help="Treebank shorthand")
 
@@ -74,7 +75,14 @@ def parse_args(args=None):
     parser.add_argument('--no_lowercase', dest='lowercase', action='store_false', help="Use cased word vectors.")
     parser.add_argument('--no_emb_finetune', dest='emb_finetune', action='store_false', help="Turn off finetuning of the embedding matrix.")
     parser.add_argument('--emb_finetune_known_only', dest='emb_finetune_known_only', action='store_true', help="Finetune the embedding matrix only for words in the embedding.  (Default: finetune words not in the embedding as well)  This may be useful for very large datasets where obscure words are only trained once in a while, such as French-WikiNER")
+    parser.add_argument('--trans_dropout', type=float, default=0.5)
+    parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
+    parser.add_argument('--num_trans_heads', type=int, default=8, help="Number of Transformer heads")
+    parser.add_argument('--num_trans', type=int, default=6, help="Number of Transformer layers")
+    parser.add_argument('--kv_dim', type=int, default=64, help="Dimension of attention k, v")
+    parser.add_argument('--max_block_size', type=int, default=1000, help="Maximum block size for positional embed")
     parser.add_argument('--no_input_transform', dest='input_transform', action='store_false', help="Do not use input transformation layer before tagger lstm.")
+    parser.add_argument('--output_transform', action='store_true', help="Use output transformation layer after tagger lstm.")
     parser.add_argument('--scheme', type=str, default='bioes', help="The tagging scheme to use: bio or bioes.")
 
 
@@ -181,13 +189,20 @@ def train(args):
     if len(train_doc.sentences) == 0:
         raise ValueError("File %s exists but has no usable training data" % args['train_file'])
 
-    train_batch = DataLoader(train_doc, args['batch_size'], args, pretrain, vocab=vocab, evaluation=False)
+    # set up trainer first to have a vocab set
+    if trainer is None: # init if model was not loaded previously from file
+        vocab = DataLoader(train_doc, args['batch_size'], args, vocab_only=True, pretrain=pretrain, vocab=vocab, evaluation=False).vocab
+        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
+                          freeze_layers=args['train_classifier_only'], from_scratch=args['no_transfer'])
+        vocab = trainer.vocab
+
+    train_batch = DataLoader(train_doc, args['batch_size'], args, vocab_only=False, pretrain=pretrain, vocab=vocab, evaluation=False)
     vocab = train_batch.vocab
     dev_doc = Document(json.load(open(args['eval_file'])))
     logger.info("Loaded %d sentences of dev data", len(dev_doc.sentences))
     if len(dev_doc.sentences) == 0:
         raise ValueError("File %s exists but has no usable dev data" % args['train_file'])
-    dev_batch = DataLoader(dev_doc, args['batch_size'], args, pretrain, vocab=vocab, evaluation=True)
+    dev_batch = DataLoader(dev_doc, args['batch_size'], args, vocab_only=False, pretrain=pretrain, vocab=vocab, evaluation=True)
     dev_gold_tags = dev_batch.tags
 
     train_tags = utils.get_known_tags(train_batch.tags)
@@ -205,9 +220,6 @@ def train(args):
         return
 
     logger.info("Training tagger...")
-    if trainer is None: # init if model was not loaded previously from file
-        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
-                          freeze_layers=args['train_classifier_only'])
     logger.info(trainer.model)
 
     global_step = 0
@@ -227,12 +239,15 @@ def train(args):
 
     if args['tensorboard']:
         from torch.utils.tensorboard import SummaryWriter
-        writer = SummaryWriter()
+        writer = SummaryWriter(log_dir='runs/'+args['shorthand'])
 
         # plot embeddings
-        # writer.add_image('image', np.ones((3,3,3)), 0) # hack to get projector working
         ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)
-        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, torch.from_numpy(ind)),
+        if args['cuda'] and not args['cpu']:
+            ind = torch.from_numpy(ind).to(torch.device("cuda:0" if torch.cuda.is_available() else "cpu"))
+        else:
+            ind = torch.from_numpy(ind)
+        writer.add_embedding(trainer.model.word_emb.weight.index_select(0, ind),
                              metadata=trainer.model.vocab['word'].unmap(ind))
 
     # start training
@@ -363,7 +378,8 @@ def load_model(args, model_file):
     if 'charlm_backward_file' in args:
         charlm_args['charlm_backward_file'] = args['charlm_backward_file']
     pretrain = load_pretrain(args)
-    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain, use_cuda=use_cuda, freeze_layers=args['train_classifier_only'])
+    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain,
+            use_cuda=use_cuda, freeze_layers=args['train_classifier_only'], from_scratch=args['no_transfer'])
     loaded_args, vocab = trainer.args, trainer.vocab
 
     # load config
