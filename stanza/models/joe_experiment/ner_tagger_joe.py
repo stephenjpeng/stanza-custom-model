@@ -18,7 +18,7 @@ import json
 import torch
 from torch import nn, optim
 
-from stanza.models.data_extractor.data import DataLoader     # Updated to pull correct vocab from Stephen's data.py file
+from stanza.models.ner.data import DataLoader     
 from stanza.models.joe_experiment.trainer_joe import Trainer # Updated trainer to pull model with conv layer
 from stanza.models.ner import scorer                         # I don't think I should need to update scorer?
 from stanza.models.common import utils

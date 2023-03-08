@@ -125,6 +125,7 @@ sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 sta
 # 	--tensorboard
 
 # # train from BERT (with Convolution layer before LSTM) - Joe (local)
+	# sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	# PYTHONPATH=$PYTHONPATH:. python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	# --data_dir ./data \
 	# --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
@@ -132,11 +133,11 @@ sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 sta
 	# --mode train \
 	# --save_dir ./models/joe_experiment/synth_combined_vanilla_from_bert_wConv \
 	# --shorthand en_synth_combined_vanilla_from_bert_wConv \
-	# --wordvec_pretrain_file ./../stanza_resources/en/pretrain/combined.pt \
+	# --wordvec_pretrain_file ../stanza_resources/en/pretrain/combined.pt \
 	# --charlm \
 	# --charlm_shorthand 1billion \
-	# --charlm_forward_file ./../stanza_resources/en/forward_charlm/1billion.pt \
-	# --charlm_backward_file ./../stanza_resources/en/backward_charlm/1billion.pt \
+	# --charlm_forward_file ../stanza_resources/en/forward_charlm/1billion.pt \
+	# --charlm_backward_file ../stanza_resources/en/backward_charlm/1billion.pt \
 	# --tensorboard
 
 # # train from BERT add hidden layer --Mitty
