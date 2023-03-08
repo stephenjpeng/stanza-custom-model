@@ -29,4 +29,4 @@ python3 stanza/models/data_extractor.py \
 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 	--mode predict \
 	--save_dir ./models/data_extractor/"$model" \
-	--shorthand "$pre""$model"
+	--shorthand "$pre""$model" --cpu

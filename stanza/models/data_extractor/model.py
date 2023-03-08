@@ -110,7 +110,10 @@ class DataExtractor(nn.Module):
                     nn.Linear(input_size, 2 * self.args['hidden_dim']),
                     nn.GELU()
             )
-            self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+
+            if self.args.get('pos_emb', False):
+                self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+
             self.trans_blocks = nn.Sequential(*[
                 TransformerBlock(2 * self.args['hidden_dim'],
                     self.args['num_trans_heads'], self.args['trans_dropout'], self.args['kv_dim'])
@@ -226,9 +229,13 @@ class DataExtractor(nn.Module):
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
         if self.args.get('transformer', False):
             lstm_inputs = self.trans_input_transform(lstm_inputs)
-            lstm_inputs = pad(lstm_inputs)
-            lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
-            lstm_inputs = pack(lstm_inputs).data
+
+            if self.args.get('pos_emb', False):
+                lstm_inputs = pad(lstm_inputs)
+                lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
+                lstm_inputs = pack(lstm_inputs).data
+            else:
+                lstm_inputs = lstm_inputs.data
         if self.args['word_dropout'] > 0:
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)
