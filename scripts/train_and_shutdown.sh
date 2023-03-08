@@ -10,17 +10,17 @@ do
 			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
 			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 			--mode train \
-			--save_dir ./models/data_extractor/synth_combined_trans_"$nh"h_"$nt"t \
-			--shorthand en_synth_combined_trans_"$nh"h_"$nt"t \
+			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_adam \
+			--shorthand trans_"$nh"h_"$nt"t_adam \
 			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
 			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
 			--charlm \
 			--charlm_shorthand 1billion \
 			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
 			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-			--tensorboard --transformer --no_transfer --max_steps 20000 \
+			--tensorboard --transformer --no_transfer \
+			--optim adam --batch_size 1024 --max_steps 30000 --lr 0.001 --min_lr 0 \
 			--num_trans_heads $nh --num_trans $nt \
-			--lr 0.3 --patience 4 
 	done
 done
 
