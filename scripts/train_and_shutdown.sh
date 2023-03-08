@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# train trigram_cnn
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/nobilstm_trigram_cnn_5L_0.5drop \
+	--shorthand nobilstm_trigram_cnn_6L_0.5drop \
+	--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--trigram_cnn --trigram_drop 0.5 --no_transfer --num_trans 5 --no_bilstm \
+	--tensorboard
+
 for nh in 8 16
 do
 	for nt in 6
