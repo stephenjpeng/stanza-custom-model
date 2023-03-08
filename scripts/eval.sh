@@ -3,12 +3,14 @@
 
 output="./output/output.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
-while getopts o:i:m: flag
+pre="en_"
+while getopts o:i:m:p: flag
 do
     case "${flag}" in
         o) output=${OPTARG};;
         i) file=${OPTARG};;
         m) model=${OPTARG};;
+        p) pre=${OPTARG};;
     esac
 done
 
@@ -27,4 +29,4 @@ python3 stanza/models/data_extractor.py \
 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 	--mode predict \
 	--save_dir ./models/data_extractor/"$model" \
-	--shorthand en_"$model"
+	--shorthand "$pre""$model"

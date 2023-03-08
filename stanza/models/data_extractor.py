@@ -77,6 +77,7 @@ def parse_args(args=None):
     parser.add_argument('--emb_finetune_known_only', dest='emb_finetune_known_only', action='store_true', help="Finetune the embedding matrix only for words in the embedding.  (Default: finetune words not in the embedding as well)  This may be useful for very large datasets where obscure words are only trained once in a while, such as French-WikiNER")
 
     parser.add_argument('--trigram_cnn', action='store_true', help="Add trigram-cnn layers before BiLSTM")
+    parser.add_argument('--trigram_drop', type=float, default=0.0, help="Trigram MLP dropout")
     parser.add_argument('--num_trigrams', type=int, default=3, help="Number of trigram-cnn layers")
 
     parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
