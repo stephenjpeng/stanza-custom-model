@@ -75,13 +75,19 @@ def parse_args(args=None):
     parser.add_argument('--no_lowercase', dest='lowercase', action='store_false', help="Use cased word vectors.")
     parser.add_argument('--no_emb_finetune', dest='emb_finetune', action='store_false', help="Turn off finetuning of the embedding matrix.")
     parser.add_argument('--emb_finetune_known_only', dest='emb_finetune_known_only', action='store_true', help="Finetune the embedding matrix only for words in the embedding.  (Default: finetune words not in the embedding as well)  This may be useful for very large datasets where obscure words are only trained once in a while, such as French-WikiNER")
-    parser.add_argument('--trans_dropout', type=float, default=0.5)
+
+    parser.add_argument('--trigram_cnn', action='store_true', help="Add trigram-cnn layers before BiLSTM")
+    parser.add_argument('--trigram_drop', type=float, default=0.0, help="Trigram MLP dropout")
+    parser.add_argument('--num_trigrams', type=int, default=3, help="Number of trigram-cnn layers")
+
     parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
+    parser.add_argument('--trans_dropout', type=float, default=0.5)
     parser.add_argument('--num_trans_heads', type=int, default=8, help="Number of Transformer heads")
     parser.add_argument('--num_trans', type=int, default=6, help="Number of Transformer layers")
     parser.add_argument('--kv_dim', type=int, default=64, help="Dimension of attention k, v")
     parser.add_argument('--max_block_size', type=int, default=1000, help="Maximum block size for positional embed")
     parser.add_argument('--no_input_transform', dest='input_transform', action='store_false', help="Do not use input transformation layer before tagger lstm.")
+
     parser.add_argument('--output_transform', action='store_true', help="Use output transformation layer after tagger lstm.")
     parser.add_argument('--scheme', type=str, default='bioes', help="The tagging scheme to use: bio or bioes.")
 

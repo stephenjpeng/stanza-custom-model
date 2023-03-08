@@ -10,6 +10,7 @@ from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence, pack_s
 from stanza.models.common.data import map_to_ids, get_long_tensor
 
 from stanza.models.common.packed_lstm import PackedLSTM
+from stanza.models.common.trigram_cnn import TrigramCNN
 from stanza.models.common.transformer import TransformerBlock
 from stanza.models.common.positional_embedding import PositionalEmbedding
 from stanza.models.common.dropout import WordDropout, LockedDropout
@@ -88,6 +89,15 @@ class DataExtractor(nn.Module):
             else:
                 self.charmodel = CharacterModel(args, vocab, bidirectional=True, attention=False)
                 input_size += self.args['char_hidden_dim'] * 2
+
+        if self.args.get('trigram_cnn', False):
+            if 'trigram_drop' not in self.args.keys():
+                self.args['trigram_drop'] = 0.0
+            self.cnn_blocks = nn.Sequential(*[
+                TrigramCNN(input_size, 2 * self.args['hidden_dim'], self.args['trigram_drop'])
+                    for _ in range(self.args['num_trigrams'])
+            ])
+
 
         if self.args.get('transformer', False):
             # optionally add a input transformation layer
@@ -223,11 +233,16 @@ class DataExtractor(nn.Module):
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)
         lstm_inputs = pad(lstm_inputs)
+
+        if self.args.get('trigram_cnn', False):
+            lstm_inputs = self.cnn_blocks(lstm_inputs)
+
         lstm_inputs = self.lockeddrop(lstm_inputs)
         lstm_inputs = pack(lstm_inputs).data
 
         if self.input_transform:
             lstm_inputs = self.input_transform(lstm_inputs)
+
 
         if self.args.get('transformer', False):
             lstm_outputs = self.trans_blocks(lstm_inputs)
