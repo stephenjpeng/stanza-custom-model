@@ -19,6 +19,8 @@ from stanza.models.common.vocab import PAD_ID, UNK_ID
 from stanza.models.common.bert_embedding import extract_bert_embeddings
 logger = logging.getLogger('stanza')
 
+CONVOLUTION_KERNEL = 5 # kernel_size = 5 captures two tokens on either side a given token 
+
 class NERTagger_wConv(nn.Module):
     def __init__(self, args, vocab, emb_matrix=None, bert_model=None, bert_tokenizer=None, use_cuda=False):
         super().__init__()
@@ -115,8 +117,8 @@ class NERTagger_wConv(nn.Module):
                 self.input_transform = None
        
             # Convolutional layer
-            CONVOLUTION_KERNEL = 5 # kernel_size = 5 captures two tokens on either side a given token 
-            self.conv_1D = nn.Conv1d(input_size, kernel_size= CONVOLUTION_KERNEL, padding= 'same')
+            self.conv_1D = nn.Conv1d(in_channels= input_size, out_channels= input_size, 
+                                     kernel_size= CONVOLUTION_KERNEL, padding= 'same')
 
             # recurrent layers
             self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
@@ -156,6 +158,7 @@ class NERTagger_wConv(nn.Module):
         self.word_emb.weight.data.copy_(emb_matrix)
 
     def forward(self, sentences, wordchars, wordchars_mask, tags, word_orig_idx, sentlens, wordlens, chars, charoffsets, charlens, char_orig_idx):
+        
         
         def pack(x):
             return pack_padded_sequence(x, sentlens, batch_first=True)
@@ -217,10 +220,31 @@ class NERTagger_wConv(nn.Module):
                 char_reps = self.charmodel(wordchars, wordchars_mask, word_orig_idx, sentlens, wordlens)
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
-        conv_inputs = torch.cat([x.data for x in inputs], 1)
 
+        #Need to understand dimensions of inputs.data to feed into conv layer
+        # print("sentence lengths: ", [len(i) for i in sentences])
+        # print("inputs[1]: ", inputs[1])
+        # print("bool: ", all(inputs[0].batch_sizes == inputs[2].batch_sizes))
+        # print(torch.sum(inputs[0].batch_sizes))
+        # print("len inputs[1].data: ", len(inputs[1].data))
+        # print("len inputs[1].data[0]: ", len(inputs[1].data[0]))
+        # lstm_inputs = torch.cat([x.data for x in inputs], 1)
+        # print ("lstm_inputs shape: ", lstm_inputs.shape)
+        
         # Convolute inputs before packing and passing into LSTM
-        lstm_inputs = self.conv_1D(conv_inputs)
+        conv_inputs = torch.cat([x.data for x in inputs], 1)
+        
+        # print("conv_inputs: ", conv_inputs.shape)
+
+        # print("sentence lengths: ", [len(i) for i in sentences])
+        # IDEA: Break data into sentence_lengths ^^, feed it through conv layer, then re-assemble into batch of 
+        # [src_len, embedding_size] where sum([len(i) for i in sentences]) = src_len = 630
+
+        # Conv layer input of shape [batch_size, embedding_size, src_len]
+        conv_inputs = conv_inputs.unsqueeze(0)
+        lstm_inputs = self.conv_1D(torch.permute(conv_inputs, (0, 2, 1))) 
+        # Reshape to [src_len, embedding_size] as desired for LSTM
+        lstm_inputs = torch.permute(lstm_inputs, (0, 2, 1)).squeeze()
 
         if self.args.get('transformer', False):
             lstm_inputs = self.trans_input_transform(lstm_inputs)
@@ -246,7 +270,6 @@ class NERTagger_wConv(nn.Module):
                     self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
                     self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
             lstm_outputs = lstm_outputs.data
-
 
         # prediction layer
         lstm_outputs = self.drop(lstm_outputs)
