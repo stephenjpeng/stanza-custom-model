@@ -100,6 +100,10 @@ class model_w_Ablation(nn.Module):
         self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
         self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
 
+        # add a hidden layer between output and BiLSTM
+        self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
+        self.L1_gelu = nn.GELU()
+        
         # tag classifier
         num_tag = len(self.vocab['tag'])
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
@@ -207,6 +211,8 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = pad(lstm_outputs)
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
+        if self.L1:
+            lstm_outputs = self.L1_gelu(self.L1(lstm_outputs))
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
         
