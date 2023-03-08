@@ -146,13 +146,13 @@ sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 sta
 # 	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
 # 	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 # 	--mode train \
-# 	--save_dir ./models/data_extractor/synth_combined_vanilla_from_bert \
-# 	--shorthand en_synth_combined_vanilla_from_bert \
-# 	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+# 	--save_dir ./models/mitty_experiment/synth_combined_vanilla_from_bert_ablation_l1 \
+# 	--shorthand en_synth_combined_vanilla_from_bert_ablation_l1 \
+# 	--wordvec_pretrain_file ../stanza_resources/en/pretrain/combined.pt \
 # 	--charlm \
 # 	--charlm_shorthand 1billion \
-# 	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-# 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+# 	--charlm_forward_file ../stanza_resources/en/forward_charlm/1billion.pt \
+# 	--charlm_backward_file ../stanza_resources/en/backward_charlm/1billion.pt \
 # 	--tensorboard
 
 
