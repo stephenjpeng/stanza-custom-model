@@ -91,8 +91,10 @@ class DataExtractor(nn.Module):
                 input_size += self.args['char_hidden_dim'] * 2
 
         if self.args.get('trigram_cnn', False):
+            if 'trigram_drop' not in self.args.keys():
+                self.args['trigram_drop'] = 0.0
             self.cnn_blocks = nn.Sequential(*[
-                TrigramCNN(input_size, 2 * self.args['hidden_dim'])
+                TrigramCNN(input_size, 2 * self.args['hidden_dim'], self.args['trigram_drop'])
                     for _ in range(self.args['num_trigrams'])
             ])
 

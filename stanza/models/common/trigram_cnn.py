@@ -5,13 +5,15 @@ from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence, pack_s
 
 # Inspired by spaCy NER architecture
 class TrigramCNN(nn.Module):
-    def __init__(self, input_size, hidden_size):
+    def __init__(self, input_size, hidden_size, dropout):
         super().__init__()
         self.mlp = nn.Sequential(
             nn.Linear(input_size * 3, hidden_size),
             nn.GELU(),
+            nn.Dropout(dropout),
             nn.Linear(hidden_size, input_size),
             nn.GELU(),
+            nn.Dropout(dropout),
         )
 
 
