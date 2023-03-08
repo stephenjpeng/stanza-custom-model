@@ -123,13 +123,13 @@ class DataExtractor(nn.Module):
                 self.input_transform = nn.Linear(input_size, input_size)
             else:
                 self.input_transform = None
-       
-            # recurrent layers
-            self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
-                    bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
-            # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
-            self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
-            self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+            if self.args.get('bilstm', True):
+                # recurrent layers
+                self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
+                        bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
+                # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
+                self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+                self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
         self.drop_replacement = None
 
         num_tag = len(self.vocab['tag'])
@@ -247,12 +247,15 @@ class DataExtractor(nn.Module):
         if self.args.get('transformer', False):
             lstm_outputs = self.trans_blocks(lstm_inputs)
             lstm_outputs = self.trans_ln(lstm_outputs)
-        else:
+        elif self.args.get('bilstm', True):
             lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
             lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
-                    self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
-                    self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
+                self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
+                self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
             lstm_outputs = lstm_outputs.data
+        else:
+            lstm_outputs = lstm_inputs
+
 
 
         # prediction layer
