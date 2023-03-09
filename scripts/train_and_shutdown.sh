@@ -167,7 +167,6 @@
 # 	--tensorboard
 
 # # train from BERT (with Convolution layer before LSTM) - Joe (local)
-	# sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	# PYTHONPATH=$PYTHONPATH:. python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	# --data_dir ./data \
 	# --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
