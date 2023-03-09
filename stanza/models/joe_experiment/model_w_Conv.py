@@ -228,9 +228,9 @@ class NERTagger_wConv(nn.Module):
         # Pad original sentences to same length for batched convolution
         conv_inputs = pad(conv_inputs)
         lstm_inputs = self.conv_1D(torch.permute(conv_inputs, (0, 2, 1)))
-        
+
         # Reshape to [src_len, embedding_size] as desired for LSTM and pack to remove padding
-        lstm_inputs = torch.permute(lstm_inputs, (0, 2, 1)).squeeze(0) 
+        lstm_inputs = torch.permute(lstm_inputs, (0, 2, 1))
         lstm_inputs = pack(lstm_inputs).data
         # print(lstm_inputs.shape)
         
