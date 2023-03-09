@@ -223,7 +223,7 @@ class NERTagger_wConv(nn.Module):
         
         # Convolute each sentence's embeddings before passing into LSTM
         conv_inputs = torch.cat([x.data for x in inputs], 1)
-        # print(conv_inputs.shape)
+        # print(conv_inputs.shape) 
 
         # Pad original sentences to same length for batched convolution
         conv_inputs = pad(conv_inputs)
