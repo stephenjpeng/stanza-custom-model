@@ -221,7 +221,7 @@ class NERTagger_wConv(nn.Module):
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
         
-        # Convolute each sentence's embeddings before packing and passing into LSTM
+        # Convolute each sentence's embeddings before passing into LSTM
         conv_inputs = torch.cat([x.data for x in inputs], 1)
         # Pad original sentences to same length for batched convolution
         conv_inputs = pad(conv_inputs)
