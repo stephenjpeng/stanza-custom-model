@@ -220,32 +220,17 @@ class NERTagger_wConv(nn.Module):
                 char_reps = self.charmodel(wordchars, wordchars_mask, word_orig_idx, sentlens, wordlens)
                 char_reps = PackedSequence(char_reps.data, char_reps.batch_sizes)
                 inputs += [char_reps]
-
-        #Need to understand dimensions of inputs.data to feed into conv layer
-        # print("sentence lengths: ", [len(i) for i in sentences])
-        # print("inputs[1]: ", inputs[1])
-        # print("bool: ", all(inputs[0].batch_sizes == inputs[2].batch_sizes))
-        # print(torch.sum(inputs[0].batch_sizes))
-        # print("len inputs[1].data: ", len(inputs[1].data))
-        # print("len inputs[1].data[0]: ", len(inputs[1].data[0]))
-        # lstm_inputs = torch.cat([x.data for x in inputs], 1)
-        # print ("lstm_inputs shape: ", lstm_inputs.shape)
         
-        # Convolute inputs before packing and passing into LSTM
+        # Convolute each sentence's embeddings before packing and passing into LSTM
         conv_inputs = torch.cat([x.data for x in inputs], 1)
+        # Pad original sentences to same length for batched convolution
+        conv_inputs = pad(conv_inputs)
+        lstm_inputs = self.conv_1D(torch.permute(conv_inputs, (0, 2, 1)))
+        # Reshape to [src_len, embedding_size] as desired for LSTM and pack to remove padding
+        lstm_inputs = torch.permute(lstm_inputs, (0, 2, 1)).squeeze(0) 
+        lstm_inputs = pack(lstm_inputs).data
         
-        # print("conv_inputs: ", conv_inputs.shape)
-
-        # print("sentence lengths: ", [len(i) for i in sentences])
-        # IDEA: Break data into sentence_lengths ^^, feed it through conv layer, then re-assemble into batch of 
-        # [src_len, embedding_size] where sum([len(i) for i in sentences]) = src_len = 630
-
-        # Conv layer input of shape [batch_size, embedding_size, src_len]
-        conv_inputs = conv_inputs.unsqueeze(0)
-        lstm_inputs = self.conv_1D(torch.permute(conv_inputs, (0, 2, 1))) 
-        # Reshape to [src_len, embedding_size] as desired for LSTM
-        lstm_inputs = torch.permute(lstm_inputs, (0, 2, 1)).squeeze()
-
+        
         if self.args.get('transformer', False):
             lstm_inputs = self.trans_input_transform(lstm_inputs)
             lstm_inputs = pad(lstm_inputs)
