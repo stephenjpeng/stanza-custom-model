@@ -249,8 +249,7 @@ def train(args):
 
     if args['tensorboard']:
         from torch.utils.tensorboard import SummaryWriter
-        writer =
-        SummaryWriter(log_dir='runs/'+args['shorthand']+args['tensorboard_suffix'])
+        writer = SummaryWriter(log_dir='runs/'+args['shorthand']+args['tensorboard_suffix'])
 
         # plot embeddings
         ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)

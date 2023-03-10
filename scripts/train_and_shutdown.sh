@@ -52,7 +52,7 @@ do
 			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
 			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 			--tensorboard --tensorboard_suffix _finetune  --transformer --no_transfer \
-			--optim adam --batch_size 256 --max_steps 200000 --lr 0.0003 --lr_decay 0 --min_lr 0 \
+			--optim adam --batch_size 256 --max_steps 50000 --lr 0.0003 --lr_decay 0 --min_lr 0 \
 			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3 --finetune
 	done
 done
