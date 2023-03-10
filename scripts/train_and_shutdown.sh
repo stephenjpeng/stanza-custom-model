@@ -141,20 +141,19 @@ sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 sta
 	# --tensorboard
 
 # # train from BERT add hidden layer --Mitty
-# sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/ner_tagger.py \
-# PYTHONPATH=$PYTHONPATH:. python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
-# 	--data_dir ./data \
-# 	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-# 	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-# 	--mode train \
-# 	--save_dir ./models/mitty_experiment/synth_combined_vanilla_from_bert_ablation_l1 \
-# 	--shorthand en_synth_combined_vanilla_from_bert_ablation_l1 \
-# 	--wordvec_pretrain_file ../stanza_resources/en/pretrain/combined.pt \
-# 	--charlm \
-# 	--charlm_shorthand 1billion \
-# 	--charlm_forward_file ../stanza_resources/en/forward_charlm/1billion.pt \
-# 	--charlm_backward_file ../stanza_resources/en/backward_charlm/1billion.pt \
-# 	--tensorboard
+# sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
+	# --data_dir ./data \
+	# --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	# --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	# --mode train \
+	# --save_dir ./models/mitty_experiment/synth_combined_vanilla_from_bert_ablation_l1 \
+	# --shorthand en_synth_combined_vanilla_from_bert_ablation_l1 \
+	# --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	# --charlm \
+	# --charlm_shorthand 1billion \
+	# --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	# --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	# --tensorboard
 
 
 echo "WARNING! SYSTEM WILL SHUTDOWN IN 60 SECONDS UNLESS CTRL-C INTERRUPT..."
