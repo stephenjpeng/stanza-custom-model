@@ -133,6 +133,9 @@ class DataExtractor(nn.Module):
                 # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
                 self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
                 self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+            else:
+                self.input_transform = nn.Linear(input_size, 2 * self.args['hidden_dim'])
+
         self.drop_replacement = None
 
         num_tag = len(self.vocab['tag'])

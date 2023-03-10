@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# train no bilstm
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/no_bilstm \
+	--shorthand no_bilstm \
+	--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--no_transfer --no_bilstm \
+	--tensorboard
+
 # # train trigram_cnn
 # sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
 # 	--data_dir ./data \
