@@ -110,7 +110,10 @@ class DataExtractor(nn.Module):
                     nn.Linear(input_size, 2 * self.args['hidden_dim']),
                     nn.GELU()
             )
-            self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+
+            if self.args.get('pos_emb', False):
+                self.pos_emb = PositionalEmbedding(2 * self.args['hidden_dim'], self.args['max_block_size'])
+
             self.trans_blocks = nn.Sequential(*[
                 TransformerBlock(2 * self.args['hidden_dim'],
                     self.args['num_trans_heads'], self.args['trans_dropout'], self.args['kv_dim'])
@@ -123,13 +126,13 @@ class DataExtractor(nn.Module):
                 self.input_transform = nn.Linear(input_size, input_size)
             else:
                 self.input_transform = None
-       
-            # recurrent layers
-            self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
-                    bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
-            # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
-            self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
-            self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+            if self.args.get('bilstm', True):
+                # recurrent layers
+                self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
+                        bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
+                # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
+                self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
+                self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
         self.drop_replacement = None
 
         num_tag = len(self.vocab['tag'])
@@ -226,9 +229,13 @@ class DataExtractor(nn.Module):
         lstm_inputs = torch.cat([x.data for x in inputs], 1)
         if self.args.get('transformer', False):
             lstm_inputs = self.trans_input_transform(lstm_inputs)
-            lstm_inputs = pad(lstm_inputs)
-            lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
-            lstm_inputs = pack(lstm_inputs).data
+
+            if self.args.get('pos_emb', False):
+                lstm_inputs = pad(lstm_inputs)
+                lstm_inputs = lstm_inputs + self.pos_emb(lstm_inputs, word_mask)
+                lstm_inputs = pack(lstm_inputs).data
+            else:
+                lstm_inputs = lstm_inputs.data
         if self.args['word_dropout'] > 0:
             lstm_inputs = self.worddrop(lstm_inputs, self.drop_replacement)
         lstm_inputs = self.drop(lstm_inputs)
@@ -247,12 +254,15 @@ class DataExtractor(nn.Module):
         if self.args.get('transformer', False):
             lstm_outputs = self.trans_blocks(lstm_inputs)
             lstm_outputs = self.trans_ln(lstm_outputs)
-        else:
+        elif self.args.get('bilstm', True):
             lstm_inputs = PackedSequence(lstm_inputs, inputs[0].batch_sizes)
             lstm_outputs, _ = self.taggerlstm(lstm_inputs, sentlens, hx=(\
-                    self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
-                    self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
+                self.taggerlstm_h_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous(), \
+                self.taggerlstm_c_init.expand(2 * self.args['num_layers'], batch_size, self.args['hidden_dim']).contiguous()))
             lstm_outputs = lstm_outputs.data
+        else:
+            lstm_outputs = lstm_inputs
+
 
 
         # prediction layer

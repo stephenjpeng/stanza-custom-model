@@ -80,7 +80,10 @@ def parse_args(args=None):
     parser.add_argument('--trigram_drop', type=float, default=0.0, help="Trigram MLP dropout")
     parser.add_argument('--num_trigrams', type=int, default=3, help="Number of trigram-cnn layers")
 
+    parser.add_argument('--no_bilstm', dest='bilstm', action='store_false', help="Do not use a BiLSTM.")
+
     parser.add_argument('--transformer', action='store_true', help="Drop-in replace BiLSTM with a Transformer")
+    parser.add_argument('--pos_emb', action='store_true', help="Add in a positional embedding")
     parser.add_argument('--trans_dropout', type=float, default=0.5)
     parser.add_argument('--num_trans_heads', type=int, default=8, help="Number of Transformer heads")
     parser.add_argument('--num_trans', type=int, default=6, help="Number of Transformer layers")

@@ -20,7 +20,7 @@ from torch import nn, optim
 
 from stanza.models.ner.data import DataLoader     
 from stanza.models.joe_experiment.trainer_joe import Trainer # Updated trainer to pull model with conv layer
-from stanza.models.ner import scorer                         # I don't think I should need to update scorer?
+from stanza.models.ner import scorer                         # Shouldn't need to update scorer
 from stanza.models.common import utils
 from stanza.models.common.pretrain import Pretrain
 from stanza.utils.conll import CoNLL
@@ -223,7 +223,7 @@ def train(args):
 
     if args['tensorboard']:
         from torch.utils.tensorboard import SummaryWriter
-        writer = SummaryWriter()
+        writer = SummaryWriter(log_dir='runs/'+args['shorthand'])
 
         # plot embeddings
         ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)

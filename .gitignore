@@ -190,3 +190,4 @@ output/
 .run_and_shutdown.sh
 
 stanza/TOC_Utility/api_key.txt
+stanza/models/joe_experiment/scratch_file.py
