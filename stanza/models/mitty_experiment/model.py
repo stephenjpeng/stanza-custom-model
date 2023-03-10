@@ -108,7 +108,7 @@ class model_w_Ablation(nn.Module):
         if self.args['add_layer_before_output'] == 1:
             # Maps the output of the LSTM into tag space.
             self.L1 = nn.Linear(self.args['hidden_dim']*2, num_tag)
-            # self.L1_gelu = nn.GELU()
+            self.L1_gelu = nn.GELU()
         
         # Attention
         self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
@@ -221,7 +221,7 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = pack(lstm_outputs).data
         
         if self.L1:
-            lstm_outputs = self.L1(lstm_outputs)
+            lstm_outputs = self.L1_gelu(self.L1(lstm_outputs))
         if self.attn:
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
         
