@@ -119,6 +119,7 @@ def parse_args(args=None):
     parser.add_argument('--cpu', action='store_true', help='Ignore CUDA.')
 
     parser.add_argument('--tensorboard', action='store_true', help='Start a tensorboard session and write the results of training.  Only applies to training.')
+    parser.add_argument('--tensorboard_suffix', type=str, default='', help="Suffix on TB run name")
 
     args = parser.parse_args(args=args)
 
@@ -248,7 +249,8 @@ def train(args):
 
     if args['tensorboard']:
         from torch.utils.tensorboard import SummaryWriter
-        writer = SummaryWriter(log_dir='runs/'+args['shorthand'])
+        writer =
+        SummaryWriter(log_dir='runs/'+args['shorthand']+args['tensorboard_suffix'])
 
         # plot embeddings
         ind = np.random.choice(len(trainer.model.vocab['word']), size=2000, replace=False)
