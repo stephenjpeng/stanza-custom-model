@@ -24,6 +24,8 @@ class model_w_Ablation(nn.Module):
         self.vocab = vocab
         self.args = args
         self.unsaved_modules = []
+        START_TAG = "<START>"
+        STOP_TAG = "<STOP>" 
 
         def add_unsaved_module(name, module):
             self.unsaved_modules += [name]
@@ -100,16 +102,18 @@ class model_w_Ablation(nn.Module):
         self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
         self.taggerlstm_c_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
 
+        num_tag = len(self.vocab['tag'])
+        
         # add a hidden layer between output and BiLSTM
         if self.args['add_layer_before_output'] == 1:
-            self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
-            self.L1_gelu = nn.GELU()
+            # Maps the output of the LSTM into tag space.
+            self.L1 = nn.Linear(self.args['hidden_dim']*2, num_tag)
+            # self.L1_gelu = nn.GELU()
         
         # Attention
         self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
         
         # tag classifier
-        num_tag = len(self.vocab['tag'])
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
         self.tag_clf.bias.data.zero_()
 
@@ -216,11 +220,11 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
         
+        if self.L1:
+            lstm_outputs = self.L1(lstm_outputs)
         if self.attn:
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
         
-        if self.L1:
-            lstm_outputs = self.L1_gelu(self.L1(lstm_outputs))
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
         

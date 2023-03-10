@@ -95,8 +95,8 @@ def parse_args(args=None):
     parser.add_argument('--save_dir', type=str, default='saved_models/ner', help='Root dir for saving models.')
     parser.add_argument('--save_name', type=str, default=None, help="File name to save the model")
 
-    # parser.add_argument('--attn_num_head', type=int, default=20)
-    # parser.add_argument('--add_layer_before_output', type=int, default=0)
+    parser.add_argument('--attn_num_head', type=int, default=20)
+    parser.add_argument('--add_layer_before_output', type=int, default=0)
 
     parser.add_argument('--seed', type=int, default=1234)
     parser.add_argument('--cuda', type=bool, default=torch.cuda.is_available())
