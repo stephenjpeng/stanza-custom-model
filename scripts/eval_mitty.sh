@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output="./output/output_attn_l.tsv"
+output="./output/output_l.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
 pre="en_"
 while getopts o:i:m:p: flag
@@ -27,5 +27,5 @@ python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
 	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 	--mode predict \
-	--save_dir ./models/data_extractor/"$model" \
+	--save_dir ./models/mitty_experiment/"$model" \
 	--shorthand "$pre""$model" --cpu
