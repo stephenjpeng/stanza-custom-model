@@ -102,7 +102,7 @@ class Trainer(BaseTrainer):
             self.model.cuda()
         else:
             self.model.cpu()
-        self.optimizer = utils.get_optimizer(self.args['optim'], self.parameters, self.args['lr'], momentum=self.args['momentum'])
+        self.optimizer = utils.get_optimizer(args['optim'], self.parameters, args['lr'], momentum=args['momentum'])
 
     def update(self, batch, eval=False):
         inputs, orig_idx, word_orig_idx, char_orig_idx, sentlens, wordlens, charlens, charoffsets = unpack_batch(batch, self.use_cuda)

@@ -383,13 +383,13 @@ def evaluate(args):
 def load_model(args, model_file):
     # load model
     use_cuda = args['cuda'] and not args['cpu']
-    charlm_args = {}
-    if 'charlm_forward_file' in args:
-        charlm_args['charlm_forward_file'] = args['charlm_forward_file']
-    if 'charlm_backward_file' in args:
-        charlm_args['charlm_backward_file'] = args['charlm_backward_file']
+    # charlm_args = {}
+    # if 'charlm_forward_file' in args:
+    #     charlm_args['charlm_forward_file'] = args['charlm_forward_file']
+    # if 'charlm_backward_file' in args:
+    #     charlm_args['charlm_backward_file'] = args['charlm_backward_file']
     pretrain = load_pretrain(args)
-    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain, freeze_bert=args['freeze_bert'],
+    trainer = Trainer(args=args, model_file=model_file, pretrain=pretrain, freeze_bert=args['freeze_bert'],
             use_cuda=use_cuda, freeze_layers=args['train_classifier_only'], from_scratch=args['no_transfer'])
     loaded_args, vocab = trainer.args, trainer.vocab
 
