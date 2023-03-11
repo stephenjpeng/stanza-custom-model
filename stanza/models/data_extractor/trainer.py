@@ -77,7 +77,7 @@ class Trainer(BaseTrainer):
             self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
             if freeze_bert:
                 logger.info('Disabling gradient for BERT layers')
-                for pname, p in self.bert_model.bert.parameters():
+                for p in self.bert_model.base_model.parameters():
                     p.requires_grad = False
             self.model = DataExtractor(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
         elif model_file is not None:
@@ -93,7 +93,7 @@ class Trainer(BaseTrainer):
             logger.info('Disabling gradient for NER layers')
             # ner_tagger layers
             exclude = ['taggerlstm_h_init', 'taggerlstm_c_init', 'word_emb', 'input_transform', 'taggerlstm']
-            for pname, p in self.model.named_parameters():
+            for p in self.model.named_parameters():
                 if pname.split('.')[0] in exclude:
                     p.requires_grad = False
 
@@ -177,7 +177,7 @@ class Trainer(BaseTrainer):
         self.bert_model, self.bert_tokenizer = load_bert(self.args.get('bert_model', None), foundation_cache)
         if 'freeze_bert' in args and args['freeze_bert']:
             logger.info('Disabling gradient for BERT layers')
-            for pname, p in self.bert_model.bert.parameters():
+            for pname, p in self.bert_model.base_model.parameters():
                 p.requires_grad = False
         self.vocab = MultiVocab.load_state_dict(checkpoint['vocab'])
 
