@@ -97,6 +97,7 @@ def parse_args(args=None):
 
     parser.add_argument('--bert_model', type=str, default=None, help="Use an external bert model (requires the transformers package)")
     parser.add_argument('--no_bert_model', dest='bert_model', action="store_const", const=None, help="Don't use bert")
+    parser.add_argument('--freeze_bert', action='store_true')
 
     parser.add_argument('--sample_train', type=float, default=1.0, help='Subsample training data.')
     parser.add_argument('--optim', type=str, default='sgd', help='sgd, adagrad, adam or adamax.')
@@ -202,7 +203,7 @@ def train(args):
     # set up trainer first to have a vocab set
     if trainer is None: # init if model was not loaded previously from file
         vocab = DataLoader(train_doc, args['batch_size'], args, vocab_only=True, pretrain=pretrain, vocab=vocab, evaluation=False).vocab
-        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'],
+        trainer = Trainer(args=args, vocab=vocab, pretrain=pretrain, use_cuda=args['cuda'], freeze_bert=args['freeze_bert'],
                           freeze_layers=args['train_classifier_only'], from_scratch=args['no_transfer'])
         vocab = trainer.vocab
 
@@ -388,7 +389,7 @@ def load_model(args, model_file):
     if 'charlm_backward_file' in args:
         charlm_args['charlm_backward_file'] = args['charlm_backward_file']
     pretrain = load_pretrain(args)
-    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain,
+    trainer = Trainer(args=charlm_args, model_file=model_file, pretrain=pretrain, freeze_bert=args['freeze_bert'],
             use_cuda=use_cuda, freeze_layers=args['train_classifier_only'], from_scratch=args['no_transfer'])
     loaded_args, vocab = trainer.args, trainer.vocab
 

@@ -66,7 +66,7 @@ def fix_singleton_tags(tags):
 class Trainer(BaseTrainer):
     """ A trainer for training models. """
     def __init__(self, args=None, vocab=None, pretrain=None, model_file=None, use_cuda=False,
-                 freeze_layers=True, foundation_cache=None, from_scratch=False):
+                 freeze_bert=False, freeze_layers=False, foundation_cache=None, from_scratch=False):
         self.passed_vocab = vocab
         self.use_cuda = use_cuda
         if from_scratch:
@@ -75,6 +75,10 @@ class Trainer(BaseTrainer):
             self.args = args
             self.vocab = vocab
             self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
+            if freeze_bert:
+                logger.info('Disabling gradient for BERT layers')
+                for pname, p in self.bert_model.named_parameters():
+                    p.requires_grad = False
             self.model = DataExtractor(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
         elif model_file is not None:
             # load everything from file
@@ -92,6 +96,7 @@ class Trainer(BaseTrainer):
             for pname, p in self.model.named_parameters():
                 if pname.split('.')[0] in exclude:
                     p.requires_grad = False
+
         self.parameters = [p for p in self.model.parameters() if p.requires_grad]
         if self.use_cuda:
             self.model.cuda()
@@ -170,6 +175,10 @@ class Trainer(BaseTrainer):
         self.args = checkpoint['config']
         if args: self.args.update(args)
         self.bert_model, self.bert_tokenizer = load_bert(self.args.get('bert_model', None), foundation_cache)
+        if freeze_bert:
+            logger.info('Disabling gradient for BERT layers')
+            for pname, p in self.bert_model.named_parameters():
+                p.requires_grad = False
         self.vocab = MultiVocab.load_state_dict(checkpoint['vocab'])
 
         if self.passed_vocab is not None and utils.warn_missing_tags([i for i in self.vocab['tag']], self.passed_vocab['tag']._id2unit, "training set"):
