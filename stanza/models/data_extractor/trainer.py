@@ -175,7 +175,7 @@ class Trainer(BaseTrainer):
         self.args = checkpoint['config']
         if args: self.args.update(args)
         self.bert_model, self.bert_tokenizer = load_bert(self.args.get('bert_model', None), foundation_cache)
-        if freeze_bert:
+        if 'freeze_bert' in args and args['freeze_bert']:
             logger.info('Disabling gradient for BERT layers')
             for pname, p in self.bert_model.named_parameters():
                 p.requires_grad = False

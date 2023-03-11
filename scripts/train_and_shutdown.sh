@@ -34,28 +34,28 @@
 # 	--trigram_cnn --trigram_drop 0.5 --no_transfer --num_trans 5 --no_bilstm \
 # 	--tensorboard
 
-for nh in 16
-do
-	for nt in 2
-	do
-		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
-			--data_dir ./data \
-			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-			--mode train \
-			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
-			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.001lr_adam \
-			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
-			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
-			--charlm \
-			--charlm_shorthand 1billion \
-			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-			--tensorboard --tensorboard_suffix _finetune  --transformer --no_transfer \
-			--optim adam --batch_size 256 --max_steps 50000 --lr 0.0003 --lr_decay 0 --min_lr 0 \
-			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3 --finetune
-	done
-done
+# for nh in 16
+# do
+# 	for nt in 2
+# 	do
+# 		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+# 			--data_dir ./data \
+# 			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+# 			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+# 			--mode train \
+# 			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
+# 			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.001lr_adam \
+# 			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+# 			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+# 			--charlm \
+# 			--charlm_shorthand 1billion \
+# 			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+# 			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+# 			--tensorboard --tensorboard_suffix _finetune  --transformer --no_transfer \
+# 			--optim adam --batch_size 256 --max_steps 50000 --lr 0.0003 --lr_decay 0 --min_lr 0 \
+# 			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3 --finetune
+# 	done
+# done
 
 # # train trigram_cnn
 # sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
@@ -133,20 +133,76 @@ done
 # 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 # 	--tensorboard
 
-# # train from BERT
-# sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/ner_tagger.py \
-# 	--data_dir ./data \
-# 	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-# 	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-# 	--mode train \
-# 	--save_dir ./models/data_extractor/synth_combined_vanilla_from_bert \
-# 	--shorthand en_synth_combined_vanilla_from_bert \
-# 	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
-# 	--charlm \
-# 	--charlm_shorthand 1billion \
-# 	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-# 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-# 	--tensorboard
+# train from BERT (freeze bert)
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/vanilla_from_bert_2stage \
+	--shorthand vanilla_from_bert_2stage \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--bert_model "bert-base-cased" \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--no_transfer --freeze_bert \
+	--tensorboard
+
+# train from BERT (all layers)
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/vanilla_from_bert_2stage \
+	--shorthand vanilla_from_bert_2stage \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--bert_model "bert-base-cased" \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--no_transfer --finetune \
+	--optim adam --max_steps 50000 --lr 0.00001 --lr_decay 0 --min_lr 0 \
+	--tensorboard
+
+# train from BERT no BiLSTM (freeze bert)
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/nobilstm_from_bert_2stage \
+	--shorthand nobilstm_from_bert_2stage \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--bert_model "bert-base-cased" \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--no_bilstm --no_transfer \
+	--tensorboard
+
+# train from BERT no BiLSTM (freeze bert)
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+	--save_dir ./models/data_extractor/nobilstm_from_bert_2stage \
+	--shorthand nobilstm_from_bert_2stage \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--bert_model "bert-base-cased" \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--no_bilstm --no_transfer --finetune \
+	--optim adam --max_steps 50000 --lr 0.00001 --lr_decay 0 --min_lr 0 \
+	--tensorboard
+
 # 
 # # train only class layers
 # sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
