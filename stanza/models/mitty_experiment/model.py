@@ -9,6 +9,7 @@ from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence, pack_s
 from stanza.models.common.data import map_to_ids, get_long_tensor
 
 from stanza.models.common.packed_lstm import PackedLSTM
+from stanza.models.mitty_experiment.common.packedgru import PackedGRU
 from stanza.models.common.dropout import WordDropout, LockedDropout
 from stanza.models.common.char_model import CharacterModel, CharacterLanguageModel
 from stanza.models.common.crf import CRFLoss
@@ -95,8 +96,15 @@ class model_w_Ablation(nn.Module):
             self.input_transform = None
        
         # recurrent layers
-        self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
+        if self.args['gru'] == 1:
+            self.taggerlstm = PackedGRU(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
                 bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
+            logger.info("Using GRU as the tagger architecture.")
+        else:
+            self.taggerlstm = PackedLSTM(input_size, self.args['hidden_dim'], self.args['num_layers'], batch_first=True, \
+                bidirectional=True, dropout=0 if self.args['num_layers'] == 1 else self.args['dropout'])
+            logger.info("Using LSTM as the tagger architecture.")
+            
         # self.drop_replacement = nn.Parameter(torch.randn(input_size) / np.sqrt(input_size))
         self.drop_replacement = None
         self.taggerlstm_h_init = nn.Parameter(torch.zeros(2 * self.args['num_layers'], 1, self.args['hidden_dim']), requires_grad=False)
@@ -111,7 +119,8 @@ class model_w_Ablation(nn.Module):
             self.L1_gelu = nn.GELU()
         
         # Attention
-        self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
+        if self.args['attn_layer'] == 1:
+            self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
         
         # tag classifier
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
@@ -220,9 +229,9 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
         
-        if self.L1:
+        if self.args['add_layer_before_output'] == 1:
             lstm_outputs = self.L1_gelu(self.L1(lstm_outputs))
-        if self.attn:
+        if self.args['attn_layer'] == 1:
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
         
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()

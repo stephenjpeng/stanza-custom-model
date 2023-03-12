@@ -76,7 +76,11 @@ class Trainer(BaseTrainer):
             self.vocab = vocab
             self.bert_model, self.bert_tokenizer = load_bert(args['bert_model'], foundation_cache)
             self.model = model_w_Ablation(args, vocab, emb_matrix=pretrain.emb, bert_model = self.bert_model, bert_tokenizer = self.bert_tokenizer, use_cuda = self.use_cuda)
-
+            print("GRU tag:", self.args['gru'])
+            if self.args['gru'] == 1:
+                logger.info('Use GRU.')
+            else:
+                logger.info('Use LSTM.')
         if train_classifier_only:
             logger.info('Disabling gradient for non-classifier layers')
             exclude = ['tag_clf', 'crit']

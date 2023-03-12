@@ -18,9 +18,9 @@ import json
 import torch
 from torch import nn, optim
 
-from stanza.models.ner.data import DataLoader
-from stanza.models.ner.trainer import Trainer
-from stanza.models.ner import scorer
+from stanza.models.mitty_experiment.data import DataLoader
+from stanza.models.mitty_experiment.trainer import Trainer
+from stanza.models.mitty_experiment import scorer
 from stanza.models.common import utils
 from stanza.models.common.pretrain import Pretrain
 from stanza.utils.conll import CoNLL
@@ -40,6 +40,8 @@ def parse_args(args=None):
     parser.add_argument('--train_file', type=str, default=None, help='Input file for data loader.')
     parser.add_argument('--eval_file', type=str, default=None, help='Input file for data loader.')
     parser.add_argument('--eval_output_file', type=str, default=None, help='Where to write results: text, gold, pred.  If None, no results file printed')
+
+    parser.add_argument('--gru', type=int, default=0)
 
     parser.add_argument('--mode', default='train', choices=['train', 'predict'])
     parser.add_argument('--finetune', action='store_true', help='Load existing model during `train` mode from `save_dir` path')
@@ -95,6 +97,7 @@ def parse_args(args=None):
     parser.add_argument('--save_dir', type=str, default='saved_models/ner', help='Root dir for saving models.')
     parser.add_argument('--save_name', type=str, default=None, help="File name to save the model")
 
+    parser.add_argument('--attn_layer', type=int, default=0)
     parser.add_argument('--attn_num_head', type=int, default=20)
     parser.add_argument('--add_layer_before_output', type=int, default=0)
 
