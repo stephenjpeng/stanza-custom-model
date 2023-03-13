@@ -19,7 +19,9 @@ from stanza.models.common.vocab import PAD_ID, UNK_ID
 from stanza.models.common.bert_embedding import extract_bert_embeddings
 logger = logging.getLogger('stanza')
 
-CONVOLUTION_KERNEL = 5 # kernel_size = 5 captures two tokens on either side a given token 
+CONVOLUTION_KERNEL = 3 
+# kernel_size = 5 captures two tokens on either side a given token 
+# kernel_size = 3 captures one token on either side a given token 
 
 class NERTagger_wConv(nn.Module):
     def __init__(self, args, vocab, emb_matrix=None, bert_model=None, bert_tokenizer=None, use_cuda=False):

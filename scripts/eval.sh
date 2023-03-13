@@ -3,8 +3,8 @@
 
 output="./output/output.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
-pre="en_"
-suff="_data_extractor"
+ pre="en_"
+suff="_nertagger"
 folder="data_extractor"
 while getopts o:i:m:p:s:f: flag
 do
@@ -22,7 +22,7 @@ done
 
 echo "Evaluating $model on $file... Output will be written to $output"
 
-python3 stanza/models/data_extractor.py \
+python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	--data_dir ./data \
 	--eval_file  "$file" \
 	--eval_output_file  "$output" \
