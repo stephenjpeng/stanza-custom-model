@@ -256,7 +256,7 @@
 	# --charlm_backward_file ../stanza_resources/en/backward_charlm/1billion.pt \
 	# --tensorboard
 
-# train from BERT (with Convolution layer before LSTM) - Joe (AWS)
+# train from pretrained embeddings (with Convolution layer before LSTM) - Joe (AWS)
 sudo -u joe PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 		--data_dir ./data \
 		--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
