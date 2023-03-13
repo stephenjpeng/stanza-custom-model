@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output="./output/output_l.tsv"
+output="./output/output_gru.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
 pre="en_"
 while getopts o:i:m:p: flag
@@ -17,7 +17,7 @@ done
 
 echo "Evaluating $model on $file... Output will be written to $output"
 
-python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
+sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
 	--data_dir ./data \
 	--eval_file  "$file" \
 	--eval_output_file  "$output" \

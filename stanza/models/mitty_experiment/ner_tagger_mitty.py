@@ -100,7 +100,8 @@ def parse_args(args=None):
     parser.add_argument('--attn_layer', type=int, default=0)
     parser.add_argument('--attn_num_head', type=int, default=20)
     parser.add_argument('--add_layer_before_output', type=int, default=0)
-
+    parser.add_argument('--activation', default='gelu', choices=['gelu', 'relu', 'sigmoid'])
+    
     parser.add_argument('--seed', type=int, default=1234)
     parser.add_argument('--cuda', type=bool, default=torch.cuda.is_available())
     parser.add_argument('--cpu', action='store_true', help='Ignore CUDA.')
