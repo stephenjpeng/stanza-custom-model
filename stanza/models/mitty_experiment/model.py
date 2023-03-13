@@ -116,7 +116,12 @@ class model_w_Ablation(nn.Module):
         if self.args['add_layer_before_output'] == 1:
             # Maps the output of the LSTM into tag space.
             self.L1 = nn.Linear(self.args['hidden_dim']*2, num_tag)
-            self.L1_gelu = nn.GELU()
+            if self.args['activation'] == 'gelu':
+                self.L1_act = nn.GELU()
+            elif self.args['activation'] == 'relu':
+                self.L1_act = nn.ReLU()
+            else:
+                self.L1_act = nn.Sigmoid()
         
         # Attention
         if self.args['attn_layer'] == 1:
@@ -230,7 +235,7 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = pack(lstm_outputs).data
         
         if self.args['add_layer_before_output'] == 1:
-            lstm_outputs = self.L1_gelu(self.L1(lstm_outputs))
+            lstm_outputs = self.L1_act(self.L1(lstm_outputs))
         if self.args['attn_layer'] == 1:
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
         
