@@ -3,8 +3,8 @@
 
 output="./output/output.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
-pre="en_"
-suff="_data_extractor"
+ pre="en_"
+suff="_nertagger"
 folder="data_extractor"
 while getopts o:i:m:p:s:f: flag
 do
