@@ -62,7 +62,8 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --charlm_shorthand 1billion \
         --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
         --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-        --add_layer_before_output 0 \
+        --add_layer_before_output 1 \
+        --activation gelu \
         --attn_layer 1 \
         --attn_num_head 10 \
         --tensorboard
@@ -80,6 +81,7 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
         --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
         --add_layer_before_output 0 \
+        --activation gelu \
         --attn_layer 1 \
         --attn_num_head 20 \
         --tensorboard
@@ -97,6 +99,7 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
         --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
         --add_layer_before_output 0 \
+        --activation gelu \
         --attn_layer 1 \
         --attn_num_head 5 \
         --tensorboard

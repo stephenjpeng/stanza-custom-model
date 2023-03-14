@@ -123,10 +123,11 @@ class model_w_Ablation(nn.Module):
         
         # Attention
         if self.args['attn_layer'] == 1:
-            #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
+            self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
             #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
-            self.attn = nn.MultiheadAttention(self.args['hidden_dim']*2, self.args['attn_num_head'])
-        
+            self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
+            self.post_L = nn.Linear(self.args['word_emb_dim'], self.args['hidden_dim']*2)
+            
         # tag classifier
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
         self.tag_clf.bias.data.zero_()
@@ -234,11 +235,14 @@ class model_w_Ablation(nn.Module):
         lstm_outputs = self.lockeddrop(lstm_outputs)
         lstm_outputs = pack(lstm_outputs).data
         
+        if self.args['attn_layer'] == 1:
+            lstm_outputs = self.L(lstm_outputs)
+            lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
+            lstm_outputs = self.post_L(lstm_outputs)
+            
+            #lstm_outputs = self.L(lstm_outputs)
         if self.args['add_layer_before_output'] == 1:
             lstm_outputs = self.L1_act(self.L1(lstm_outputs))
-        if self.args['attn_layer'] == 1:
-            lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
-            #lstm_outputs = self.L(lstm_outputs)
         
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
