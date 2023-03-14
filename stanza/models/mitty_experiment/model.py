@@ -115,7 +115,7 @@ class model_w_Ablation(nn.Module):
         # add a hidden layer between output and BiLSTM
         if self.args['add_layer_before_output'] == 1:
             # Maps the output of the LSTM into tag space.
-            self.L1 = nn.Linear(self.args['hidden_dim']*2, num_tag)
+            self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
             if self.args['activation'] == 'gelu':
                 self.L1_act = nn.GELU()
             elif self.args['activation'] == 'relu':

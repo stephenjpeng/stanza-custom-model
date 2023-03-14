@@ -3,10 +3,11 @@
 
 output="./output/output.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
- pre="en_"
+pre="en_"
 suff="_nertagger"
 folder="data_extractor"
-while getopts o:i:m:p:s:f: flag
+args=""
+while getopts e:o:i:m:p:s:f: flag
 do
     case "${flag}" in
         o) output=${OPTARG};;
@@ -15,6 +16,7 @@ do
         p) pre=${OPTARG};;
         s) suff=${OPTARG};;
         f) folder=${OPTARG};;
+        e) args=${OPTARG};;
     esac
 done
 
@@ -22,7 +24,7 @@ done
 
 echo "Evaluating $model on $file... Output will be written to $output"
 
-python3 stanza/models/joe_experiment/ner_tagger_joe.py \
+python3 stanza/models/data_extractor.py \
 	--data_dir ./data \
 	--eval_file  "$file" \
 	--eval_output_file  "$output" \
@@ -33,5 +35,4 @@ python3 stanza/models/joe_experiment/ner_tagger_joe.py \
 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
 	--mode predict \
 	--save_dir ./models/"$folder"/"$model" \
-	--save_name "$pre""$model""$suff".pt 
-	# --cpu
+	--save_name "$pre""$model""$suff".pt $args
