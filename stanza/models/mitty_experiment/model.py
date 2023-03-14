@@ -25,8 +25,6 @@ class model_w_Ablation(nn.Module):
         self.vocab = vocab
         self.args = args
         self.unsaved_modules = []
-        START_TAG = "<START>"
-        STOP_TAG = "<STOP>" 
 
         def add_unsaved_module(name, module):
             self.unsaved_modules += [name]
@@ -125,6 +123,8 @@ class model_w_Ablation(nn.Module):
         
         # Attention
         if self.args['attn_layer'] == 1:
+            #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
+            self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
             self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
         
         # tag classifier
@@ -237,6 +237,7 @@ class model_w_Ablation(nn.Module):
         if self.args['add_layer_before_output'] == 1:
             lstm_outputs = self.L1_act(self.L1(lstm_outputs))
         if self.args['attn_layer'] == 1:
+            lstm_outputs = self.L(lstm_outputs)
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
         
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
