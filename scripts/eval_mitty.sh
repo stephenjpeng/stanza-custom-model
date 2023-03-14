@@ -1,6 +1,5 @@
 #!/bin/bash
 
-output="./output/output_gru.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
 pre="en_"
 while getopts o:i:m:p: flag
@@ -13,6 +12,7 @@ do
     esac
 done
 
+[ -z "$output" ] && echo "Please enter a output path with the [-o] flag!" && exit 2;
 [ -z "$model" ] && echo "Please enter a model with the [-m] flag!" && exit 2;
 
 echo "Evaluating $model on $file... Output will be written to $output"
@@ -20,7 +20,7 @@ echo "Evaluating $model on $file... Output will be written to $output"
 sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
 	--data_dir ./data \
 	--eval_file  "$file" \
-	--eval_output_file  "$output" \
+	--eval_output_file  ./output/mitty_experiment/"$output" \
 	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
 	--charlm \
 	--charlm_shorthand 1billion \

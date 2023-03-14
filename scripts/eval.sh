@@ -1,10 +1,10 @@
 #!/bin/bash
 
-
+# NO NEED TO CHANGE DEFAULT ARGS, JUST PASS IN YOUR RELEVANT ONES AT COMMAND LINE
 output="./output/output.tsv"
 file="./stanza/TOC_Utility/Processed_Data/synth_combined.test.json"
 pre="en_"
-suff="_nertagger"
+suff="_dataextractor"
 folder="data_extractor"
 args=""
 while getopts e:o:i:m:p:s:f: flag

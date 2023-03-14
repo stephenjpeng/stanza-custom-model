@@ -55,8 +55,8 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
         --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_10 \
-        --shorthand en_synth_combined_vanilla_attn_10 \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_8 \
+        --shorthand en_synth_combined_vanilla_attn_8 \
         --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
         --charlm \
         --charlm_shorthand 1billion \
@@ -65,7 +65,7 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --add_layer_before_output 1 \
         --activation gelu \
         --attn_layer 1 \
-        --attn_num_head 10 \
+        --attn_num_head 8 \
         --tensorboard
 
 sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
@@ -73,8 +73,8 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
         --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_20 \
-        --shorthand en_synth_combined_vanilla_attn_20 \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_16 \
+        --shorthand en_synth_combined_vanilla_attn_16 \
         --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
         --charlm \
         --charlm_shorthand 1billion \
@@ -83,7 +83,7 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --add_layer_before_output 0 \
         --activation gelu \
         --attn_layer 1 \
-        --attn_num_head 20 \
+        --attn_num_head 16 \
         --tensorboard
 
 sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
@@ -91,8 +91,8 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
         --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_5 \
-        --shorthand en_synth_combined_vanilla_attn_5 \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_32 \
+        --shorthand en_synth_combined_vanilla_attn_32 \
         --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
         --charlm \
         --charlm_shorthand 1billion \
@@ -101,7 +101,7 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --add_layer_before_output 0 \
         --activation gelu \
         --attn_layer 1 \
-        --attn_num_head 5 \
+        --attn_num_head 32 \
         --tensorboard
 
 echo "WARNING! SYSTEM WILL SHUTDOWN IN 60 SECONDS UNLESS CTRL-C INTERRUPT..."
