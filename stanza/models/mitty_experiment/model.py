@@ -124,7 +124,7 @@ class model_w_Ablation(nn.Module):
         # Attention
         if self.args['attn_layer'] == 1:
             #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
-            self.L = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
+            #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
             self.attn = nn.MultiheadAttention(self.args['hidden_dim']*2, self.args['attn_num_head'])
         
         # tag classifier
@@ -238,7 +238,7 @@ class model_w_Ablation(nn.Module):
             lstm_outputs = self.L1_act(self.L1(lstm_outputs))
         if self.args['attn_layer'] == 1:
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
-            lstm_outputs = self.L(lstm_outputs)
+            #lstm_outputs = self.L(lstm_outputs)
         
         logits = pad(self.tag_clf(lstm_outputs)).contiguous()
         loss, trans = self.crit(logits, word_mask, tags)
