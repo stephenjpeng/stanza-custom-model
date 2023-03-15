@@ -105,30 +105,15 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
         --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_5 \
-        --shorthand en_synth_combined_vanilla_attn_5 \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_dropout_10 \
+        --shorthand en_synth_combined_vanilla_attn_dropout_10 \
         --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
         --charlm \
         --charlm_shorthand 1billion \
         --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
         --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
         --add_layer_before_output 1 \
-        --attn_num_head 5 \
-        --tensorboard
-
-sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
-        --data_dir ./data \
-        --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-        --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_10 \
-        --shorthand en_synth_combined_vanilla_attn_10 \
-        --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
-        --charlm \
-        --charlm_shorthand 1billion \
-        --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-        --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-        --add_layer_before_output 1 \
+        --attn_layer 1 \
         --attn_num_head 10 \
         --tensorboard
 
@@ -137,13 +122,31 @@ sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanz
         --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
         --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 		--mode train \
-        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_20 \
-        --shorthand en_synth_combined_vanilla_attn_20 \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_dropout_20 \
+        --shorthand en_synth_combined_vanilla_attn_dropout_20 \
         --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
         --charlm \
         --charlm_shorthand 1billion \
         --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
         --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
         --add_layer_before_output 1 \
+        --attn_layer 1 \
         --attn_num_head 20 \
+        --tensorboard
+
+sudo -u mitty PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/mitty_experiment/ner_tagger_mitty.py \
+        --data_dir ./data \
+        --train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+        --eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+		--mode train \
+        --save_dir ./models/mitty_experiment/synth_combined_vanilla_attn_dropout_25 \
+        --shorthand en_synth_combined_vanilla_attn_dropout_25 \
+        --wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+        --charlm \
+        --charlm_shorthand 1billion \
+        --charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+        --charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+        --add_layer_before_output 1 \
+        --attn_layer 1 \
+        --attn_num_head 25 \
         --tensorboard
