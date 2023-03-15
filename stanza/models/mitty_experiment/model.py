@@ -107,14 +107,14 @@ class model_w_Ablation(nn.Module):
         # add a hidden layer between output and BiLSTM
         if self.args['add_layer_before_output'] == 1:
             # Maps the output of the LSTM into tag space.
-            self.L1 = nn.Linear(self.args['hidden_dim']*2, num_tag)
+            self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
             self.L1_gelu = nn.GELU()
         
         # Attention
         self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'])
         
         # tag classifier
-        self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
+        self.tag_clf = nn.Linear(self.args['word_emb_dim'], num_tag)
         self.tag_clf.bias.data.zero_()
 
         # criterion

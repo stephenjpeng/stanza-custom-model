@@ -34,65 +34,85 @@
 # 	--trigram_cnn --trigram_drop 0.5 --no_transfer --num_trans 5 --no_bilstm \
 # 	--tensorboard
 
-for nh in 16 8
-do
-	for nt in 2
-	do
-		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
-			--data_dir ./data \
-			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-			--mode train \
-			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
-			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
-			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
-			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
-			--charlm \
-			--charlm_shorthand 1billion \
-			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-			--tensorboard --transformer --no_transfer \
-			--optim adam --batch_size 128 --max_steps 50000 --lr 0.2 --lr_decay 0 --min_lr 0 \
-			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3
+# for nh in 16 8
+# do
+# 	for nt in 2
+# 	do
+# 		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+# 			--data_dir ./data \
+# 			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+# 			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+# 			--mode train \
+# 			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
+# 			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam \
+# 			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+# 			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+# 			--charlm \
+# 			--charlm_shorthand 1billion \
+# 			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+# 			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+# 			--tensorboard --transformer --no_transfer \
+# 			--optim adam --batch_size 128 --max_steps 50000 --lr 0.2 --lr_decay 0 --min_lr 0 \
+# 			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3
+# 
+# 		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+# 			--data_dir ./data \
+# 			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+# 			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+# 			--mode train \
+# 			--finetune_load_name ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam .pt \
+# 			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.0001lr_adam_finetune \
+# 			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.0001lr_adam_finetune \
+# 			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+# 			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+# 			--charlm \
+# 			--charlm_shorthand 1billion \
+# 			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+# 			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+# 			--tensorboard --transformer --no_transfer \
+# 			--optim adam --batch_size 128 --max_steps 50000 --lr 0.0001 --lr_decay 0 --min_lr 0 \
+# 			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3 --finetune
+# 	done
+# done
 
-		sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
-			--data_dir ./data \
-			--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
-			--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
-			--mode train \
-			--finetune_load_name ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam/trans_"$nh"h_"$nt"t_0.3d_0.2lr_adam .pt \
-			--save_dir ./models/data_extractor/trans_"$nh"h_"$nt"t_0.3d_0.0001lr_adam_finetune \
-			--shorthand trans_"$nh"h_"$nt"t_0.3d_0.0001lr_adam_finetune \
-			--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
-			--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
-			--charlm \
-			--charlm_shorthand 1billion \
-			--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
-			--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-			--tensorboard --transformer --no_transfer \
-			--optim adam --batch_size 128 --max_steps 50000 --lr 0.0001 --lr_decay 0 --min_lr 0 \
-			--num_trans_heads $nh --num_trans $nt --trans_drop 0.3 --finetune
-	done
-done
-
-# # train trigram_cnn
+# train trigram_cnn
 # sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
 # 	--data_dir ./data \
 # 	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
 # 	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
 # 	--mode train \
-# 	--save_dir ./models/data_extractor/vanilla_trigram_cnn_6L_0.5drop \
-# 	--shorthand vanilla_trigram_cnn_6L_0.5drop \
+# 	--save_dir ./models/data_extractor/bert_trigram_cnn_3L_0.5drop_p1 \
+# 	--shorthand bert_trigram_cnn_3L_0.5drop_p1 \
 # 	--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
 # 	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
 # 	--charlm \
 # 	--charlm_shorthand 1billion \
 # 	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
 # 	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
-# 	--trigram_cnn --trigram_drop 0.5 --no_transfer --num_trigram 6 \
+# 	--trigram_cnn --trigram_drop 0.5 --no_transfer --num_trigram 3 \
+# 	--bert_model bert-base-cased --freeze_bert \
 # 	--tensorboard
-# 
-# 
+
+sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
+	--data_dir ./data \
+	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
+	--eval_file  ./stanza/TOC_Utility/Processed_Data/synth_combined.dev.json \
+	--mode train \
+  	--finetune_load_name ./models/data_extractor/bert_trigram_cnn_3L_0.5drop_p1/bert_trigram_cnn_3L_0.5drop_p1_dataextractor.pt \
+	--save_dir ./models/data_extractor/bert_trigram_cnn_3L_0.5drop_p2 \
+	--shorthand bert_trigram_cnn_3L_0.5drop_p2 \
+	--ner_model_file /home/stephen/stanza_resources/en/ner/conll03.pt \
+	--wordvec_pretrain_file /home/stephen/stanza_resources/en/pretrain/combined.pt \
+	--charlm \
+	--charlm_shorthand 1billion \
+	--charlm_forward_file /home/stephen/stanza_resources/en/forward_charlm/1billion.pt \
+	--charlm_backward_file /home/stephen/stanza_resources/en/backward_charlm/1billion.pt \
+	--trigram_cnn --trigram_drop 0.5 --num_trigram 3 \
+	--bert_model bert-base-cased \
+  	--optim adam --max_steps 50000 --lr 0.00001 --lr_decay 0 --min_lr 0 --finetune \
+	--tensorboard
+ 
+ 
 # sudo -u stephen PYTHONPATH=$PYTHONPATH:. /opt/conda/envs/pytorch/bin/python3 stanza/models/data_extractor.py \
 # 	--data_dir ./data \
 # 	--train_file ./stanza/TOC_Utility/Processed_Data/synth_combined.train.json \
