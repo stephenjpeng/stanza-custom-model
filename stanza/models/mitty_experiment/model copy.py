@@ -114,7 +114,7 @@ class model_w_Ablation(nn.Module):
         if self.args['add_layer_before_output'] == 1:
             # Maps the output of the LSTM into tag space.
             # self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
-            self.L1 = nn.Linear(self.args['hidden_dim']*2, self.args['hidden_dim']*2)
+            self.L1 = nn.Linear(self.args['word_emb_dim'], self.args['hidden_dim']*2)
             if self.args['activation'] == 'gelu':
                 self.L1_act = nn.GELU()
             elif self.args['activation'] == 'relu':
@@ -125,9 +125,7 @@ class model_w_Ablation(nn.Module):
         # Attention
         if self.args['attn_layer'] == 1:
             #self.L = nn.Linear(self.args['hidden_dim']*2, self.args['word_emb_dim'])
-            self.attn = nn.MultiheadAttention(self.args['hidden_dim']*2, self.args['attn_num_head'], dropout=self.args['dropout'])
-            self.fc_dropout = nn.Dropout(self.args['fc_dropout'])
-            #self.fc = nn.Linear(self.args['hidden_dim']*2, output_dim)  # times 2 for bidirectional
+            self.attn = nn.MultiheadAttention(self.args['word_emb_dim'], self.args['attn_num_head'], dropout=self.args['dropout'])
             
         # tag classifier
         self.tag_clf = nn.Linear(self.args['hidden_dim']*2, num_tag)
@@ -239,7 +237,6 @@ class model_w_Ablation(nn.Module):
         if self.args['attn_layer'] == 1:
             # lstm_outputs = self.L(lstm_outputs)
             lstm_outputs, _ = self.attn(lstm_outputs, lstm_outputs, lstm_outputs)
-            lstm_outputs = self.fc_dropout(lstm_outputs)
             
             #lstm_outputs = self.L(lstm_outputs)
         if self.args['add_layer_before_output'] == 1:
