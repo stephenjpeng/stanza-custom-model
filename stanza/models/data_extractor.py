@@ -18,6 +18,7 @@ import json
 import torch
 from torch import nn, optim
 
+from stanza import Pipeline
 from stanza.models.data_extractor.data import DataLoader
 from stanza.models.data_extractor.trainer import Trainer
 from stanza.models.data_extractor import scorer
@@ -43,7 +44,7 @@ def parse_args(args=None):
 
     parser.add_argument('--ner_model_file', type=str, default=None, help='State file of parameters for pretrained NER model')
 
-    parser.add_argument('--mode', default='train', choices=['train', 'predict'])
+    parser.add_argument('--mode', default='train', choices=['train', 'predict', 'interactive'])
     parser.add_argument('--finetune', action='store_true', help='Load existing model during `train` mode from `save_dir` path')
     parser.add_argument('--finetune_load_name', type=str, default=None, help='Model to load when finetuning')
     parser.add_argument('--train_classifier_only', action='store_true',
@@ -139,6 +140,8 @@ def main(args=None):
 
     if args['mode'] == 'train':
         train(args)
+    elif args['mode'] == 'interactive':
+        interact(args)
     else:
         evaluate(args)
 
@@ -379,6 +382,32 @@ def evaluate(args):
         write_ner_results(args['eval_output_file'], batch, preds)
 
     return confusion
+
+def interact(args):
+    # file paths
+    model_file = os.path.join(args['save_dir'], args['save_name']) if args['save_name'] \
+        else '{}/{}_dataextractor.pt'.format(args['save_dir'], args['shorthand'])
+
+    loaded_args, trainer, vocab = load_model(args, model_file)
+    logger.debug("Loaded model for interaction from %s", model_file)
+
+    # load data
+    logger.info("Loading data with batch size {}...".format(args['batch_size']))
+    nlp = Pipeline(lang='en', processors='tokenize', tokenize_pretokenized=True)
+    print('Sentence to predict on (q to quit): ', end='')
+    text = input()
+
+    while text.lower() != "q":
+        doc = nlp(text)
+        doc.set("ner", ["O"] * doc.num_tokens, to_token=True)
+        batch = DataLoader(doc, args['batch_size'], loaded_args, vocab=vocab, evaluation=True, bert_tokenizer=trainer.bert_tokenizer)
+        preds = trainer.predict(batch[0])[0]
+        for w, p in zip(doc.get('text'), preds):
+            print(w + '\t\t' + p)
+
+        print('Sentence to predict on (q to quit): ', end='')
+        text = input()
+    return
 
 def load_model(args, model_file):
     # load model
